@@ -1,0 +1,698 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanctuary Details &bull; Travique Luxury Travel</title>
+  <meta name="description" content="Discover bespoke details, day-by-day itineraries, and private VIP access for handpicked Travique travel sanctuaries.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&family=Urbanist:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-sand-50 dark:bg-ocean-950 text-slate-800 dark:text-slate-100 transition-colors duration-300 font-sans antialiased overflow-x-hidden">
+
+  <header class="site-header">
+    <div class="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8">
+      <div class="header-inner-row flex items-center justify-between h-20 transition-all duration-300">
+
+        <a href="index.html" class="flex items-center gap-2 sm:gap-3 group shrink-0 -ml-1 sm:ml-0">
+          <div class="relative h-10 sm:h-12 w-auto flex items-center shrink-0">
+            <img src="logo-light.png" alt="Travique Logo" class="header-logo-img h-10 sm:h-12 w-auto object-contain dark:hidden group-hover:scale-105 transition-all duration-300">
+            <img src="logo-dark.png" alt="Travique Logo" class="header-logo-img h-10 sm:h-12 w-auto object-contain hidden dark:block group-hover:scale-105 transition-all duration-300">
+          </div>
+          <div class="flex flex-col items-start sm:items-center text-left sm:text-center">
+            <span class="text-xl sm:text-2xl font-black font-heading tracking-tight text-ocean-900 dark:text-white group-hover:text-teal-400 transition-colors">
+              Travique
+            </span>
+            <span class="text-[6.5px] sm:text-[7.5px] font-bold tracking-[0.12em] sm:tracking-[0.14em] text-[#9E6738] uppercase mt-0.5 whitespace-nowrap text-left sm:text-center">
+              Escape. Explore. Experience
+            </span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center justify-center gap-1 xl:gap-2">
+          <div class="nav-dropdown-wrapper relative group" id="home-dropdown">
+            <button data-view="home" class="nav-link flex items-center gap-1.5 cursor-pointer" onclick="toggleHomeDropdown(event)">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-200 group-hover:rotate-180"></i>
+            </button>
+            <div class="nav-dropdown-menu" id="home-dropdown-menu">
+              <button onclick="window.location.href='index.html'" class="dropdown-item flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-compass text-sm"></i>
+                </div>
+                <div class="text-left rtl:text-right">
+                  <span class="block font-bold text-sm text-slate-800 dark:text-slate-100 item-title">Home 1</span>
+                  <span class="block text-[11px] text-slate-500 dark:text-slate-400 font-normal">Classic Luxury &amp; Explorer</span>
+                </div>
+              </button>
+              <button onclick="window.location.href='home-2.html'" class="dropdown-item flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-[#9E6738]/20 text-[#9E6738] flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-crown text-sm"></i>
+                </div>
+                <div class="text-left rtl:text-right">
+                  <span class="block font-bold text-sm text-[#9E6738] dark:text-[#C9935E] item-title">Home 2</span>
+                  <span class="block text-[11px] text-slate-500 dark:text-slate-400 font-normal">Panoramic Escapes &amp; VIP Lounge</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <button onclick="window.location.href='about.html'" class="nav-link">About Us</button>
+          <button onclick="window.location.href='destinations.html'" class="nav-link active">Destinations</button>
+          <button onclick="window.location.href='packages.html'" class="nav-link">Holiday Packages</button>
+          <button onclick="window.location.href='contact.html'" class="nav-link">Contact Us</button>
+          <button onclick="window.location.href='dashboard.html'" class="nav-link">Dashboard</button>
+        </nav>
+
+        <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+          <button id="dir-toggle-btn" onclick="toggleDirection()" class="ctrl-btn ctrl-btn-icon w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center p-0" title="Toggle Layout Direction (LTR / RTL)">
+            <i class="fa-solid fa-right-left text-[#9E6738] dark:text-[#DEB17E] text-xs sm:text-sm"></i>
+          </button>
+          <button id="theme-toggle-btn" onclick="toggleDarkMode()" class="ctrl-btn ctrl-btn-icon w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center p-0" title="Toggle Theme (Light / Dark)">
+            <i class="fa-solid fa-moon text-[#9E6738] dark:text-[#DEB17E] text-xs sm:text-sm"></i>
+          </button>
+          <div id="auth-button-container">
+            <button onclick="openLoginModal()" class="ctrl-btn ctrl-btn-primary px-2.5 sm:px-4 py-1.5 sm:py-2 text-xs flex items-center gap-1.5 font-bold">
+              <i class="fa-solid fa-user text-xs"></i>
+              <span>Login</span>
+            </button>
+          </div>
+          <button id="mobile-menu-toggle" class="lg:hidden p-1.5 sm:p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:text-teal-400">
+            <i class="fa-solid fa-bars-staggered text-lg sm:text-xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mobile-menu-drawer" class="lg:hidden hidden px-4 pt-2 pb-6 bg-white dark:bg-ocean-900 border-b border-slate-200 dark:border-ocean-800 shadow-xl space-y-2">
+      <div class="mobile-dropdown border-b border-slate-200 dark:border-ocean-800/60 pb-2">
+        <button onclick="toggleMobileHomeSubmenu()" class="flex items-center justify-between w-full py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium hover:text-teal-400">
+          <span class="flex items-center gap-2">
+            <i class="fa-solid fa-house text-teal-400 text-sm"></i>
+            <span>Home</span>
+          </span>
+          <i id="mobile-home-chevron" class="fa-solid fa-chevron-down text-xs transition-transform duration-200"></i>
+        </button>
+        <div id="mobile-home-submenu" class="pl-6 space-y-1 mt-1">
+          <button data-view="home-1" onclick="window.location.href='index.html'; closeMobileMenuDrawer();" class="mobile-nav-link block w-full text-left py-1.5 px-3 rounded-lg text-slate-600 dark:text-slate-300 hover:text-teal-400 text-sm font-medium">
+            <i class="fa-solid fa-compass text-teal-500 text-xs mr-2 rtl:ml-2 rtl:mr-0"></i>Home 1 (Classic Luxury)
+          </button>
+          <button data-view="home-2" onclick="window.location.href='home-2.html'; closeMobileMenuDrawer();" class="mobile-nav-link block w-full text-left py-1.5 px-3 rounded-lg text-[#9E6738] dark:text-[#C9935E] hover:text-teal-400 text-sm font-bold bg-[#9E6738]/10">
+            <i class="fa-solid fa-crown text-[#9E6738] text-xs mr-2 rtl:ml-2 rtl:mr-0"></i>Home 2 (Panoramic &amp; VIP)
+          </button>
+        </div>
+      </div>
+      <button onclick="window.location.href='about.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium">About Us</button>
+      <button onclick="window.location.href='destinations.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-[#9E6738] dark:text-[#C9935E] font-bold bg-[#9E6738]/10">Destinations</button>
+      <button onclick="window.location.href='packages.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium">Holiday Packages</button>
+      <button onclick="window.location.href='contact.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium">Contact Us</button>
+      <button onclick="window.location.href='dashboard.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-teal-400 font-bold bg-teal-500/10">Dashboard</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="relative min-h-[520px] lg:min-h-[620px] flex items-center justify-center overflow-hidden pb-16 pt-36 text-center">
+
+      <img id="detail-hero-img" src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1800&q=85" alt="Destination Hero" class="absolute inset-0 w-full h-full object-cover object-center scale-105 transition-transform duration-1000">
+
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0B1924] via-[#0B1924]/80 to-[#0B1924]/40 z-10 pointer-events-none"></div>
+
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full flex flex-col items-center justify-center text-center">
+
+        <div class="flex flex-wrap items-center justify-center gap-2 text-xs text-slate-300 mb-4 mx-auto">
+          <a href="destinations.html" class="hover:text-[#DEB17E] transition-colors flex items-center gap-1.5"><i class="fa-solid fa-arrow-left"></i><span>All Destinations</span></a>
+          <span>&bull;</span>
+          <span id="detail-breadcrumb-country" class="text-[#DEB17E] font-bold">Switzerland</span>
+          <span>&bull;</span>
+          <span id="detail-breadcrumb-name" class="text-white font-medium">Swiss Alps &amp; Lake Lucerne</span>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-2.5 mb-4 mx-auto">
+          <div class="section-tag-badge mb-0">
+            <i class="fa-solid fa-plane"></i>
+            <span id="detail-badge-country">Switzerland Sanctuary</span>
+          </div>
+          <span id="detail-badge-temp" class="px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-bold backdrop-blur-md">
+            <i class="fa-solid fa-temperature-half text-[#DEB17E] mr-1"></i>18°C / 2°C
+          </span>
+          <span id="detail-badge-season" class="px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-bold backdrop-blur-md">
+            <i class="fa-solid fa-calendar-check text-[#DEB17E] mr-1"></i>Dec - Mar / Jun - Sep
+          </span>
+        </div>
+
+        <h1 id="detail-title" class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-normal font-heading tracking-tight text-white leading-[1.08] max-w-4xl mx-auto drop-shadow-md">
+          Swiss Alps &amp; Lake Lucerne
+        </h1>
+
+        <p id="detail-tagline" class="text-slate-200 text-base sm:text-lg lg:text-xl max-w-3xl font-normal leading-relaxed mt-4 mx-auto drop-shadow">
+          Matterhorn, Glacier Express Excellence Class, Interlaken, and private cogwheel summits.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-4 mt-8 pt-2">
+          <a href="contact.html" class="btn-primary text-sm sm:text-base px-8 py-3.5 shadow-xl flex items-center gap-2.5 hover:scale-105 transition-all">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Book This Sanctuary</span>
+          </a>
+          <a href="destinations.html" class="btn-secondary text-sm sm:text-base px-7 py-3.5 shadow-md flex items-center gap-2.5 hover:scale-105 transition-all bg-white/10 border-white/20 text-white hover:bg-white hover:text-ocean-950 backdrop-blur-md">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Other Sanctuaries</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+        <div class="lg:col-span-8 space-y-10">
+
+          <div class="scroll-reveal p-8 rounded-3xl bg-white dark:bg-ocean-900 border border-slate-200 dark:border-ocean-800 shadow-sm space-y-4">
+            <div class="section-tag-badge">
+              <i class="fa-solid fa-gem"></i>
+              <span>Sanctuary Essence</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-normal font-heading text-ocean-950 dark:text-white">
+              Bespoke Immersion in <span id="detail-overview-title">Swiss Alpine Splendor</span>
+            </h2>
+            <p id="detail-overview-p1" class="text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
+              Every detail of this journey is individually orchestrated by Travique's senior destination architects. From guaranteed private cogwheel carriages ascending snowcapped peaks to Michelin-starred dining along Lake Lucerne, experience peerless tranquility and world-class service.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-100 dark:border-ocean-800">
+              <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-ocean-950 border border-slate-200/60 dark:border-ocean-800">
+                <i class="fa-solid fa-hotel text-[#9E6738] mb-1 text-base"></i>
+                <div class="text-xs font-bold text-ocean-950 dark:text-white">5-Star Luxury</div>
+                <div class="text-[11px] text-slate-500 dark:text-slate-400">Palace &amp; Chalet Stays</div>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-ocean-950 border border-slate-200/60 dark:border-ocean-800">
+                <i class="fa-solid fa-champagne-glasses text-[#9E6738] mb-1 text-base"></i>
+                <div class="text-xs font-bold text-ocean-950 dark:text-white">VIP Dining</div>
+                <div class="text-[11px] text-slate-500 dark:text-slate-400">All Gourmet Breakfasts</div>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-ocean-950 border border-slate-200/60 dark:border-ocean-800">
+                <i class="fa-solid fa-shield-halved text-[#9E6738] mb-1 text-base"></i>
+                <div class="text-xs font-bold text-ocean-950 dark:text-white">100% Protected</div>
+                <div class="text-[11px] text-slate-500 dark:text-slate-400">ATOL Escrow Bond</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-reveal p-8 rounded-3xl bg-white dark:bg-ocean-900 border border-slate-200 dark:border-ocean-800 shadow-sm space-y-5">
+            <div class="section-tag-badge">
+              <i class="fa-solid fa-sparkles"></i>
+              <span>Unrivaled Inclusions</span>
+            </div>
+            <h3 class="text-2xl font-normal font-heading text-ocean-950 dark:text-white">
+              Every Journey Includes Travique Concierge Standard
+            </h3>
+            <div id="detail-inclusions-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-700 dark:text-slate-300">
+              <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-50 dark:bg-ocean-950 border border-slate-200/50 dark:border-ocean-800">
+                <i class="fa-solid fa-check text-emerald-500 shrink-0"></i>
+                <span>Private Mercedes tarmac airport transfer</span>
+              </div>
+              <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-50 dark:bg-ocean-950 border border-slate-200/50 dark:border-ocean-800">
+                <i class="fa-solid fa-check text-emerald-500 shrink-0"></i>
+                <span>First-class global airport lounge privileges</span>
+              </div>
+              <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-50 dark:bg-ocean-950 border border-slate-200/50 dark:border-ocean-800">
+                <i class="fa-solid fa-check text-emerald-500 shrink-0"></i>
+                <span>24/7 dedicated private WhatsApp concierge host</span>
+              </div>
+              <div class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-50 dark:bg-ocean-950 border border-slate-200/50 dark:border-ocean-800">
+                <i class="fa-solid fa-check text-emerald-500 shrink-0"></i>
+                <span>100% verified carbon offset on all local transit</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="lg:col-span-4">
+          <div class="sticky top-28 p-7 rounded-3xl bg-white dark:bg-ocean-900 border border-slate-200 dark:border-ocean-800 shadow-xl space-y-6 scroll-reveal">
+
+            <div class="flex items-center justify-between pb-4 border-b border-slate-100 dark:border-ocean-800">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">Starting From</span>
+                <span id="detail-price" class="text-3xl font-black font-heading text-[#1A3B55] dark:text-[#DEB17E]">$4,850</span>
+                <span class="text-xs text-slate-500 dark:text-slate-400 font-normal"> / guest</span>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-500 text-xs font-bold">
+                Available 2026
+              </span>
+            </div>
+
+            <div class="space-y-3 text-xs text-slate-600 dark:text-slate-300">
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Deposit:</span>
+                <span class="font-bold text-ocean-950 dark:text-white">10% at Reservation</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Flexibility:</span>
+                <span class="font-bold text-ocean-950 dark:text-white">14-Day Free Reschedule</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Airfare:</span>
+                <span class="font-bold text-ocean-950 dark:text-white">Available Upon Request</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Curator Rating:</span>
+                <span class="font-bold text-amber-400 flex items-center gap-1">
+                  <i class="fa-solid fa-star"></i> 4.98 / 5.0
+                </span>
+              </div>
+            </div>
+
+            <div class="space-y-3 pt-2">
+              <a href="contact.html" class="btn-primary w-full py-3.5 text-center justify-center font-bold text-sm shadow-xl flex items-center gap-2">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Reserve This Sanctuary</span>
+              </a>
+              <button onclick="window.location.href='packages.html'" class="btn-secondary w-full py-3 text-center justify-center font-bold text-xs shadow-md flex items-center gap-2">
+                <i class="fa-solid fa-suitcase"></i>
+                <span>View Full Holiday Packages</span>
+              </button>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-[#9E6738]/10 border border-[#9E6738]/20 text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed flex items-start gap-2.5">
+              <i class="fa-solid fa-phone text-[#9E6738] mt-0.5"></i>
+              <span>Need bespoke dates or charter aviation? Call our London concierge desk: <strong class="text-ocean-900 dark:text-white">+91 98765 43210</strong></span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="destination-itinerary-section" class="py-20 md:py-28 bg-slate-100/70 dark:bg-ocean-900/40 border-y border-slate-200 dark:border-ocean-800 transition-colors duration-300">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-3xl mx-auto mb-16 scroll-reveal">
+          <div class="section-tag-badge mx-auto">
+            <i class="fa-solid fa-route"></i>
+            <span>Day-by-Day Private Blueprint</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ocean-950 dark:text-white mt-2 leading-tight">
+            Crafted Daily Expedition Schedule
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base mt-3 leading-relaxed font-normal">
+            An hour-by-hour immersion designed by senior travel curators. Every private flight, scenic transfer, and Michelin dining link seamlessly synchronized.
+          </p>
+          <div class="mt-5 inline-flex items-center gap-2">
+            <span id="detail-duration-pill" class="px-4 py-1.5 rounded-full bg-[#1A3B55]/10 dark:bg-[#DEB17E]/15 text-[#1A3B55] dark:text-[#DEB17E] text-xs font-extrabold border border-[#1A3B55]/20 dark:border-[#DEB17E]/30 shadow-sm">
+              7 Days &bull; 6 Nights Blueprint
+            </span>
+          </div>
+        </div>
+
+        <div id="detail-itinerary-list" class="max-w-4xl mx-auto space-y-6">
+
+        </div>
+
+        <div class="text-center mt-12 scroll-reveal">
+          <div class="inline-flex flex-wrap items-center justify-center gap-3">
+            <a href="contact.html" class="btn-primary text-sm px-8 py-3.5 shadow-xl flex items-center gap-2.5">
+              <i class="fa-solid fa-calendar-check"></i>
+              <span>Customize This Itinerary Blueprint</span>
+            </a>
+            <button onclick="window.print()" class="btn-secondary text-sm px-7 py-3.5 shadow-md flex items-center gap-2.5">
+              <i class="fa-solid fa-print"></i>
+              <span>Print Full Schedule</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="py-20 bg-slate-100/60 dark:bg-ocean-900/40 border-t border-slate-200 dark:border-ocean-800 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4 scroll-reveal">
+          <div>
+            <div class="section-tag-badge">
+              <i class="fa-solid fa-compass"></i>
+              <span>Continue Exploring</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-ocean-950 dark:text-white mt-1">
+              Explore Neighboring Sanctuaries
+            </h3>
+          </div>
+          <a href="destinations.html" class="btn-secondary text-xs shadow-sm flex items-center gap-2 self-start sm:self-auto">
+            <span>All Sanctuaries</span>
+            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <div id="detail-related-grid" class="grid grid-cols-1 sm:grid-cols-3 gap-6"></div>
+      </div>
+    </section>
+
+  </main>
+
+<footer class="site-footer pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="site-footer-grid grid grid-cols-1 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 md:gap-4 lg:gap-8 pb-12 border-b border-slate-200 dark:border-ocean-800">
+
+        <div class="footer-brand space-y-4">
+          <div class="footer-brand-header flex items-center gap-2.5">
+            <div class="h-9 sm:h-9 md:h-9 lg:h-11 w-auto flex items-center shrink-0">
+              <img src="logo-light.png" alt="Travique Logo" class="h-8 sm:h-9 md:h-8 lg:h-10 w-auto object-contain dark:hidden">
+              <img src="logo-dark.png" alt="Travique Logo" class="h-8 sm:h-9 md:h-8 lg:h-10 w-auto object-contain hidden dark:block">
+            </div>
+            <div class="flex flex-col items-start text-left">
+              <span class="footer-brand-title text-xl sm:text-lg md:text-xl lg:text-2xl font-black font-heading tracking-tight text-ocean-950 dark:text-white leading-none">Travique</span>
+              <span class="footer-brand-tagline text-[6.5px] sm:text-[6px] md:text-[6.5px] lg:text-[7.5px] font-bold tracking-[0.08em] text-[#9E6738] uppercase block mt-1 text-left">Escape. Explore. Experience</span>
+            </div>
+          </div>
+
+          <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
+            Crafting indelible journeys across<br>
+            oceans and alpine horizons.<br>
+            Fully protected with private<br>
+            traveler booking tracking.
+          </p>
+
+          <div class="flex items-center gap-2.5 pt-1">
+            <a href="#" aria-label="Instagram" class="footer-social-btn">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="Facebook" class="footer-social-btn">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="X Twitter" class="footer-social-btn">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#" aria-label="YouTube" class="footer-social-btn">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading text-xs font-extrabold uppercase tracking-widest text-[#9E6738] dark:text-[#C9935E] font-heading">
+            Quick Links
+          </h4>
+          <nav aria-label="Footer Quick Links">
+            <ul class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 font-medium">
+              <li>
+                <a href="index.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="about.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                  <span>About Us</span>
+                </a>
+              </li>
+              <li>
+                <a href="destinations.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                  <span>Destinations</span>
+                </a>
+              </li>
+              <li>
+                <a href="packages.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                  <span>Holiday Packages</span>
+                </a>
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                  <span>Contact Us</span>
+                </a>
+              </li>
+              <li>
+                <a href="dashboard.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                  <span>Dashboard</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-heading text-xs font-extrabold uppercase tracking-widest text-[#9E6738] dark:text-[#C9935E] font-heading">
+            Holiday Packages
+          </h4>
+          <ul class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 font-medium">
+            <li>
+              <a href="domestic.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                <span>Domestic Packages</span>
+              </a>
+            </li>
+            <li>
+              <a href="international.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                <span>International Packages</span>
+              </a>
+            </li>
+            <li>
+              <a href="packages.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                <span>All Holiday Packages</span>
+              </a>
+            </li>
+            <li>
+              <a href="packages.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                <span>Private Island Villas</span>
+              </a>
+            </li>
+            <li>
+              <a href="packages.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                <span>Alpine Ski &amp; Rail</span>
+              </a>
+            </li>
+            <li>
+              <a href="packages.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                <span>Yacht &amp; Catamaran Charters</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading text-xs font-extrabold uppercase tracking-widest text-[#9E6738] dark:text-[#C9935E] font-heading">
+            Traveler Portal
+          </h4>
+          <ul class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 font-medium">
+            <li>
+              <a href="dashboard.html" class="hover:text-teal-400 transition-colors flex items-center gap-1.5 group">
+                <span>Traveler Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard.html" class="hover:text-teal-400 transition-colors flex items-center gap-1.5 group">
+                <span>Live Booking Tracker</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard.html" class="hover:text-teal-400 transition-colors flex items-center gap-1.5 group">
+                <span>Interactive Itinerary</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard.html" class="hover:text-teal-400 transition-colors flex items-center gap-1.5 group">
+                <span>Saved Wishlist</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard.html" class="hover:text-teal-400 transition-colors flex items-center gap-1.5 group">
+                <span>Download Tickets &amp; Invoices</span>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-teal-400 transition-colors flex items-center gap-1.5 group">
+                <span>24/7 Island Concierge</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading text-xs font-extrabold uppercase tracking-widest text-[#9E6738] dark:text-[#C9935E] font-heading">
+            VIP Club
+          </h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mb-3 leading-relaxed">Join 45,000+ members receiving private luxury escapes and seasonal privileges.</p>
+          <form onsubmit="event.preventDefault(); (window.showToast ? showToast('Subscribed to Travique VIP Club!', 'fa-bell') : null); this.reset()" class="space-y-2">
+            <input type="email" required placeholder="Enter your email" class="w-full p-2.5 rounded-xl bg-slate-100 dark:bg-ocean-900 border border-slate-200 dark:border-ocean-800 text-xs text-slate-900 dark:text-white focus:outline-none focus:border-teal-400">
+            <button type="submit" class="btn-secondary w-full py-2.5 text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-paper-plane text-[11px]"></i>
+              <span>Join VIP Club</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 dark:text-slate-400 gap-4">
+        <p>&copy; 2026 Travique Luxury Travel &amp; Holidays. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-teal-400">Privacy Policy</a>
+          <a href="#" class="hover:text-teal-400">Terms of Service</a>
+          <a href="#" class="hover:text-teal-400">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const destId = urlParams.get('id') || 'dest-swiss';
+      const targetId = urlParams.get('target');
+
+      const dests = traviqueData.destinations || [];
+      let currentDest = dests.find(d => d.id === destId);
+      if (!currentDest && targetId) {
+        currentDest = dests.find(d => d.packageTarget === targetId);
+      }
+      if (!currentDest) {
+        currentDest = dests[0];
+      }
+
+      let currentPkg = null;
+      if (typeof findPackageById === 'function') {
+        currentPkg = findPackageById(currentDest.packageTarget);
+      }
+
+      document.getElementById('detail-hero-img').src = currentDest.image;
+      document.getElementById('detail-breadcrumb-country').textContent = currentDest.country;
+      document.getElementById('detail-breadcrumb-name').textContent = currentDest.name;
+      document.getElementById('detail-badge-country').textContent = currentDest.country;
+      document.getElementById('detail-badge-temp').innerHTML = `<i class="fa-solid fa-temperature-half text-[#DEB17E] mr-1"></i>${currentDest.temp}`;
+      document.getElementById('detail-badge-season').innerHTML = `<i class="fa-solid fa-calendar-check text-[#DEB17E] mr-1"></i>${currentDest.bestSeason}`;
+      document.getElementById('detail-title').textContent = currentDest.name;
+      document.getElementById('detail-tagline').textContent = currentDest.highlights;
+
+      document.getElementById('detail-overview-title').textContent = currentDest.name;
+      if (currentPkg && currentPkg.overview) {
+        document.getElementById('detail-overview-p1').textContent = currentPkg.overview;
+      } else {
+        document.getElementById('detail-overview-p1').textContent = `Immerse in the pinnacle of luxury with Travique's bespoke curation for ${currentDest.name}, featuring ${currentDest.highlights} with fully customized private itineraries and dedicated concierge hosts.`;
+      }
+
+      if (currentPkg) {
+        document.getElementById('detail-price').textContent = `$${currentPkg.price.toLocaleString()}`;
+        document.getElementById('detail-duration-pill').textContent = `${currentPkg.days} Days - ${currentPkg.nights} Nights`;
+      }
+
+      const itList = document.getElementById('detail-itinerary-list');
+      if (currentPkg && currentPkg.itinerary && currentPkg.itinerary.length) {
+        itList.innerHTML = currentPkg.itinerary.map((item, index) => `
+          <div class="scroll-reveal group p-6 sm:p-7 rounded-3xl bg-white dark:bg-ocean-900 border border-slate-200/90 dark:border-ocean-800 shadow-sm hover:shadow-xl hover:border-[#9E6738] dark:hover:border-[#DEB17E] transition-all duration-300 relative overflow-hidden" style="transition-delay: ${index * 75}ms">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100 dark:border-ocean-800">
+              <div class="flex items-center gap-3">
+                <span class="w-10 h-10 rounded-2xl bg-[#1A3B55] text-white dark:bg-[#DEB17E] dark:text-[#0B1924] font-black text-xs flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform">
+                  D${item.day}
+                </span>
+                <div>
+                  <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#9E6738] dark:text-[#DEB17E] block">
+                    Day ${item.day} Expedition
+                  </span>
+                  <h4 class="font-bold text-base sm:text-lg text-ocean-950 dark:text-white leading-tight">
+                    ${item.title}
+                  </h4>
+                </div>
+              </div>
+              <span class="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-ocean-800 text-slate-600 dark:text-slate-300 self-start sm:self-auto border border-slate-200 dark:border-ocean-700">
+                <i class="fa-solid fa-clock mr-1 text-[#9E6738] dark:text-[#DEB17E]"></i>${item.time || 'All Day'}
+              </span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-4 leading-relaxed font-normal">
+              ${item.desc}
+            </p>
+            ${item.highlight ? `
+              <div class="mt-4 pt-3 border-t border-dashed border-slate-200 dark:border-ocean-800 flex items-center gap-2 text-xs font-semibold text-[#9E6738] dark:text-[#DEB17E]">
+                <i class="fa-solid fa-sparkles text-xs"></i>
+                <span>Curator Highlight: ${item.highlight}</span>
+              </div>
+            ` : ''}
+          </div>
+        `).join('');
+      } else {
+        itList.innerHTML = `
+          <div class="scroll-reveal group p-6 sm:p-7 rounded-3xl bg-white dark:bg-ocean-900 border border-slate-200/90 dark:border-ocean-800 shadow-sm hover:shadow-xl hover:border-[#9E6738] dark:hover:border-[#DEB17E] transition-all duration-300">
+            <div class="flex items-center gap-3 pb-3 border-b border-slate-100 dark:border-ocean-800">
+              <span class="w-10 h-10 rounded-2xl bg-[#1A3B55] text-white dark:bg-[#DEB17E] dark:text-[#0B1924] font-black text-xs flex items-center justify-center shrink-0">D1</span>
+              <div>
+                <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#9E6738] dark:text-[#DEB17E] block">Day 1 Expedition</span>
+                <h4 class="font-bold text-base sm:text-lg text-ocean-950 dark:text-white">Private Tarmac Welcome &amp; VIP Villa Check-In</h4>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">Chauffeur direct transfer, welcome champagne tasting, and evening sunset orientation.</p>
+          </div>
+          <div class="scroll-reveal group p-6 sm:p-7 rounded-3xl bg-white dark:bg-ocean-900 border border-slate-200/90 dark:border-ocean-800 shadow-sm hover:shadow-xl hover:border-[#9E6738] dark:hover:border-[#DEB17E] transition-all duration-300">
+            <div class="flex items-center gap-3 pb-3 border-b border-slate-100 dark:border-ocean-800">
+              <span class="w-10 h-10 rounded-2xl bg-[#1A3B55] text-white dark:bg-[#DEB17E] dark:text-[#0B1924] font-black text-xs flex items-center justify-center shrink-0">D2</span>
+              <div>
+                <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#9E6738] dark:text-[#DEB17E] block">Day 2-4 Expedition</span>
+                <h4 class="font-bold text-base sm:text-lg text-ocean-950 dark:text-white">Curated Sanctuary Excursions &amp; Local Heritage</h4>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">Private guided expeditions, secret access to cultural landmarks, and world-class culinary experiences.</p>
+          </div>
+          <div class="scroll-reveal group p-6 sm:p-7 rounded-3xl bg-white dark:bg-ocean-900 border border-slate-200/90 dark:border-ocean-800 shadow-sm hover:shadow-xl hover:border-[#9E6738] dark:hover:border-[#DEB17E] transition-all duration-300">
+            <div class="flex items-center gap-3 pb-3 border-b border-slate-100 dark:border-ocean-800">
+              <span class="w-10 h-10 rounded-2xl bg-[#1A3B55] text-white dark:bg-[#DEB17E] dark:text-[#0B1924] font-black text-xs flex items-center justify-center shrink-0">D5</span>
+              <div>
+                <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#9E6738] dark:text-[#DEB17E] block">Day 5 Expedition</span>
+                <h4 class="font-bold text-base sm:text-lg text-ocean-950 dark:text-white">Twilight Leisure &amp; Seamless Private Departure</h4>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">Late checkout, luggage concierge, and private VIP lounge boarding.</p>
+          </div>
+        `;
+      }
+
+      const relatedGrid = document.getElementById('detail-related-grid');
+      const related = dests.filter(d => d.id !== currentDest.id).slice(0, 3);
+      relatedGrid.innerHTML = related.map(d => `
+        <div class="travel-card group cursor-pointer scroll-reveal" onclick="window.location.href='destination-detail.html?id=${d.id}&target=${d.packageTarget}'">
+          <div class="travel-card-img-wrap">
+            <img src="${d.image}" alt="${d.name}" class="travel-card-img" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"></div>
+            <div class="absolute top-3 left-3">
+              <span class="badge-teal font-bold">${d.country}</span>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 text-white">
+              <h3 class="text-lg font-bold font-heading group-hover:text-[#DEB17E] transition-colors">${d.name}</h3>
+              <p class="text-[11px] text-slate-200 mt-0.5 line-clamp-1">${d.highlights}</p>
+            </div>
+          </div>
+          <div class="p-4 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-700 dark:text-slate-300">${d.bestSeason}</span>
+            <span class="btn-secondary !py-1.5 !px-3 !text-xs">Explore &rarr;</span>
+          </div>
+        </div>
+      `).join('');
+
+      initScrollRevealObserver();
+    });
+
+    function initScrollRevealObserver() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-scale').forEach(el => {
+        observer.observe(el);
+      });
+    }
+    });
+  </script>
+</body>
+</html>

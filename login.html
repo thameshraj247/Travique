@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Login &bull; Travique Luxury Travel Sanctuary</title>
+
+  <link rel="icon" type="image/png" href="logo-dark.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" href="logo-light.png" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="logo-light.png">
+  <link rel="apple-touch-icon" href="logo-light.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Cinzel:wght@400;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            ocean: {
+              700: '#1E4968',
+              800: '#12283A',
+              850: '#0E202E',
+              900: '#0B1924',
+              950: '#071018'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['"Playfair Display"', 'serif'],
+            serif: ['"Playfair Display"', 'serif'],
+            cinzel: ['"Cinzel"', 'serif'],
+            script: ['"Great Vibes"', 'cursive']
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    html, body {
+      height: 100vh;
+      max-height: 100vh;
+      overflow: hidden !important;
+      margin: 0;
+      padding: 0;
+    }
+
+    .login-card-glass {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 25px 60px -15px rgba(11, 25, 36, 0.35), 0 0 30px rgba(255, 255, 255, 0.2);
+    }
+
+    html.dark .login-card-glass {
+      background: rgba(11, 25, 36, 0.88);
+      border: 1px solid rgba(222, 177, 126, 0.25);
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.75), 0 0 40px rgba(158, 103, 56, 0.15);
+    }
+
+    .google-btn-hover:hover {
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      border-color: rgba(26, 59, 85, 0.3);
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body class="relative h-screen max-h-screen overflow-hidden font-sans antialiased select-none bg-[#071018]">
+
+  <div class="absolute inset-0 w-full h-full pointer-events-none select-none overflow-hidden z-0">
+    <img src="login-coastal-drone.jpg" alt="Exotic Tropical Coastline & Ocean - Travique" class="w-full h-full object-cover object-center scale-100 transition-transform duration-1000 ease-out">
+
+    <div class="absolute inset-0 bg-black/10 dark:bg-[#071018]/55 transition-colors duration-500"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/30 dark:from-[#071018]/80 dark:via-[#071018]/50 dark:to-[#071018]/80"></div>
+  </div>
+
+  <header class="absolute top-0 left-0 right-0 z-30 px-5 sm:px-10 lg:px-14 py-4 sm:py-6 flex items-center justify-end pointer-events-auto">
+
+    <div class="flex items-center gap-3">
+
+      <button id="dir-toggle-btn" onclick="toggleDirection()" class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/20 hover:bg-white/35 dark:bg-[#0B1924]/70 dark:hover:bg-[#0B1924]/90 text-white text-xs font-bold border border-white/30 dark:border-white/15 backdrop-blur-md transition-all cursor-pointer shadow-md" title="Toggle Layout Direction (LTR / RTL)" aria-label="Toggle Layout Direction (LTR / RTL)">
+        <i class="fa-solid fa-right-left text-teal-300 dark:text-[#DEB17E] text-xs"></i>
+        <span id="dir-toggle-text">RTL</span>
+      </button>
+
+      <button id="theme-toggle-btn" onclick="toggleDarkMode()" class="w-9 h-9 rounded-full bg-white/20 hover:bg-white/35 dark:bg-[#0B1924]/70 dark:hover:bg-[#0B1924]/90 text-white flex items-center justify-center border border-white/30 dark:border-white/15 backdrop-blur-md transition-all text-xs cursor-pointer shadow-md" title="Toggle Light/Dark Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="relative z-10 w-full h-full max-h-screen flex flex-col justify-between px-6 sm:px-12 lg:px-16 pt-20 sm:pt-24 pb-6 sm:pb-8 pointer-events-auto">
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-8 lg:gap-12 w-full max-w-7xl mx-auto my-auto">
+
+      <div class="lg:col-span-6 xl:col-span-7 hidden md:flex flex-col justify-center text-left rtl:text-right space-y-4">
+
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/20 dark:bg-[#0B1924]/60 backdrop-blur-md border border-white/35 dark:border-[#DEB17E]/30 text-white text-xs font-bold uppercase tracking-widest w-fit shadow-md">
+          <i class="fa-solid fa-compass text-teal-300 dark:text-[#DEB17E] text-[11px]"></i>
+          <span>Bespoke Journeys &bull; 2026 Collection</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black font-sans tracking-tight text-white uppercase leading-[1.05] drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
+          EXPLORE<br>
+          THE WORLD<br>
+          WITH<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-200 via-sky-100 to-white">TRAVIQUE</span>
+        </h1>
+
+        <p class="text-sm sm:text-base text-white/95 dark:text-slate-200 font-medium max-w-lg leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
+          Immerse in handcrafted private island escapes, alpine sanctuaries, and luxury expeditions curated exclusively for you.
+        </p>
+
+        <div class="flex items-center gap-6 pt-2 text-white/90 text-xs font-semibold drop-shadow">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-emerald-400"></i>
+            <span>Verified Concierge</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-shield-halved text-teal-300"></i>
+            <span>ATOL Protected</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-headset text-[#DEB17E]"></i>
+            <span>24/7 Dedicated Butler</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="lg:col-span-6 xl:col-span-5 flex justify-center lg:justify-end w-full">
+        <div class="login-card-glass rounded-3xl p-6 sm:p-8 lg:p-9 max-w-md w-full relative transition-all duration-300">
+
+          <div class="text-center mb-5">
+            <a href="index.html" class="inline-block group cursor-pointer transition-transform duration-200 hover:scale-[1.02]" title="Go to Travique Home">
+
+              <img src="logo-dark.png" alt="Travique Logo" class="h-10 sm:h-11 w-auto mx-auto object-contain dark:hidden">
+
+              <img src="logo-light.png" alt="Travique Logo" class="h-10 sm:h-11 w-auto mx-auto object-contain hidden dark:block">
+
+              <span class="block font-heading font-black tracking-widest text-ocean-950 dark:text-white text-xl sm:text-2xl uppercase mt-2">
+                TRAVIQUE
+              </span>
+
+              <p class="text-[9px] tracking-[0.28em] uppercase font-bold text-[#9E6738] dark:text-[#DEB17E] mt-1 group-hover:text-[#1A3B55] dark:group-hover:text-[#F6D8AC] transition-colors">
+                ESCAPE &bull; EXPLORE &bull; EXPERIENCE
+              </p>
+            </a>
+
+            <h2 id="auth-card-title" class="text-base sm:text-lg font-extrabold uppercase tracking-widest text-slate-800 dark:text-white mt-3">
+              LOGIN TO YOUR ACCOUNT
+            </h2>
+          </div>
+
+          <form id="login-form" onsubmit="handlePortalAuth(event, 'login')" class="space-y-3.5 text-left rtl:text-right">
+
+            <div>
+              <div class="relative">
+                <input type="email" id="login-email" required placeholder="Email Address" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-white/20 bg-slate-50/70 dark:bg-black/35 text-slate-900 dark:text-white placeholder-slate-400 text-xs sm:text-sm focus:outline-none focus:border-[#1A3B55] dark:focus:border-[#DEB17E] focus:ring-2 focus:ring-[#1A3B55]/20 dark:focus:ring-[#DEB17E]/20 transition-all">
+              </div>
+            </div>
+
+            <div>
+              <div class="relative">
+                <input type="password" id="login-password" required placeholder="Password" class="w-full pl-3.5 pr-10 rtl:pl-10 rtl:pr-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-white/20 bg-slate-50/70 dark:bg-black/35 text-slate-900 dark:text-white placeholder-slate-400 text-xs sm:text-sm focus:outline-none focus:border-[#1A3B55] dark:focus:border-[#DEB17E] focus:ring-2 focus:ring-[#1A3B55]/20 dark:focus:ring-[#DEB17E]/20 transition-all">
+                <button type="button" onclick="togglePasswordVisibility('login-password', this)" class="absolute right-3.5 rtl:right-auto rtl:left-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 dark:hover:text-white text-xs cursor-pointer" title="Show/Hide Password">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between text-xs pt-0.5">
+              <label class="flex items-center gap-2 cursor-pointer text-slate-600 dark:text-slate-300">
+                <input type="checkbox" id="remember-me" checked class="rounded border-slate-300 dark:border-white/30 text-[#1A3B55] accent-[#1A3B55] dark:accent-[#DEB17E] w-3.5 h-3.5">
+                <span>Remember me</span>
+              </label>
+              <a href="#" onclick="showPortalToast('Password reset link sent to your registered email.', 'fa-key')" class="font-semibold text-slate-600 dark:text-slate-300 hover:text-[#9E6738] dark:hover:text-[#DEB17E] transition-colors">
+                Forgot Password?
+              </a>
+            </div>
+
+            <button type="submit" id="login-submit-btn" class="btn-primary !rounded-xl w-full py-3 font-bold text-xs sm:text-sm tracking-wider uppercase shadow-xl transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer mt-2">
+              <span>LOG IN</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </form>
+
+          <form id="register-form" onsubmit="handlePortalAuth(event, 'register')" class="space-y-3 text-left rtl:text-right hidden">
+            <div>
+              <input type="text" id="reg-name" required placeholder="Full Name" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-white/20 bg-slate-50/70 dark:bg-black/35 text-slate-900 dark:text-white placeholder-slate-400 text-xs sm:text-sm focus:outline-none focus:border-[#1A3B55] dark:focus:border-[#DEB17E] transition-all">
+            </div>
+            <div>
+              <input type="email" id="reg-email" required placeholder="Primary Email Address" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-white/20 bg-slate-50/70 dark:bg-black/35 text-slate-900 dark:text-white placeholder-slate-400 text-xs sm:text-sm focus:outline-none focus:border-[#1A3B55] dark:focus:border-[#DEB17E] transition-all">
+            </div>
+            <div>
+              <input type="password" id="reg-password" required placeholder="Create Password" class="w-full pl-3.5 pr-10 rtl:pl-10 rtl:pr-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-white/20 bg-slate-50/70 dark:bg-black/35 text-slate-900 dark:text-white placeholder-slate-400 text-xs sm:text-sm focus:outline-none focus:border-[#1A3B55] dark:focus:border-[#DEB17E] transition-all">
+            </div>
+            <button type="submit" class="btn-primary !rounded-xl w-full py-3 font-bold text-xs sm:text-sm tracking-wider uppercase shadow-xl transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer mt-2">
+              <span>CREATE ACCOUNT</span>
+              <i class="fa-solid fa-user-plus text-xs"></i>
+            </button>
+          </form>
+
+          <div class="relative my-4 text-center">
+            <div class="absolute inset-0 flex items-center">
+              <div class="w-full border-t border-slate-200 dark:border-white/15"></div>
+            </div>
+            <span class="relative px-3 bg-white dark:bg-[#0B1924] text-[11px] text-slate-400 dark:text-slate-400 font-semibold uppercase tracking-wider">
+              or
+            </span>
+          </div>
+
+          <button type="button" onclick="handleSocialAuth('Google')" class="google-btn-hover w-full py-2.5 px-4 rounded-xl bg-white dark:bg-white/10 border border-slate-200 dark:border-white/15 text-slate-700 dark:text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-3 transition-all cursor-pointer shadow-sm">
+            <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            <span id="google-btn-text">Login with Google</span>
+          </button>
+
+          <button type="button" onclick="handleSocialAuth('Apple')" class="google-btn-hover w-full mt-2.5 py-2.5 px-4 rounded-xl bg-black dark:bg-white text-white dark:text-black font-semibold text-xs sm:text-sm flex items-center justify-center gap-3 transition-all cursor-pointer shadow-sm">
+            <i class="fa-brands fa-apple text-base"></i>
+            <span id="apple-btn-text">Sign in with Apple</span>
+          </button>
+
+          <div class="mt-4 pt-3 border-t border-slate-200/80 dark:border-white/10 text-center text-xs text-slate-600 dark:text-slate-300">
+            <span id="auth-switch-label">Don't have an account?</span>
+            <button type="button" id="auth-switch-btn" onclick="toggleAuthMode()" class="text-emerald-600 dark:text-emerald-400 font-bold hover:underline ml-1 cursor-pointer">
+              Create new account
+            </button>
+          </div>
+
+          <div class="mt-3 text-center">
+            <button type="button" onclick="quickDemoLogin()" class="text-[11px] text-slate-500 dark:text-slate-400 hover:text-[#9E6738] dark:hover:text-[#DEB17E] inline-flex items-center gap-1.5 transition-colors cursor-pointer">
+              <i class="fa-solid fa-bolt text-amber-500 text-[10px]"></i>
+              <span>Instant VIP Demo: Sophia Vance (Diamond Club)</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="w-full max-w-7xl mx-auto flex items-center justify-between text-xs text-white/85 drop-shadow pt-4">
+      <p class="font-medium tracking-wide">
+        &copy; 2026 Travique&trade;. All Rights Reserved.
+      </p>
+      <div class="hidden sm:flex items-center gap-4 text-white/80">
+        <a href="about.html" class="hover:text-white transition-colors">Privacy Policy</a>
+        <span>&bull;</span>
+        <a href="about.html" class="hover:text-white transition-colors">Terms of Service</a>
+        <span>&bull;</span>
+        <a href="contact.html" class="hover:text-white transition-colors">Concierge Desk</a>
+      </div>
+    </div>
+
+  </main>
+
+  <div id="portal-toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-5 py-2.5 rounded-full bg-[#1A3B55] text-white text-xs font-bold shadow-2xl border border-[#DEB17E]/40 flex items-center gap-2 opacity-0 pointer-events-none transition-all duration-300">
+    <i id="portal-toast-icon" class="fa-solid fa-circle-check text-emerald-400"></i>
+    <span id="portal-toast-msg">Signed in successfully.</span>
+  </div>
+
+  <script>
+    let currentAuthMode = 'login';
+
+    function toggleAuthMode() {
+      const loginForm = document.getElementById('login-form');
+      const regForm = document.getElementById('register-form');
+      const switchLabel = document.getElementById('auth-switch-label');
+      const switchBtn = document.getElementById('auth-switch-btn');
+      const authTitle = document.getElementById('auth-card-title');
+      const googleBtnText = document.getElementById('google-btn-text');
+      const appleBtnText = document.getElementById('apple-btn-text');
+
+      if (currentAuthMode === 'login') {
+        currentAuthMode = 'register';
+        loginForm.classList.add('hidden');
+        regForm.classList.remove('hidden');
+        if (authTitle) authTitle.textContent = "CREATE YOUR ACCOUNT";
+        if (googleBtnText) googleBtnText.textContent = "Sign up with Google";
+        if (appleBtnText) appleBtnText.textContent = "Sign up with Apple";
+        switchLabel.textContent = "Already have an account?";
+        switchBtn.textContent = "Log in here";
+      } else {
+        currentAuthMode = 'login';
+        loginForm.classList.remove('hidden');
+        regForm.classList.add('hidden');
+        if (authTitle) authTitle.textContent = "LOGIN TO YOUR ACCOUNT";
+        if (googleBtnText) googleBtnText.textContent = "Login with Google";
+        if (appleBtnText) appleBtnText.textContent = "Sign in with Apple";
+        switchLabel.textContent = "Don't have an account?";
+        switchBtn.textContent = "Create new account";
+      }
+    }
+
+    function togglePasswordVisibility(inputId, btn) {
+      const input = document.getElementById(inputId);
+      const icon = btn.querySelector('i');
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.className = 'fa-regular fa-eye-slash';
+      } else {
+        input.type = 'password';
+        icon.className = 'fa-regular fa-eye';
+      }
+    }
+
+    function showPortalToast(message, iconClass = 'fa-circle-check') {
+      const toast = document.getElementById('portal-toast');
+      const msgEl = document.getElementById('portal-toast-msg');
+      const iconEl = document.getElementById('portal-toast-icon');
+      if (!toast) return;
+
+      msgEl.textContent = message;
+      iconEl.className = `fa-solid ${iconClass} text-emerald-400`;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none');
+        toast.classList.remove('opacity-100');
+      }, 3000);
+    }
+
+    function handlePortalAuth(e, type) {
+      e.preventDefault();
+      const email = type === 'login' ? document.getElementById('login-email').value : document.getElementById('reg-email').value;
+      const userName = email.split('@')[0];
+
+      localStorage.setItem('travique_user', JSON.stringify({
+        isLoggedIn: true,
+        email: email,
+        name: userName.charAt(0).toUpperCase() + userName.slice(1),
+        tier: "Diamond Club VIP",
+        id: "TRV-" + Math.floor(10000 + Math.random() * 90000), avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+      }));
+
+      showPortalToast('Authentication verified. Welcome to Travique Sanctuary...', 'fa-circle-check');
+      setTimeout(() => {
+        window.location.href = 'dashboard.html';
+      }, 1000);
+    }
+
+    function handleSocialAuth(provider) {
+      localStorage.setItem('travique_user', JSON.stringify({
+        isLoggedIn: true,
+        email: `vip.${provider.toLowerCase()}@travique.com`,
+        name: `${provider} Traveler`,
+        tier: "Diamond Club VIP",
+        id: "TRV-99214", avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+      }));
+      showPortalToast(`Signed in with ${provider}. Opening Dashboard...`, 'fa-circle-check');
+      setTimeout(() => {
+        window.location.href = 'dashboard.html';
+      }, 1000);
+    }
+
+    function quickDemoLogin() {
+      localStorage.setItem('travique_user', JSON.stringify({
+        isLoggedIn: true,
+        email: 'sophia.vance@travique.com',
+        name: 'Sophia Vance',
+        tier: 'Diamond Club VIP',
+        id: 'TRV-88029', avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+      }));
+      showPortalToast('Signed in as Sophia Vance (Diamond Club). Opening Dashboard...', 'fa-circle-check');
+      setTimeout(() => {
+        window.location.href = 'dashboard.html';
+      }, 1000);
+    }
+
+    function toggleDirection() {
+      const currentDir = document.documentElement.getAttribute('dir') || 'ltr';
+      const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
+      setDirection(newDir);
+    }
+
+    function setDirection(dir) {
+      document.documentElement.setAttribute('dir', dir);
+      localStorage.setItem('travique_dir', dir);
+      updateDirButtonUI(dir);
+    }
+
+    function updateDirButtonUI(dir) {
+      const dirText = document.getElementById('dir-toggle-text');
+      const dirBtn = document.getElementById('dir-toggle-btn');
+      if (!dirText || !dirBtn) return;
+      if (dir === 'rtl') {
+        dirText.textContent = 'LTR';
+        dirBtn.setAttribute('title', 'Switch to Left to Right layout (LTR)');
+        dirBtn.setAttribute('aria-label', 'Switch to Left to Right layout (LTR)');
+      } else {
+        dirText.textContent = 'RTL';
+        dirBtn.setAttribute('title', 'Switch to Right to Left layout (RTL)');
+        dirBtn.setAttribute('aria-label', 'Switch to Right to Left layout (RTL)');
+      }
+    }
+
+    function toggleDarkMode() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      localStorage.setItem('travique_theme', isDark ? 'dark' : 'light');
+      updateThemeButtonUI();
+    }
+
+    function updateThemeButtonUI() {
+      const btn = document.getElementById('theme-toggle-btn');
+      if (!btn) return;
+      const isDark = document.documentElement.classList.contains('dark');
+      btn.innerHTML = isDark ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+      btn.setAttribute('title', isDark ? 'Switch to Light Theme' : 'Switch to Dark Theme');
+    }
+
+    (function() {
+      const savedDir = localStorage.getItem('travique_dir') || 'ltr';
+      setDirection(savedDir);
+
+      const savedTheme = localStorage.getItem('theme') || localStorage.getItem('travique_theme');
+      if (savedTheme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
+      updateThemeButtonUI();
+    })();
+  </script>
+</body>
+</html>

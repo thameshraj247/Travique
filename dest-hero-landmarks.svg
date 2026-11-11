@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" fill="currentColor">
+  <!-- Colosseum / Roman Arches Silhouette -->
+  <g transform="translate(20, 40) scale(0.75)">
+    <path d="M 0,220 L 0,80 Q 80,40 220,40 Q 360,40 440,80 L 440,220 Z" />
+    <path d="M 40,80 L 40,220 M 100,70 L 100,220 M 160,60 L 160,220 M 220,55 L 220,220 M 280,60 L 280,220 M 340,70 L 340,220 M 400,80 L 400,220" stroke="#000" stroke-width="6" fill="none" opacity="0.3" />
+    <!-- Colosseum Arches Row 1 -->
+    <path d="M 50,110 Q 70,85 90,110 L 90,140 L 50,140 Z M 110,105 Q 130,80 150,105 L 150,140 L 110,140 Z M 170,100 Q 190,75 210,100 L 210,140 L 170,140 Z M 230,100 Q 250,75 270,100 L 270,140 L 230,140 Z M 290,105 Q 310,80 330,105 L 330,140 L 290,140 Z M 350,110 Q 370,85 390,110 L 390,140 L 350,140 Z" fill="#fff" opacity="0.3" />
+    <!-- Colosseum Arches Row 2 -->
+    <path d="M 50,160 Q 70,145 90,160 L 90,195 L 50,195 Z M 110,160 Q 130,145 150,160 L 150,195 L 110,195 Z M 170,160 Q 190,145 210,160 L 210,195 L 170,195 Z M 230,160 Q 250,145 270,160 L 270,195 L 230,195 Z M 290,160 Q 310,145 330,160 L 330,195 L 290,195 Z M 350,160 Q 370,145 390,160 L 390,195 L 350,195 Z" fill="#fff" opacity="0.3" />
+  </g>
+
+  <!-- Taj Mahal Silhouette -->
+  <g transform="translate(320, 20) scale(0.85)">
+    <!-- Main Dome -->
+    <path d="M 120,220 L 120,110 Q 120,60 160,30 Q 170,10 170,0 Q 170,10 180,30 Q 220,60 220,110 L 220,220 Z" />
+    <!-- Side Domes -->
+    <path d="M 75,220 L 75,130 Q 75,100 95,85 Q 100,75 100,70 Q 100,75 105,85 Q 125,100 125,130 L 125,220 Z" />
+    <path d="M 215,220 L 215,130 Q 215,100 235,85 Q 240,75 240,70 Q 240,75 245,85 Q 265,100 265,130 L 265,220 Z" />
+    <!-- Center Iwan Arch -->
+    <path d="M 140,220 L 140,150 Q 170,120 200,150 L 200,220 Z" fill="#fff" opacity="0.35" />
+    <!-- Minaret Left -->
+    <path d="M 30,220 L 38,40 L 46,40 L 46,30 L 42,30 L 42,20 L 46,20 L 42,12 L 38,20 L 42,20 L 42,30 L 38,30 L 38,40 L 46,220 Z" />
+    <rect x="34" y="90" width="16" height="5" />
+    <rect x="35" y="145" width="14" height="5" />
+    <!-- Minaret Right -->
+    <path d="M 294,220 L 302,40 L 310,40 L 310,30 L 306,30 L 306,20 L 310,20 L 306,12 L 302,20 L 306,20 L 306,30 L 302,30 L 302,40 L 310,220 Z" />
+    <rect x="298" y="90" width="16" height="5" />
+    <rect x="299" y="145" width="14" height="5" />
+  </g>
+
+  <!-- Eiffel Tower Silhouette -->
+  <g transform="translate(620, -10) scale(0.95)">
+    <!-- Base legs -->
+    <path d="M 40,250 L 80,180 L 105,180 L 145,250 L 125,250 L 110,205 Q 92.5,190 75,205 L 60,250 Z" />
+    <!-- Platform 1 -->
+    <rect x="74" y="174" width="37" height="7" rx="1.5" />
+    <!-- Middle tier -->
+    <path d="M 78,174 L 84,115 L 101,115 L 107,174 Z" />
+    <!-- Platform 2 -->
+    <rect x="82" y="110" width="21" height="6" rx="1" />
+    <!-- Spire -->
+    <path d="M 87,110 L 91,25 L 94,25 L 98,110 Z" />
+    <!-- Tip & Antenna -->
+    <line x1="92.5" y1="25" x2="92.5" y2="2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+</svg>
