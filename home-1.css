@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .h1-hero-container {
   position: relative;
   overflow: hidden;
@@ -249,3 +250,256 @@ html.dark .h1-mission-feature:hover .h1-mission-icon-pill {
 .testimonial-card.cursor-grab:active {
   cursor: grabbing;
 }
+=======
+.h1-hero-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.h1-flight-path,
+#heroFlightPath {
+  stroke-dasharray: 8 8;
+  animation: flightDash 20s linear infinite;
+}
+
+@keyframes flightDash {
+  to {
+    stroke-dashoffset: -120;
+  }
+}
+
+.h1-hero-card {
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(26, 59, 85, 0.22);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+}
+
+.h1-hero-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 32px 70px rgba(26, 59, 85, 0.28);
+}
+
+.h1-ticket-pill {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1.5px solid rgba(158, 103, 56, 0.35);
+  box-shadow: 0 10px 25px rgba(26, 59, 85, 0.12);
+  transition: all var(--transition-normal);
+}
+
+.h1-ticket-pill:hover {
+  transform: translateY(-2px);
+  border-color: var(--secondary);
+  box-shadow: 0 12px 30px var(--secondary-glow);
+}
+
+#discover-world-section {
+  position: relative;
+  background-color: #FCFBF8;
+}
+
+html.dark #discover-world-section {
+  background-color: #0B1924;
+}
+
+.h1-collage-wrapper {
+  position: relative;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.h1-collage-wrapper:hover {
+  transform: scale(1.025);
+}
+
+.h1-feature-item {
+  position: relative;
+  padding: 1.25rem;
+  transition: transform var(--transition-normal);
+}
+
+.h1-feature-item:hover {
+  transform: translateY(-4px);
+}
+
+.h1-feature-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(26, 59, 85, 0.06);
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  transition: all var(--transition-normal);
+}
+
+html.dark .h1-feature-icon {
+  background: rgba(158, 103, 56, 0.15);
+  color: var(--secondary);
+}
+
+.h1-feature-item:hover .h1-feature-icon {
+  background: var(--primary);
+  color: #ffffff;
+  transform: scale(1.1) rotate(4deg);
+}
+
+.h1-package-card {
+  background: var(--bg-card);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.h1-package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(26, 59, 85, 0.14);
+  border-color: rgba(158, 103, 56, 0.45);
+}
+
+.h1-package-card .card-media-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 240px;
+}
+
+.h1-package-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.h1-package-card:hover img {
+  transform: scale(1.08);
+}
+
+.h1-price-badge {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(26, 59, 85, 0.92);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  font-weight: 800;
+  font-size: 0.85rem;
+  border: 1px solid rgba(158, 103, 56, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.h1-budget-card {
+  background: linear-gradient(145deg, #1A3B55 0%, #12283A 100%);
+  border-radius: 2rem;
+  border: 1.5px solid rgba(158, 103, 56, 0.35);
+  box-shadow: 0 20px 50px rgba(11, 25, 36, 0.35);
+}
+
+.h1-slider-track {
+  accent-color: var(--secondary);
+}
+
+.h1-review-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.h1-review-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--secondary);
+  box-shadow: 0 14px 32px rgba(26, 59, 85, 0.10);
+}
+
+.h1-review-stars {
+  color: var(--secondary);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+}
+
+.h1-mission-section {
+  position: relative;
+  background-color: #F8FAF9;
+  overflow: hidden;
+}
+
+html.dark .h1-mission-section {
+  background-color: #07131D;
+}
+
+.h1-mission-card {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
+}
+
+.h1-mission-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 24px 50px rgba(26, 59, 85, 0.18);
+}
+
+.h1-mission-icon-pill {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px;
+  background: #E8F1F5;
+  color: #1A3B55;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  transition: all 0.35s ease;
+  box-shadow: 0 4px 15px rgba(26, 59, 85, 0.08);
+}
+
+@media (max-width: 639.98px) {
+  .h1-mission-icon-pill {
+    width: 3.25rem !important;
+    height: 3.25rem !important;
+    font-size: 1.15rem !important;
+  }
+}
+
+html.dark .h1-mission-icon-pill {
+  background: #0E2233;
+  color: #C9935E;
+  border: 1px solid rgba(158, 103, 56, 0.3);
+}
+
+.h1-mission-feature:hover .h1-mission-icon-pill {
+  background: #1A3B55;
+  color: #ffffff;
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 10px 25px rgba(26, 59, 85, 0.25);
+}
+
+html.dark .h1-mission-feature:hover .h1-mission-icon-pill {
+  background: #9E6738;
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(158, 103, 56, 0.35);
+}
+
+.testimonial-card {
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+  will-change: transform, opacity;
+}
+
+.testimonial-card.cursor-grab {
+  cursor: grab;
+}
+
+.testimonial-card.cursor-grab:active {
+  cursor: grabbing;
+}
+>>>>>>> 107638ee6bc6b2e4c7a4a43a5f47d9382c9597dd

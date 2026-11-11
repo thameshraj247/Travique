@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth">
 <head>
@@ -1047,6 +1048,1057 @@
 
   <div id="toast-container"></div>
 
+=======
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Sanctuaries and Top Destinations | Travique</title>
+  <meta name="description" content="Explore handcrafted domestic & international holiday packages, romantic honeymoon tours, and manage your trips via the Travique Traveler Dashboard.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&family=Urbanist:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+
+  <link rel="icon" type="image/png" href="logo-light.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="destinations.css">
+</head>
+<body class="bg-slate-50 dark:bg-ocean-950 text-slate-800 dark:text-slate-100 font-body transition-colors duration-300">
+
+  <header class="site-header">
+    <div class="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8">
+      <div class="header-inner-row flex items-center justify-between h-20 transition-all duration-300">
+
+        <a href="index.html" class="flex items-center gap-2 sm:gap-3 group shrink-0 -ml-1 sm:ml-0">
+          <div class="relative h-10 sm:h-12 w-auto flex items-center shrink-0">
+            <img src="logo-light.png" alt="Travique Logo" class="header-logo-img h-10 sm:h-12 w-auto object-contain dark:hidden group-hover:scale-105 transition-all duration-300">
+            <img src="logo-dark.png" alt="Travique Logo" class="header-logo-img h-10 sm:h-12 w-auto object-contain hidden dark:block group-hover:scale-105 transition-all duration-300">
+          </div>
+          <div class="flex flex-col items-start sm:items-center text-left sm:text-center">
+            <span class="text-xl sm:text-2xl font-black font-heading tracking-tight text-ocean-900 dark:text-white group-hover:text-teal-400 transition-colors">
+              Travique
+            </span>
+            <span class="text-[6.5px] sm:text-[7.5px] font-bold tracking-[0.12em] sm:tracking-[0.14em] text-[#9E6738] uppercase mt-0.5 whitespace-nowrap text-left sm:text-center">
+              Escape. Explore. Experience
+            </span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center justify-center gap-1 xl:gap-2">
+
+          <div class="nav-dropdown-wrapper relative group" id="home-dropdown">
+            <button data-view="home" class="nav-link flex items-center gap-1.5 cursor-pointer" id="home-nav-trigger" aria-haspopup="true" aria-expanded="false" onclick="toggleHomeDropdown(event)">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-200 group-hover:rotate-180"></i>
+            </button>
+            <div class="nav-dropdown-menu" id="home-dropdown-menu">
+              <button data-view="home-1" onclick="window.location.href='index.html'" class="dropdown-item flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-compass text-sm"></i>
+                </div>
+                <div class="text-left rtl:text-right">
+                  <span class="block font-bold text-sm text-slate-800 dark:text-slate-100 item-title">Home 1</span>
+                  <span class="block text-[11px] text-slate-500 dark:text-slate-400 font-normal">Classic Luxury &amp; Explorer</span>
+                </div>
+              </button>
+              <button data-view="home-2" onclick="window.location.href='home-2.html'" class="dropdown-item flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-[#9E6738]/20 text-[#9E6738] flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-crown text-sm"></i>
+                </div>
+                <div class="text-left rtl:text-right">
+                  <span class="block font-bold text-sm text-[#9E6738] dark:text-[#C9935E] item-title">Home 2</span>
+                  <span class="block text-[11px] text-slate-500 dark:text-slate-400 font-normal">Panoramic Escapes &amp; VIP Lounge</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <button data-view="about" onclick="window.location.href='about.html'" class="nav-link">
+            About Us
+          </button>
+          <button data-view="destinations" onclick="window.location.href='destinations.html'" class="nav-link active">
+            Destinations
+          </button>
+          <button data-view="packages" onclick="window.location.href='packages.html'" class="nav-link">
+            Holiday Packages
+          </button>
+          <button data-view="contact" onclick="window.location.href='contact.html'" class="nav-link">
+            Contact Us
+          </button>
+          <button data-view="dashboard" onclick="window.location.href='dashboard.html'" class="nav-link">
+            Dashboard
+          </button>
+        </nav>
+
+        <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+          <button id="dir-toggle-btn" onclick="toggleDirection()" class="ctrl-btn ctrl-btn-icon w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center p-0" title="Toggle Layout Direction (LTR / RTL)" aria-label="Toggle Direction">
+            <i class="fa-solid fa-right-left text-[#9E6738] dark:text-[#DEB17E] text-xs sm:text-sm"></i>
+          </button>
+
+          <button id="theme-toggle-btn" onclick="toggleDarkMode()" class="ctrl-btn ctrl-btn-icon w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center p-0" title="Toggle Theme (Light / Dark)" aria-label="Toggle Dark Mode">
+            <i class="fa-solid fa-moon text-[#9E6738] dark:text-[#DEB17E] text-xs sm:text-sm"></i>
+          </button>
+
+          <div id="auth-button-container">
+            <button onclick="openLoginModal()" class="ctrl-btn ctrl-btn-primary px-2.5 sm:px-4 py-1.5 sm:py-2 text-xs flex items-center gap-1.5 font-bold">
+              <i class="fa-solid fa-user text-xs"></i>
+              <span>Login</span>
+            </button>
+          </div>
+
+          <button id="mobile-menu-toggle" class="lg:hidden p-1.5 sm:p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:text-teal-400">
+            <i class="fa-solid fa-bars-staggered text-lg sm:text-xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mobile-menu-drawer" class="lg:hidden hidden px-4 pt-2 pb-6 bg-white dark:bg-ocean-900 border-b border-slate-200 dark:border-ocean-800 shadow-xl space-y-2">
+      <div class="mobile-dropdown border-b border-slate-200 dark:border-ocean-800/60 pb-2">
+        <button onclick="toggleMobileHomeSubmenu()" class="flex items-center justify-between w-full py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium hover:text-teal-400">
+          <span class="flex items-center gap-2">
+            <i class="fa-solid fa-house text-teal-400 text-sm"></i>
+            <span>Home</span>
+          </span>
+          <i id="mobile-home-chevron" class="fa-solid fa-chevron-down text-xs transition-transform duration-200"></i>
+        </button>
+        <div id="mobile-home-submenu" class="pl-6 space-y-1 mt-1">
+          <button data-view="home-1" onclick="window.location.href='index.html'; closeMobileMenuDrawer();" class="mobile-nav-link block w-full text-left py-1.5 px-3 rounded-lg text-slate-600 dark:text-slate-300 hover:text-teal-400 text-sm font-medium">
+            <i class="fa-solid fa-compass text-teal-500 text-xs mr-2 rtl:ml-2 rtl:mr-0"></i>Home 1 (Classic Luxury)
+          </button>
+          <button data-view="home-2" onclick="window.location.href='home-2.html'; closeMobileMenuDrawer();" class="mobile-nav-link block w-full text-left py-1.5 px-3 rounded-lg text-[#9E6738] dark:text-[#C9935E] hover:text-teal-400 text-sm font-bold bg-[#9E6738]/10">
+            <i class="fa-solid fa-crown text-[#9E6738] text-xs mr-2 rtl:ml-2 rtl:mr-0"></i>Home 2 (Panoramic &amp; VIP)
+          </button>
+        </div>
+      </div>
+      <button data-view="about" onclick="window.location.href='about.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium">About Us</button>
+      <button data-view="destinations" onclick="window.location.href='destinations.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-[#9E6738] dark:text-[#C9935E] font-bold bg-[#9E6738]/10">Destinations</button>
+      <button data-view="packages" onclick="window.location.href='packages.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium">Holiday Packages</button>
+      <button data-view="contact" onclick="window.location.href='contact.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium">Contact Us</button>
+      <button data-view="dashboard" onclick="window.location.href='dashboard.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-teal-400 font-bold bg-teal-500/10">Dashboard</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="destinations-hero" class="relative overflow-hidden pt-2 sm:pt-4 lg:pt-6 pb-8 sm:pb-12 lg:pb-14 bg-white dark:bg-[#091B27] border-b border-slate-200/80 dark:border-ocean-800/80 transition-colors duration-300">
+
+      <div class="absolute bottom-0 right-0 w-full sm:w-[720px] h-[160px] sm:h-[220px] lg:h-[260px] pointer-events-none select-none text-[#1A3B55] dark:text-sky-300 opacity-[0.05] dark:opacity-[0.03] overflow-hidden -z-0">
+        <img src="dest-hero-landmarks.svg" alt="" class="w-full h-full object-contain object-bottom-right">
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+
+          <div class="lg:col-span-6 relative flex justify-center items-center order-2 lg:order-1">
+            <div class="relative w-full max-w-[480px] sm:max-w-[540px] lg:max-w-[590px] xl:max-w-[630px]">
+
+              <img src="dest-hero-santorini-light.jpg" alt="Travel Memories You'll Never Forget - Traveler sitting on suitcase with scenic Mediterranean portal" class="w-full max-h-[400px] sm:max-h-[460px] lg:max-h-[510px] xl:max-h-[550px] object-contain select-none relative z-10 dark:hidden block mx-auto">
+
+              <img src="dest-hero-santorini-dark.jpg" alt="Travel Memories You'll Never Forget - Traveler sitting on suitcase with scenic Mediterranean portal" class="w-full max-h-[400px] sm:max-h-[460px] lg:max-h-[510px] xl:max-h-[550px] object-contain select-none relative z-10 hidden dark:block mx-auto">
+
+              <div class="dest-glossy-hero-card absolute -bottom-3 sm:-bottom-4 right-0 sm:right-2 w-[240px] sm:w-[270px] lg:w-[285px] p-4 sm:p-5 rounded-2xl sm:rounded-3xl z-20 space-y-3 transition-all duration-300">
+
+                <h4 class="text-sm sm:text-[15px] font-bold font-heading text-ocean-950 dark:text-white leading-tight">
+                  Where do you want to go?
+                </h4>
+
+                <div class="space-y-1">
+                  <label class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-400 block">Destination</label>
+                  <div class="relative">
+                    <select id="hero-dest-select" onchange="filterDestinationsTab(this.value); document.getElementById('destinations-catalog').scrollIntoView({behavior:'smooth'})" class="w-full py-1.5 sm:py-2 pl-6 pr-6 rounded-xl bg-slate-50 dark:bg-ocean-850 border border-slate-200 dark:border-ocean-700 text-xs font-semibold text-ocean-950 dark:text-white focus:outline-none focus:border-teal-400 appearance-none cursor-pointer">
+                      <option value="All">Arizona, Phoenix</option>
+                      <option value="Europe">Amalfi Coast, Italy</option>
+                      <option value="Asia">Bali, Indonesia</option>
+                      <option value="Europe">Banff, Canada</option>
+                      <option value="Middle East">Petra, Jordan</option>
+                      <option value="Island">Phuket, Thailand</option>
+                      <option value="Island">Maldives Atolls</option>
+                      <option value="Europe">Swiss Alps, Zermatt</option>
+                    </select>
+                    <i class="fa-solid fa-location-dot text-[11px] text-[#9E6738] dark:text-[#DEB17E] absolute left-2 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                    <i class="fa-solid fa-chevron-down text-[8px] text-slate-400 absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                  </div>
+                </div>
+
+                <div class="space-y-1">
+                  <label class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-400 block">Dates</label>
+                  <div class="relative">
+                    <input type="text" value="May 24, 2026 - May 31, 2026" readonly class="w-full py-1.5 sm:py-2 pl-6 pr-2 rounded-xl bg-slate-50 dark:bg-ocean-850 border border-slate-200 dark:border-ocean-700 text-xs font-semibold text-ocean-950 dark:text-white cursor-pointer" onclick="showToast('Travel window: May 24, 2026 - May 31, 2026', 'fa-calendar')">
+                    <i class="fa-regular fa-calendar text-[11px] text-[#9E6738] dark:text-[#DEB17E] absolute left-2 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                  </div>
+                </div>
+
+                <div class="space-y-1">
+                  <div class="flex items-center justify-between text-[9px] sm:text-[10px] font-bold text-slate-500 dark:text-slate-400">
+                    <span>Price Range</span>
+                    <span id="hero-price-val" class="text-ocean-950 dark:text-white font-extrabold">$500 - $15,000</span>
+                  </div>
+                  <input type="range" min="500" max="15000" step="500" value="7500" oninput="document.getElementById('hero-price-val').innerText = '$500 - $' + Number(this.value).toLocaleString()" class="w-full h-1.5 bg-slate-200 dark:bg-ocean-700 rounded-lg appearance-none cursor-pointer accent-[#1A3B55] dark:accent-teal-400">
+                  <div class="flex items-center justify-between text-[9px] sm:text-[10px] text-slate-400 pt-0.5">
+                    <span>Guests: <strong class="text-slate-700 dark:text-slate-200">2 Adults</strong></span>
+                    <span>$15,000</span>
+                  </div>
+                </div>
+
+                <button type="button" onclick="document.getElementById('destinations-catalog').scrollIntoView({behavior:'smooth'}); showToast('Filtering destinations for selected criteria...', 'fa-compass')" class="w-full py-2 sm:py-2.5 rounded-xl bg-gradient-to-r from-[#DF6951] via-[#E8735B] to-[#DF6951] hover:brightness-105 text-white font-bold text-xs sm:text-[13px] shadow-md shadow-orange-500/25 flex items-center justify-center gap-2 transition-all">
+                  <span>Book Now</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-5 lg:space-y-6 order-1 lg:order-2">
+
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 dark:bg-ocean-900 border border-blue-200/80 dark:border-ocean-700 text-[#1A3B55] dark:text-sky-300 text-xs sm:text-sm font-bold tracking-wide shadow-sm">
+              <i class="fa-solid fa-plane-departure text-teal-500 text-xs sm:text-sm"></i>
+              <span>Your Next Adventure Awaits</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-[48px] xl:text-[56px] font-normal font-heading tracking-tight text-ocean-950 dark:text-white leading-[1.08] transition-colors duration-300">
+              Travel Memories<br>
+              <span class="relative inline-block">
+                <span class="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#9E6738] via-[#B87B47] to-[#7D4922] dark:from-[#F6D8AC] dark:via-[#DEB17E] dark:to-[#9E6738]">
+                  You'll Never Forget
+                </span>
+
+                <svg class="absolute -bottom-2 left-0 w-full h-3 sm:h-3.5 text-[#1A3B55] dark:text-[#9E6738] overflow-visible" viewBox="0 0 300 12" fill="none" preserveAspectRatio="none">
+                  <path d="M2,8 C80,2 220,2 298,8" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-xl leading-relaxed font-body font-normal">
+              Discover unforgettable journeys, handpicked destinations and effortless booking &ndash; all in one place.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4 pt-1 sm:pt-2">
+
+              <a href="#destinations-catalog" class="btn-primary !rounded-full inline-flex items-center justify-center gap-2.5 px-8 sm:px-9 py-3.5 sm:py-4 text-xs sm:text-sm font-bold shadow-xl shadow-[#1A3B55]/20 hover:-translate-y-0.5 transition-all duration-300">
+                <span>Explore Destinations</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+
+              <a href="contact.html" class="btn-secondary !rounded-full inline-flex items-center justify-center gap-2.5 px-7 sm:px-8 py-3.5 sm:py-4 text-xs sm:text-sm font-bold shadow-md hover:-translate-y-0.5 transition-all duration-300">
+                <i class="fa-solid fa-compass text-white text-xs"></i>
+                <span>Plan Custom Journey</span>
+              </a>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-6 sm:gap-10 pt-4 sm:pt-5 border-t border-slate-200/80 dark:border-ocean-800/80">
+
+              <div class="flex items-center gap-3">
+                <div class="flex -space-x-2">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="Traveler 1" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full border-2 border-white dark:border-ocean-900 object-cover shadow-sm">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80" alt="Traveler 2" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full border-2 border-white dark:border-ocean-900 object-cover shadow-sm">
+                  <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=80&q=80" alt="Traveler 3" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full border-2 border-white dark:border-ocean-900 object-cover shadow-sm">
+                  <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#1A3B55] text-white flex items-center justify-center text-[10px] sm:text-xs font-bold border-2 border-white dark:border-ocean-900 shadow-sm">
+                    +2K
+                  </div>
+                </div>
+                <div>
+                  <span class="block text-xs sm:text-sm font-bold text-ocean-950 dark:text-white font-heading">
+                    Trusted by Travelers
+                  </span>
+                  <span class="block text-xs text-slate-500 dark:text-slate-400">
+                    2,000+ happy adventurers
+                  </span>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 border-l border-slate-200 dark:border-ocean-800 pl-6">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-amber-500/10 text-amber-500 flex items-center justify-center text-sm sm:text-base">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-sm sm:text-base font-black text-ocean-950 dark:text-white font-heading leading-none">4.9/5</span>
+                    <div class="flex items-center text-amber-400 text-[10px] sm:text-xs">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                  <span class="block text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                    Based on 2,000+ reviews
+                  </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations-catalog" class="py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+        <div>
+          <div class="section-tag-badge">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span>Curated Sanctuaries</span>
+          </div>
+          <h2 class="text-3xl font-black font-heading text-ocean-950 dark:text-white mt-1">
+            Explore by Region &amp; Purpose
+          </h2>
+          <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Select a geographical sanctuary or filter by style, season, and luxury preferences.</p>
+        </div>
+
+        <div class="flex items-center gap-2.5 w-full md:w-auto">
+          <div class="relative flex-1 md:w-64">
+            <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+            <input type="text" id="dest-search-input" oninput="applyAllDestinationFilters()" placeholder="Search sanctuary or country..." class="w-full pl-9 pr-4 py-2.5 rounded-full border border-slate-200 dark:border-ocean-700 bg-white dark:bg-ocean-900 text-xs text-slate-800 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:border-[#9E6738]">
+          </div>
+          <button id="dest-filter-toggle-btn" onclick="toggleDestinationFilterPanel()" type="button" aria-expanded="false" class="filter-toggle-btn inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-slate-200 dark:border-ocean-700 bg-white dark:bg-ocean-900 text-xs font-bold text-ocean-950 dark:text-white hover:border-[#9E6738] hover:text-[#9E6738] dark:hover:border-[#9E6738] dark:hover:text-[#DEB17E] transition-all duration-300 shadow-sm cursor-pointer shrink-0">
+            <i class="fa-solid fa-sliders text-[#9E6738] dark:text-[#DEB17E]"></i>
+            <span id="dest-filter-btn-text">Filters</span>
+            <span id="dest-filter-badge" class="hidden px-1.5 py-0.5 rounded-full bg-[#9E6738] text-white text-[10px] font-bold leading-none">0</span>
+            <i id="dest-filter-chevron" class="fa-solid fa-chevron-down text-[10px] text-slate-400 transition-transform duration-300"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="destinations-filter-chips" class="flex items-center gap-2.5 pb-4 overflow-x-auto mb-8">
+        <button onclick="filterDestinationsTab('all', this)" class="destination-filter-btn active">
+          All Destinations
+        </button>
+        <button onclick="filterDestinationsTab('Europe', this)" class="destination-filter-btn">
+          Europe &amp; Alps
+        </button>
+        <button onclick="filterDestinationsTab('Island', this)" class="destination-filter-btn">
+          Island Atolls &amp; Maldives
+        </button>
+        <button onclick="filterDestinationsTab('Asia', this)" class="destination-filter-btn">
+          Asia &amp; Shinto Shrines
+        </button>
+        <button onclick="filterDestinationsTab('Himalayas', this)" class="destination-filter-btn">
+          Himalayas &amp; Valleys
+        </button>
+        <button onclick="filterDestinationsTab('Middle East', this)" class="destination-filter-btn">
+          Middle East &amp; Dunes
+        </button>
+      </div>
+
+      <div class="flex flex-col lg:flex-row items-start gap-8">
+
+        <aside id="dest-filter-sidebar" class="hidden w-full lg:w-72 xl:w-80 shrink-0 bg-white dark:bg-ocean-900 rounded-3xl p-6 border border-slate-200 dark:border-ocean-800 shadow-xl space-y-5 sticky top-24 transition-all duration-300">
+
+          <div class="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-ocean-800">
+            <div class="flex items-center gap-2 font-bold text-sm text-ocean-950 dark:text-white">
+              <i class="fa-solid fa-filter text-[#9E6738] dark:text-[#DEB17E]"></i>
+              <span>Filter Your Escapes</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <button type="button" onclick="clearAllDestinationFilters()" class="text-xs font-bold text-[#9E6738] dark:text-[#DEB17E] hover:text-[#83522a] flex items-center gap-1 transition-colors cursor-pointer">
+                <span>Clear All</span>
+                <i class="fa-solid fa-rotate-right text-[10px]"></i>
+              </button>
+              <button type="button" onclick="toggleDestinationFilterPanel(false)" class="w-7 h-7 rounded-full flex items-center justify-center text-slate-400 hover:text-slate-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-ocean-800 transition-colors cursor-pointer" title="Close Filters" aria-label="Close Filters">
+                <i class="fa-solid fa-xmark text-sm"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="filter-accordion border-b border-slate-100 dark:border-ocean-800/80 pb-4">
+            <button type="button" onclick="toggleFilterGroup(this)" class="w-full flex items-center justify-between text-xs font-bold text-ocean-950 dark:text-white py-1">
+              <span>Travel Purpose</span>
+              <i class="fa-solid fa-chevron-up text-[10px] text-slate-400 transition-transform"></i>
+            </button>
+            <div class="space-y-2 pt-2.5 filter-content">
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="travel-purpose" value="family" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>Family Escapes</span>
+              </label>
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="travel-purpose" value="friends" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>Friends &amp; Groups</span>
+              </label>
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="travel-purpose" value="business" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>Executive &amp; Corporate</span>
+              </label>
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="travel-purpose" value="honeymoon" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>Special Occasions &amp; Honeymoon</span>
+              </label>
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="travel-purpose" value="weekend" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>Weekend Getaways</span>
+              </label>
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="travel-purpose" value="expedition" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>Long Expeditions</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-accordion border-b border-slate-100 dark:border-ocean-800/80 pb-4">
+            <button type="button" onclick="toggleFilterGroup(this)" class="w-full flex items-center justify-between text-xs font-bold text-ocean-950 dark:text-white py-1">
+              <span>Sanctuary Category</span>
+              <i class="fa-solid fa-chevron-up text-[10px] text-slate-400 transition-transform"></i>
+            </button>
+            <div class="space-y-2 pt-2.5 filter-content">
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="category" value="Island" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>Island &amp; Overwater Atolls</span>
+              </label>
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="category" value="Europe" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>Alpine &amp; Mountain Chalets</span>
+              </label>
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="category" value="Asia" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>Heritage &amp; Shrines</span>
+              </label>
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="category" value="Himalayas" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>Himalayas &amp; Valleys</span>
+              </label>
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="category" value="Middle East" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>Desert Dunes &amp; Oasis</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-accordion border-b border-slate-100 dark:border-ocean-800/80 pb-4">
+            <button type="button" onclick="toggleFilterGroup(this)" class="w-full flex items-center justify-between text-xs font-bold text-ocean-950 dark:text-white py-1">
+              <span>Price Range (per night)</span>
+              <i class="fa-solid fa-chevron-up text-[10px] text-slate-400 transition-transform"></i>
+            </button>
+            <div class="pt-3 filter-content space-y-3">
+              <div class="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-ocean-850 border border-slate-200/80 dark:border-ocean-700">
+                <span id="price-min-display" class="text-xs font-bold text-[#9E6738] dark:text-[#DEB17E]">$2,000 / ₹2,000</span>
+                <span class="text-xs text-slate-400 font-bold">&mdash;</span>
+                <span id="price-max-display" class="text-xs font-bold text-[#9E6738] dark:text-[#DEB17E]">$12,000 / ₹12,000</span>
+              </div>
+              <input type="range" id="price-range-slider" min="2000" max="15000" step="500" value="12000" oninput="updatePriceSlider(this.value)" class="w-full accent-[#9E6738] cursor-pointer">
+              <div class="flex items-center justify-between text-[10px] text-slate-400 font-medium">
+                <span>Min $2,000</span>
+                <span>Max $15,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-accordion border-b border-slate-100 dark:border-ocean-800/80 pb-4">
+            <button type="button" onclick="toggleFilterGroup(this)" class="w-full flex items-center justify-between text-xs font-bold text-ocean-950 dark:text-white py-1">
+              <span>Guest Capacity</span>
+              <i class="fa-solid fa-chevron-up text-[10px] text-slate-400 transition-transform"></i>
+            </button>
+            <div class="space-y-2 pt-2.5 filter-content">
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="guests" value="2" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>2 Guests (Couples)</span>
+              </label>
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="guests" value="4" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>4 Guests (Small Family)</span>
+              </label>
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="guests" value="6" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>6 Guests (Villa Group)</span>
+              </label>
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="guests" value="8" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>8+ Guests (Full Sanctuary Buyout)</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-accordion pb-2">
+            <button type="button" onclick="toggleFilterGroup(this)" class="w-full flex items-center justify-between text-xs font-bold text-ocean-950 dark:text-white py-1">
+              <span>Luxury Inclusions</span>
+              <i class="fa-solid fa-chevron-up text-[10px] text-slate-400 transition-transform"></i>
+            </button>
+            <div class="space-y-2 pt-2.5 filter-content">
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="amenity" value="butler" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>Private 24/7 Butler</span>
+              </label>
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="amenity" value="pool" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>Private Plunge Pool</span>
+              </label>
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="amenity" value="yacht" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>Yacht / Seaplane Transfer</span>
+              </label>
+              <label class="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-300 cursor-pointer hover:text-ocean-950 dark:hover:text-white">
+                <input type="checkbox" name="amenity" value="escrow" onchange="applyAllDestinationFilters()" class="rounded border-slate-300 text-[#9E6738] focus:ring-[#9E6738]">
+                <span>100% Escrow Protection</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-200 dark:border-ocean-800">
+            <button type="button" onclick="toggleDestinationFilterPanel(false)" class="w-full py-2.5 rounded-xl bg-[#9E6738] hover:bg-[#85542b] text-white text-xs font-bold text-center shadow-md transition-all cursor-pointer flex items-center justify-center gap-2">
+              <i class="fa-solid fa-check text-xs"></i>
+              <span>Apply &amp; Close Filters</span>
+            </button>
+          </div>
+
+        </aside>
+
+        <div class="flex-1 min-w-0 w-full">
+          <div class="flex items-center justify-between pb-4 mb-2">
+            <span id="destinations-results-count" class="text-xs font-bold text-slate-500 dark:text-slate-400">
+              Showing all verified sanctuaries
+            </span>
+            <button id="dest-filter-quick-btn" onclick="toggleDestinationFilterPanel()" type="button" class="inline-flex sm:hidden items-center gap-1.5 text-xs font-bold text-[#9E6738] dark:text-[#DEB17E] hover:underline cursor-pointer">
+              <i class="fa-solid fa-sliders text-[11px]"></i>
+              <span id="dest-filter-quick-text">Show Filters</span>
+            </button>
+          </div>
+
+          <div id="destinations-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-300"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="destinations-featured" class="py-12 md:py-16 bg-[#FAF5EF] dark:bg-[#0B1924] border-y border-stone-200/80 dark:border-ocean-800 transition-colors">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+          <div class="lg:col-span-5 flex flex-col justify-center">
+
+            <div class="mb-4">
+              <div class="section-tag-badge">
+                <i class="fa-solid fa-earth-americas"></i>
+                <span>Featured Destinations</span>
+              </div>
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-normal text-ocean-950 dark:text-white leading-[1.14] mb-4 tracking-tight">
+              Extraordinary<br class="hidden sm:inline"> Places, Real Stories.
+            </h2>
+
+            <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed mb-6 max-w-md font-normal">
+              From sun-soaked coasts to misty mountains, vibrant cities to timeless traditions &mdash; explore a world of destinations designed to inspire a richer way of traveling.
+            </p>
+
+            <div>
+              <button onclick="document.getElementById('destinations-catalog').scrollIntoView({behavior:'smooth'})" class="btn-primary !rounded-full inline-flex items-center justify-center gap-2.5 px-8 py-3.5 text-xs sm:text-sm font-bold shadow-xl shadow-[#1A3B55]/20 hover:-translate-y-0.5 transition-all duration-300 group cursor-pointer">
+                <span>Explore All Destinations</span>
+                <i class="fa-solid fa-arrow-right text-xs text-[#DEB17E] group-hover:translate-x-1 transition-transform"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 h-auto sm:h-[340px]">
+
+              <div class="relative h-[280px] sm:h-[340px] rounded-2xl overflow-hidden group shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer" onclick="filterDestinationsTab('Europe'); document.getElementById('destinations-catalog').scrollIntoView({behavior:'smooth'})">
+                <img src="dest-amalfi.jpg" alt="Amalfi Coast Italy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
+
+                <div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                  <span class="px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-[#DEB17E] text-[10px] font-bold border border-[#DEB17E]/40 shadow-sm flex items-center gap-1">
+                    <i class="fa-solid fa-ship text-[9px]"></i> Yacht Charter
+                  </span>
+                </div>
+
+                <div class="absolute bottom-3.5 left-3.5 z-10 flex items-center gap-2 pointer-events-none">
+                  <i class="fa-solid fa-location-dot text-white text-base drop-shadow-md shrink-0"></i>
+                  <div class="leading-tight">
+                    <h3 class="text-white font-bold text-sm sm:text-base drop-shadow-md" style="color: #ffffff !important;">Amalfi Coast</h3>
+                    <span class="text-white/80 text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider block drop-shadow-sm mt-0.5">ITALY</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-3.5 h-auto sm:h-[340px]">
+
+                <div class="relative h-[160px] sm:h-[163px] rounded-2xl overflow-hidden group shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer" onclick="filterDestinationsTab('Asia'); document.getElementById('destinations-catalog').scrollIntoView({behavior:'smooth'})">
+                  <img src="dest-bali.jpg" alt="Bali Indonesia" class="absolute inset-0 w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
+
+                  <div class="absolute top-2.5 right-2.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    <span class="px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-md text-teal-300 text-[9px] font-bold border border-teal-500/40 shadow-sm flex items-center gap-1">
+                      <i class="fa-solid fa-spa text-[8px]"></i> Wellness Haven
+                    </span>
+                  </div>
+
+                  <div class="absolute bottom-3 left-3 z-10 flex items-center gap-2 pointer-events-none">
+                    <i class="fa-solid fa-location-dot text-white text-base drop-shadow-md shrink-0"></i>
+                    <div class="leading-tight">
+                      <h3 class="text-white font-bold text-xs sm:text-sm drop-shadow-md" style="color: #ffffff !important;">Bali</h3>
+                      <span class="text-white/80 text-[9px] sm:text-[10px] font-semibold uppercase tracking-wider block drop-shadow-sm mt-0.5">INDONESIA</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="relative h-[160px] sm:h-[163px] rounded-2xl overflow-hidden group shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer" onclick="filterDestinationsTab('Europe'); document.getElementById('destinations-catalog').scrollIntoView({behavior:'smooth'})">
+                  <img src="dest-banff.jpg" alt="Banff Canada" class="absolute inset-0 w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
+
+                  <div class="absolute top-2.5 right-2.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    <span class="px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-md text-[#38BDF8] text-[9px] font-bold border border-[#38BDF8]/40 shadow-sm flex items-center gap-1">
+                      <i class="fa-solid fa-mountain text-[8px]"></i> Glacial Lodge
+                    </span>
+                  </div>
+
+                  <div class="absolute bottom-3 left-3 z-10 flex items-center gap-2 pointer-events-none">
+                    <i class="fa-solid fa-location-dot text-white text-base drop-shadow-md shrink-0"></i>
+                    <div class="leading-tight">
+                      <h3 class="text-white font-bold text-xs sm:text-sm drop-shadow-md" style="color: #ffffff !important;">Banff</h3>
+                      <span class="text-white/80 text-[9px] sm:text-[10px] font-semibold uppercase tracking-wider block drop-shadow-sm mt-0.5">CANADA</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-3.5 h-auto sm:h-[340px]">
+
+                <div class="relative h-[160px] sm:h-[163px] rounded-2xl overflow-hidden group shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer" onclick="filterDestinationsTab('Middle East'); document.getElementById('destinations-catalog').scrollIntoView({behavior:'smooth'})">
+                  <img src="dest-petra.jpg" alt="Petra Jordan" class="absolute inset-0 w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
+
+                  <div class="absolute top-2.5 right-2.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    <span class="px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-md text-amber-300 text-[9px] font-bold border border-amber-500/40 shadow-sm flex items-center gap-1">
+                      <i class="fa-solid fa-landmark text-[8px]"></i> Ancient Wonders
+                    </span>
+                  </div>
+
+                  <div class="absolute bottom-3 left-3 z-10 flex items-center gap-2 pointer-events-none">
+                    <i class="fa-solid fa-location-dot text-white text-base drop-shadow-md shrink-0"></i>
+                    <div class="leading-tight">
+                      <h3 class="text-white font-bold text-xs sm:text-sm drop-shadow-md" style="color: #ffffff !important;">Petra</h3>
+                      <span class="text-white/80 text-[9px] sm:text-[10px] font-semibold uppercase tracking-wider block drop-shadow-sm mt-0.5">JORDAN</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="relative h-[160px] sm:h-[163px] rounded-2xl overflow-hidden group shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer" onclick="filterDestinationsTab('Island'); document.getElementById('destinations-catalog').scrollIntoView({behavior:'smooth'})">
+                  <img src="dest-phuket.jpg" alt="Phuket Thailand" class="absolute inset-0 w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
+
+                  <div class="absolute top-2.5 right-2.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    <span class="px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-md text-teal-300 text-[9px] font-bold border border-teal-500/40 shadow-sm flex items-center gap-1">
+                      <i class="fa-solid fa-umbrella-beach text-[8px]"></i> Private Atoll
+                    </span>
+                  </div>
+
+                  <div class="absolute bottom-3 left-3 z-10 flex items-center gap-2 pointer-events-none">
+                    <i class="fa-solid fa-location-dot text-white text-base drop-shadow-md shrink-0"></i>
+                    <div class="leading-tight">
+                      <h3 class="text-white font-bold text-xs sm:text-sm drop-shadow-md" style="color: #ffffff !important;">Phuket</h3>
+                      <span class="text-white/80 text-[9px] sm:text-[10px] font-semibold uppercase tracking-wider block drop-shadow-sm mt-0.5">THAILAND</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations-spotlights" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="section-tag-badge">
+          <i class="fa-solid fa-star"></i>
+          <span>Curator Selections</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-black font-heading text-ocean-950 dark:text-white mt-2">
+          Signature Sanctuary Spotlights
+        </h2>
+        <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">
+          Three iconic sanctuaries capturing the absolute pinnacle of privacy, gastronomy, and natural splendor.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <div class="rounded-3xl overflow-hidden bg-gradient-to-b from-white via-cyan-50/20 to-slate-50 dark:from-ocean-900 dark:via-ocean-950 dark:to-[#0B1924] border-2 border-[#9E6738] dark:border-[#DEB17E] shadow-xl group flex flex-col hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 relative">
+
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80" alt="Baa Atoll Sanctuary Maldives" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+
+            <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 dark:bg-ocean-950/90 text-[#1A3B55] dark:text-[#DEB17E] text-[10px] font-black uppercase tracking-wider shadow-md border border-[#9E6738]/30">
+              <i class="fa-solid fa-umbrella-beach mr-1 text-[#9E6738] dark:text-[#DEB17E]"></i>Maldives Atolls
+            </div>
+            <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-[10px] font-bold border border-white/20">
+              <i class="fa-solid fa-star text-amber-400 mr-1"></i>5.0 Marine Haven
+            </div>
+          </div>
+
+          <div class="p-6 space-y-3.5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[9px] font-extrabold uppercase tracking-widest text-[#9E6738] dark:text-[#DEB17E] block mb-1">Baa Atoll Biosphere</span>
+              <h3 class="text-xl font-bold font-heading text-ocean-950 dark:text-white group-hover:text-[#DEB17E] transition-colors">Baa Atoll Private Sanctuary</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                UNESCO biosphere reserve with private manta ray snorkeling, overwater glass plunge pools, and submerged champagne dining.
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2.5 py-1 rounded-lg bg-teal-500/10 text-teal-700 dark:text-teal-300 text-[10px] font-bold flex items-center gap-1">
+                  <i class="fa-solid fa-sailboat text-[9px]"></i> Private Dhoni
+                </span>
+                <span class="px-2.5 py-1 rounded-lg bg-cyan-500/10 text-cyan-700 dark:text-cyan-300 text-[10px] font-bold flex items-center gap-1">
+                  <i class="fa-solid fa-fish-fins text-[9px]"></i> Manta Safari
+                </span>
+                <span class="px-2.5 py-1 rounded-lg bg-amber-500/10 text-amber-700 dark:text-amber-300 text-[10px] font-bold flex items-center gap-1">
+                  <i class="fa-solid fa-champagne-glasses text-[9px]"></i> Glass Villa
+                </span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200 dark:border-ocean-800 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">Nightly Suite</span>
+                <span class="text-xl font-black text-teal-500 dark:text-[#DEB17E]">$3,425</span>
+              </div>
+              <a href="contact.html#contact-form" class="px-5 py-2.5 rounded-xl btn-primary text-xs font-bold inline-flex items-center gap-2 shadow-md hover:shadow-xl transition-all">
+                <span>Reserve Stay</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden bg-gradient-to-b from-white via-sky-50/20 to-slate-50 dark:from-ocean-900 dark:via-ocean-950 dark:to-[#0B1924] border-2 border-[#9E6738] dark:border-[#DEB17E] shadow-xl group flex flex-col hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 relative">
+
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=800&q=80" alt="Zermatt Matterhorn Chalet Swiss Alps" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+
+            <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 dark:bg-ocean-950/90 text-[#1A3B55] dark:text-[#DEB17E] text-[10px] font-black uppercase tracking-wider shadow-md border border-[#9E6738]/30">
+              <i class="fa-solid fa-mountain mr-1 text-[#9E6738] dark:text-[#DEB17E]"></i>Swiss Alps
+            </div>
+            <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-[10px] font-bold border border-white/20">
+              <i class="fa-solid fa-star text-amber-400 mr-1"></i>4.99 Peak Luxury
+            </div>
+          </div>
+
+          <div class="p-6 space-y-3.5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[9px] font-extrabold uppercase tracking-widest text-[#9E6738] dark:text-[#DEB17E] block mb-1">Gornergrat Alpine Vista</span>
+              <h3 class="text-xl font-bold font-heading text-ocean-950 dark:text-white group-hover:text-[#DEB17E] transition-colors">Zermatt Glass Chalet Atelier</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                Floor-to-ceiling Matterhorn vistas with ski butler service, private outdoor heated whirlpool, and private glacier rail pass.
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2.5 py-1 rounded-lg bg-teal-500/10 text-teal-700 dark:text-teal-300 text-[10px] font-bold flex items-center gap-1">
+                  <i class="fa-solid fa-person-skiing text-[9px]"></i> Ski Butler
+                </span>
+                <span class="px-2.5 py-1 rounded-lg bg-sky-500/10 text-sky-700 dark:text-sky-300 text-[10px] font-bold flex items-center gap-1">
+                  <i class="fa-solid fa-hot-tub-person text-[9px]"></i> Heated Whirlpool
+                </span>
+                <span class="px-2.5 py-1 rounded-lg bg-amber-500/10 text-amber-700 dark:text-amber-300 text-[10px] font-bold flex items-center gap-1">
+                  <i class="fa-solid fa-train-subway text-[9px]"></i> Glacier Rail
+                </span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200 dark:border-ocean-800 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">Nightly Suite</span>
+                <span class="text-xl font-black text-teal-500 dark:text-[#DEB17E]">$4,150</span>
+              </div>
+              <a href="contact.html#contact-form" class="px-5 py-2.5 rounded-xl btn-primary text-xs font-bold inline-flex items-center gap-2 shadow-md hover:shadow-xl transition-all">
+                <span>Reserve Stay</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden bg-gradient-to-b from-white via-amber-50/20 to-slate-50 dark:from-ocean-900 dark:via-ocean-950 dark:to-[#0B1924] border-2 border-[#9E6738] dark:border-[#DEB17E] shadow-xl group flex flex-col hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 relative">
+
+          <div class="h-64 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80" alt="Kyoto Bamboo Onsen Sanctuary" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+
+            <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 dark:bg-ocean-950/90 text-[#1A3B55] dark:text-[#DEB17E] text-[10px] font-black uppercase tracking-wider shadow-md border border-[#9E6738]/30">
+              <i class="fa-solid fa-torii-gate mr-1 text-[#9E6738] dark:text-[#DEB17E]"></i>Kyoto Heritage
+            </div>
+            <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-white text-[10px] font-bold border border-white/20">
+              <i class="fa-solid fa-star text-amber-400 mr-1"></i>5.0 Ultra-Luxury
+            </div>
+          </div>
+
+          <div class="p-6 space-y-3.5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[9px] font-extrabold uppercase tracking-widest text-[#9E6738] dark:text-[#DEB17E] block mb-1">Sagano Forest Sanctuary</span>
+              <h3 class="text-xl font-bold font-heading text-ocean-950 dark:text-white group-hover:text-[#DEB17E] transition-colors">Arashiyama Bamboo Onsen</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+                Centuries-old hot spring sanctuary nestled within bamboo groves. Michelin kaiseki banquets, private Zen meditation, and sacred temple tea rituals.
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2.5 py-1 rounded-lg bg-teal-500/10 text-teal-700 dark:text-teal-300 text-[10px] font-bold flex items-center gap-1">
+                  <i class="fa-solid fa-hot-tub-person text-[9px]"></i> Private Onsen
+                </span>
+                <span class="px-2.5 py-1 rounded-lg bg-amber-500/10 text-amber-700 dark:text-amber-300 text-[10px] font-bold flex items-center gap-1">
+                  <i class="fa-solid fa-utensils text-[9px]"></i> 3-Star Kaiseki
+                </span>
+                <span class="px-2.5 py-1 rounded-lg bg-blue-500/10 text-blue-700 dark:text-blue-300 text-[10px] font-bold flex items-center gap-1">
+                  <i class="fa-solid fa-feather text-[9px]"></i> Zen Master
+                </span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200 dark:border-ocean-800 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">Nightly Suite</span>
+                <span class="text-xl font-black text-teal-500 dark:text-[#DEB17E]">$3,680</span>
+              </div>
+              <a href="contact.html#contact-form" class="px-5 py-2.5 rounded-xl btn-primary text-xs font-bold inline-flex items-center gap-2 shadow-md hover:shadow-xl transition-all">
+                <span>Reserve Stay</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations-transfers" class="py-16 md:py-24 bg-slate-100/60 dark:bg-ocean-900/40 border-y border-slate-200 dark:border-ocean-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+          <div class="lg:col-span-6 space-y-6">
+            <div class="section-tag-badge">
+              <i class="fa-solid fa-plane-departure"></i>
+              <span>Seamless Private Mobility</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black font-heading text-ocean-950 dark:text-white">
+              The Journey Is as Exquisite as the Arrival.
+            </h2>
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+              Every Travique sanctuary package includes private seamless transfers. No waiting in customs queues, no baggage friction - only private tarmac escorts, twin-engine seaplanes, and champagne glass-roof trains.
+            </p>
+
+            <div class="space-y-4 pt-2">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-teal-500/10 text-teal-500 flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-plane-departure text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-ocean-950 dark:text-white text-sm">Twin-Engine Seaplane Charters</h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">Direct flight transfers to your villa jetty across Maldivian and Polynesian atolls.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-teal-500/10 text-teal-500 flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-train text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-ocean-950 dark:text-white text-sm">Panoramic Alpine Rail Class</h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">Guaranteed window seats with 5-course gourmet dining across the Swiss Glacier Express.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-teal-500/10 text-teal-500 flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-ship text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-ocean-950 dark:text-white text-sm">Private Catamaran &amp; Yacht Links</h4>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">Skip commercial ferry lines across the Aegean and Italian coastlines with private captains.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 relative">
+            <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200 dark:border-ocean-800 group">
+              <img src="https://images.unsplash.com/photo-1583416750470-965b2707b355?auto=format&fit=crop&w=1000&q=80" alt="Private Jet Charter Runway Boarding &amp; VIP Transfers" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations-cta" class="py-20 md:py-28 relative overflow-hidden bg-slate-50/50 dark:bg-transparent">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="rounded-3xl p-8 sm:p-14 bg-gradient-to-r from-[#1A3B55] via-[#12283A] to-[#0B1924] text-white border border-[#9E6738]/40 shadow-2xl relative overflow-hidden">
+
+          <div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-[#9E6738]/15 blur-3xl pointer-events-none"></div>
+          <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-teal-500/10 blur-3xl pointer-events-none"></div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+
+            <div class="lg:col-span-7 space-y-6 order-2 lg:order-1">
+              <div class="section-tag-badge">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>Unlisted Sanctuaries</span>
+              </div>
+
+              <h2 class="text-3xl sm:text-5xl font-normal font-heading leading-tight text-white !text-white">
+                Have a Rare Destination in <span class="font-serif italic text-transparent bg-clip-text bg-gradient-to-r from-[#DEB17E] via-[#F6D8AC] to-[#C9935E]">Mind?</span>
+              </h2>
+
+              <p class="text-slate-200 text-sm sm:text-base leading-relaxed max-w-2xl font-normal !text-slate-200">
+                From Antarctic luxury icebreaker expeditions to private GalÃ¡pagos yacht buyouts, our senior destination curators can charter bespoke itineraries for any longitude and latitude.
+              </p>
+
+              <div class="flex flex-wrap items-center gap-4 pt-2">
+                <a href="contact.html" class="btn-primary text-sm shadow-xl flex items-center gap-2">
+                  <i class="fa-solid fa-compass"></i>
+                  <span>Commission Bespoke Destination</span>
+                </a>
+                <a href="packages.html" class="btn-secondary text-sm shadow-md flex items-center gap-2">
+                  <i class="fa-solid fa-suitcase"></i>
+                  <span>Explore Package Catalog</span>
+                </a>
+              </div>
+
+              <div class="pt-4 flex flex-wrap items-center gap-6 text-xs text-slate-200 !text-slate-200">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-phone text-[#DEB17E]"></i>
+                  <span class="font-medium text-white">Curator Hotline: <span class="text-[#DEB17E] font-bold">+91 98765 43210</span></span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-clock text-[#DEB17E]"></i>
+                  <span class="font-medium text-white">Bespoke Blueprint Turnaround &lt; 24h</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="lg:col-span-5 relative order-1 lg:order-2">
+              <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/20 relative group">
+                <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1000&q=85" alt="Bespoke Private Sanctuary Estate and Remote Horizon Charters" class="w-full h-[280px] sm:h-[320px] object-cover group-hover:scale-105 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0B1924]/85 via-black/20 to-transparent"></div>
+                <div class="absolute top-4 left-4">
+                  <span class="px-3 py-1 rounded-full bg-[#9E6738]/90 backdrop-blur-md text-[#F6D8AC] text-xs font-bold uppercase tracking-wider border border-white/20 shadow-md">
+                    <i class="fa-solid fa-compass mr-1"></i> Private Horizons
+                  </span>
+                </div>
+                <div class="absolute bottom-4 left-4 right-4 z-10 p-3.5 rounded-xl bg-black/75 backdrop-blur-md border border-white/20 shadow-xl">
+                  <div class="text-sm font-bold font-heading !text-white drop-shadow-md" style="color: #ffffff !important;">Worldwide Bespoke Commissions</div>
+                  <div class="text-[11px] !text-slate-200 mt-0.5 drop-shadow-sm font-medium" style="color: #e2e8f0 !important;">Private island buyouts &amp; remote estate charters across 70+ unlisted realms</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="login-modal" class="modal-overlay fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-ocean-900 rounded-3xl max-w-md w-full border border-slate-200 dark:border-ocean-800 shadow-2xl overflow-hidden relative">
+      <button onclick="closeModal('login-modal')" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 dark:bg-ocean-800 text-slate-400 hover:text-slate-600 dark:hover:text-white flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="h-10 w-auto flex items-center">
+            <img src="logo-light.png" alt="Travique Logo" class="h-10 w-auto object-contain dark:hidden">
+            <img src="logo-dark.png" alt="Travique Logo" class="h-10 w-auto object-contain hidden dark:block">
+          </div>
+          <span class="text-xl font-black font-heading text-ocean-950 dark:text-white">TRAVIQUE PORTAL</span>
+        </div>
+
+        <h3 class="text-2xl font-bold font-heading text-ocean-950 dark:text-white">Traveler Sign In</h3>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Access your bookings, boarding passes, and custom itineraries.</p>
+
+        <div class="mt-6 p-3.5 rounded-2xl bg-teal-50 dark:bg-teal-950/30 border border-teal-200 dark:border-teal-800 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sophia Vance" class="w-10 h-10 rounded-full object-cover ring-2 ring-teal-400">
+            <div>
+              <p class="text-xs font-bold text-slate-900 dark:text-white">Sophia Vance</p>
+              <span class="text-[10px] text-teal-500 font-bold">Diamond Club Traveler</span>
+            </div>
+          </div>
+          <button onclick="handleLoginSubmit()" class="px-3 py-1.5 rounded-xl btn-secondary text-xs font-bold">
+            Instant Demo
+          </button>
+        </div>
+
+        <div class="relative my-6 text-center">
+          <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-slate-200 dark:border-ocean-800"></div></div>
+          <span class="relative px-3 bg-white dark:bg-ocean-900 text-xs text-slate-400 font-medium">Or enter traveler credentials</span>
+        </div>
+
+        <form onsubmit="handleLoginSubmit(event)" class="space-y-4 text-xs">
+          <div>
+            <label class="font-bold text-slate-700 dark:text-slate-300 block mb-1">Traveler Email</label>
+            <input type="email" value="sophia.vance@travique.com" required class="w-full p-2.5 rounded-xl border border-slate-200 dark:border-ocean-700 bg-slate-50 dark:bg-ocean-850 text-slate-900 dark:text-white focus:outline-none focus:border-teal-400">
+          </div>
+
+          <div>
+            <label class="font-bold text-slate-700 dark:text-slate-300 block mb-1">Password</label>
+            <input type="password" value="password123" required class="w-full p-2.5 rounded-xl border border-slate-200 dark:border-ocean-700 bg-slate-50 dark:bg-ocean-850 text-slate-900 dark:text-white focus:outline-none focus:border-teal-400">
+          </div>
+
+          <div class="flex items-center justify-between text-slate-500">
+            <label class="flex items-center gap-1.5 cursor-pointer">
+              <input type="checkbox" checked class="rounded text-teal-500 accent-teal-500">
+              <span>Remember me</span>
+            </label>
+            <a href="#" onclick="showToast('Password reset link sent to registered email.', 'fa-envelope')" class="hover:text-teal-400">Forgot?</a>
+          </div>
+
+          <button type="submit" class="w-full py-3 rounded-xl btn-primary text-sm font-bold">
+            Sign In to Dashboard
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="ticket-modal" class="modal-overlay fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-transparent max-w-2xl w-full my-8 relative">
+      <div id="ticket-modal-content"></div>
+    </div>
+  </div>
+
+  <div id="invoice-modal" class="modal-overlay fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-transparent max-w-2xl w-full my-8 relative">
+      <div id="invoice-modal-content"></div>
+    </div>
+  </div>
+
+  <div id="package-detail-modal" class="modal-overlay fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white dark:bg-ocean-900 rounded-3xl max-w-3xl w-full my-8 border border-slate-200 dark:border-ocean-800 shadow-2xl relative overflow-hidden">
+      <button onclick="closeModal('package-detail-modal')" class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-black/50 text-white hover:bg-black flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="package-detail-modal-content"></div>
+    </div>
+  </div>
+
+  <div id="booking-checkout-modal" class="modal-overlay fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white dark:bg-ocean-900 rounded-3xl max-w-lg w-full my-8 border border-slate-200 dark:border-ocean-800 shadow-2xl relative overflow-hidden">
+      <button onclick="closeModal('booking-checkout-modal')" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 dark:bg-ocean-800 text-slate-400 hover:text-slate-600 dark:hover:text-white flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="booking-checkout-modal-content"></div>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+
+>>>>>>> 107638ee6bc6b2e4c7a4a43a5f47d9382c9597dd
 <footer class="site-footer pt-16 pb-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -1228,6 +2280,7 @@
         </div>
       </div>
     </div>
+<<<<<<< HEAD
   </footer>
 
 <script src="script.js"></script>
@@ -1235,3 +2288,12 @@
   <script src="destinations.js"></script>
 </body>
 </html>
+=======
+  </footer>
+
+<script src="script.js"></script>
+
+  <script src="destinations.js"></script>
+</body>
+</html>
+>>>>>>> 107638ee6bc6b2e4c7a4a43a5f47d9382c9597dd

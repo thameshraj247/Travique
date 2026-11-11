@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth">
 <head>
@@ -913,6 +914,923 @@
 
   <div id="toast-container"></div>
 
+=======
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Luxury Travel Concierge | Travique</title>
+  <meta name="description" content="Explore handcrafted domestic & international holiday packages, romantic honeymoon tours, and manage your trips via the Travique Traveler Dashboard.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&family=Urbanist:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+
+  <link rel="icon" type="image/png" href="logo-light.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body class="bg-slate-50 dark:bg-ocean-950 text-slate-800 dark:text-slate-100 font-body transition-colors duration-300">
+
+  <header class="site-header">
+    <div class="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8">
+      <div class="header-inner-row flex items-center justify-between h-20 transition-all duration-300">
+
+        <a href="index.html" class="flex items-center gap-2 sm:gap-3 group shrink-0 -ml-1 sm:ml-0">
+          <div class="relative h-10 sm:h-12 w-auto flex items-center shrink-0">
+            <img src="logo-light.png" alt="Travique Logo" class="header-logo-img h-10 sm:h-12 w-auto object-contain dark:hidden group-hover:scale-105 transition-all duration-300">
+            <img src="logo-dark.png" alt="Travique Logo" class="header-logo-img h-10 sm:h-12 w-auto object-contain hidden dark:block group-hover:scale-105 transition-all duration-300">
+          </div>
+          <div class="flex flex-col items-start sm:items-center text-left sm:text-center">
+            <span class="text-xl sm:text-2xl font-black font-heading tracking-tight text-ocean-900 dark:text-white group-hover:text-teal-400 transition-colors">
+              Travique
+            </span>
+            <span class="text-[6.5px] sm:text-[7.5px] font-bold tracking-[0.12em] sm:tracking-[0.14em] text-[#9E6738] uppercase mt-0.5 whitespace-nowrap text-left sm:text-center">
+              Escape. Explore. Experience
+            </span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center justify-center gap-1 xl:gap-2">
+
+          <div class="nav-dropdown-wrapper relative group" id="home-dropdown">
+            <button data-view="home" class="nav-link flex items-center gap-1.5 cursor-pointer" id="home-nav-trigger" aria-haspopup="true" aria-expanded="false" onclick="toggleHomeDropdown(event)">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-200 group-hover:rotate-180"></i>
+            </button>
+            <div class="nav-dropdown-menu" id="home-dropdown-menu">
+              <button data-view="home-1" onclick="window.location.href='index.html'" class="dropdown-item flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-compass text-sm"></i>
+                </div>
+                <div class="text-left rtl:text-right">
+                  <span class="block font-bold text-sm text-slate-800 dark:text-slate-100 item-title">Home 1</span>
+                  <span class="block text-[11px] text-slate-500 dark:text-slate-400 font-normal">Classic Luxury &amp; Explorer</span>
+                </div>
+              </button>
+              <button data-view="home-2" onclick="window.location.href='home-2.html'" class="dropdown-item flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-[#9E6738]/20 text-[#9E6738] flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-crown text-sm"></i>
+                </div>
+                <div class="text-left rtl:text-right">
+                  <span class="block font-bold text-sm text-[#9E6738] dark:text-[#C9935E] item-title">Home 2</span>
+                  <span class="block text-[11px] text-slate-500 dark:text-slate-400 font-normal">Panoramic Escapes &amp; VIP Lounge</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <button data-view="about" onclick="window.location.href='about.html'" class="nav-link">
+            About Us
+          </button>
+          <button data-view="destinations" onclick="window.location.href='destinations.html'" class="nav-link">
+            Destinations
+          </button>
+          <button data-view="packages" onclick="window.location.href='packages.html'" class="nav-link">
+            Holiday Packages
+          </button>
+          <button data-view="contact" onclick="window.location.href='contact.html'" class="nav-link active">
+            Contact Us
+          </button>
+          <button data-view="dashboard" onclick="window.location.href='dashboard.html'" class="nav-link">
+            Dashboard
+          </button>
+        </nav>
+
+        <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+          <button id="dir-toggle-btn" onclick="toggleDirection()" class="ctrl-btn ctrl-btn-icon w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center p-0" title="Toggle Layout Direction (LTR / RTL)" aria-label="Toggle Direction">
+            <i class="fa-solid fa-right-left text-[#9E6738] dark:text-[#DEB17E] text-xs sm:text-sm"></i>
+          </button>
+
+          <button id="theme-toggle-btn" onclick="toggleDarkMode()" class="ctrl-btn ctrl-btn-icon w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center p-0" title="Toggle Theme (Light / Dark)" aria-label="Toggle Dark Mode">
+            <i class="fa-solid fa-moon text-[#9E6738] dark:text-[#DEB17E] text-xs sm:text-sm"></i>
+          </button>
+
+          <div id="auth-button-container">
+            <button onclick="openLoginModal()" class="ctrl-btn ctrl-btn-primary px-2.5 sm:px-4 py-1.5 sm:py-2 text-xs flex items-center gap-1.5 font-bold">
+              <i class="fa-solid fa-user text-xs"></i>
+              <span>Login</span>
+            </button>
+          </div>
+
+          <button id="mobile-menu-toggle" class="lg:hidden p-1.5 sm:p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:text-teal-400">
+            <i class="fa-solid fa-bars-staggered text-lg sm:text-xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mobile-menu-drawer" class="lg:hidden hidden px-4 pt-2 pb-6 bg-white dark:bg-ocean-900 border-b border-slate-200 dark:border-ocean-800 shadow-xl space-y-2">
+      <div class="mobile-dropdown border-b border-slate-200 dark:border-ocean-800/60 pb-2">
+        <button onclick="toggleMobileHomeSubmenu()" class="flex items-center justify-between w-full py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium hover:text-teal-400">
+          <span class="flex items-center gap-2">
+            <i class="fa-solid fa-house text-teal-400 text-sm"></i>
+            <span>Home</span>
+          </span>
+          <i id="mobile-home-chevron" class="fa-solid fa-chevron-down text-xs transition-transform duration-200"></i>
+        </button>
+        <div id="mobile-home-submenu" class="pl-6 space-y-1 mt-1">
+          <button data-view="home-1" onclick="window.location.href='index.html'; closeMobileMenuDrawer();" class="mobile-nav-link block w-full text-left py-1.5 px-3 rounded-lg text-slate-600 dark:text-slate-300 hover:text-teal-400 text-sm font-medium">
+            <i class="fa-solid fa-compass text-teal-500 text-xs mr-2 rtl:ml-2 rtl:mr-0"></i>Home 1 (Classic Luxury)
+          </button>
+          <button data-view="home-2" onclick="window.location.href='home-2.html'; closeMobileMenuDrawer();" class="mobile-nav-link block w-full text-left py-1.5 px-3 rounded-lg text-[#9E6738] dark:text-[#C9935E] hover:text-teal-400 text-sm font-bold bg-[#9E6738]/10">
+            <i class="fa-solid fa-crown text-[#9E6738] text-xs mr-2 rtl:ml-2 rtl:mr-0"></i>Home 2 (Panoramic &amp; VIP)
+          </button>
+        </div>
+      </div>
+      <button data-view="about" onclick="window.location.href='about.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium">About Us</button>
+      <button data-view="destinations" onclick="window.location.href='destinations.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium">Destinations</button>
+      <button data-view="packages" onclick="window.location.href='packages.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium">Holiday Packages</button>
+      <button data-view="contact" onclick="window.location.href='contact.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-[#9E6738] dark:text-[#C9935E] font-bold bg-[#9E6738]/10">Contact Us</button>
+      <button data-view="dashboard" onclick="window.location.href='dashboard.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-teal-400 font-bold bg-teal-500/10">Dashboard</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="contact-hero" class="relative overflow-hidden min-h-[calc(100vh-80px)] lg:h-[calc(100vh-80px)] flex flex-col justify-center items-center py-6 lg:py-0 bg-white dark:bg-[#091B27] border-b border-slate-200/80 dark:border-ocean-800 transition-colors duration-300">
+
+      <div class="absolute top-0 right-0 w-full sm:w-[65%] lg:w-[55%] h-full pointer-events-none -z-0 overflow-hidden select-none">
+
+        <img src="contact-hero-bg-shape.svg" alt="" class="absolute -top-10 right-0 w-[120%] max-w-none opacity-90 dark:opacity-20 translate-x-12">
+
+        <div class="absolute top-10 right-10 w-96 h-96 rounded-full bg-[#1A3B55]/10 dark:bg-[#1A3B55]/20 blur-3xl"></div>
+        <div class="absolute bottom-10 right-32 w-80 h-80 rounded-full bg-[#9E6738]/15 dark:bg-[#DEB17E]/15 blur-3xl"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full my-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+
+          <div class="lg:col-span-6 xl:col-span-6 text-left sm:pl-3 md:pl-5 lg:pl-8 xl:pl-12">
+
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#9E6738]/10 dark:bg-[#DEB17E]/10 border border-[#9E6738]/20 dark:border-[#DEB17E]/30 text-[#9E6738] dark:text-[#DEB17E] text-xs font-bold uppercase tracking-wider mb-2.5 sm:mb-3">
+              <span class="w-2 h-2 rounded-full bg-[#9E6738] dark:bg-[#DEB17E]"></span>
+              <span>Best Destinations Around The World</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-[42px] xl:text-[48px] font-heading font-bold text-ocean-950 dark:text-white leading-[1.28] sm:leading-[1.26] tracking-tight mb-4 sm:mb-5">
+              <span class="block">Travel, <span class="relative inline-block"><span class="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#9E6738] via-[#B87B47] to-[#7D4922] dark:from-[#F6D8AC] dark:via-[#DEB17E] dark:to-[#9E6738]">enjoy</span><img src="contact-hero-underline.svg" alt="" class="absolute -bottom-1 left-0 w-full h-auto pointer-events-none select-none"></span></span>
+              <span class="block mt-1.5 sm:mt-2">and live a new</span>
+              <span class="block mt-1.5 sm:mt-2">and full life</span>
+            </h1>
+
+            <p class="text-slate-600 dark:text-slate-300 font-medium text-xs sm:text-sm lg:text-[15px] leading-relaxed max-w-lg mb-5 sm:mb-6">
+              Built for discerning travelers who seek extraordinary horizons. Connect directly with our senior destination curators to commission bespoke itineraries, secure private sanctuaries, and enjoy 24/7 dedicated concierge care.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4 sm:gap-5">
+
+              <a href="#contact-form-section" class="btn-primary !rounded-xl inline-flex items-center justify-center gap-2 px-7 py-3.5 text-xs sm:text-sm font-bold shadow-xl shadow-[#1A3B55]/20 hover:-translate-y-0.5 transition-all duration-300">
+                <i class="fa-solid fa-paper-plane text-xs"></i>
+                <span>Send Inquiry</span>
+              </a>
+
+              <a href="tel:+919876543210" class="btn-secondary !rounded-xl inline-flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3.5 text-xs sm:text-sm font-bold shadow-md hover:-translate-y-0.5 transition-all duration-300" aria-label="Call Priority Desk">
+                <i class="fa-solid fa-phone text-white text-xs"></i>
+                <span>Call Priority Desk</span>
+              </a>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4 sm:gap-6 pt-4 sm:pt-5 mt-4 sm:mt-5 border-t border-slate-200/80 dark:border-ocean-800 text-xs font-semibold text-slate-500 dark:text-slate-400">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-clock text-[#9E6738] dark:text-[#DEB17E]"></i>
+                <span>Response &lt; 15 Mins</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-shield-halved text-[#1A3B55] dark:text-[#DEB17E]"></i>
+                <span>100% Escrow Protected</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-headset text-[#9E6738] dark:text-[#DEB17E]"></i>
+                <span>24/7 Concierge Desk</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 xl:col-span-6 relative flex justify-center lg:justify-center items-center lg:-translate-x-8 xl:-translate-x-12">
+
+            <div class="absolute w-[300px] sm:w-[380px] lg:w-[440px] h-[300px] sm:h-[380px] lg:h-[440px] rounded-[42%_58%_70%_30%/45%_45%_55%_55%] bg-gradient-to-tr from-[#1A3B55]/10 via-[#9E6738]/15 to-[#DEB17E]/20 dark:from-[#1A3B55]/30 dark:via-[#9E6738]/20 dark:to-[#DEB17E]/15 blur-xl pointer-events-none -z-0"></div>
+
+            <div class="relative z-10 w-full max-w-[380px] sm:max-w-[440px] lg:max-w-[480px]">
+              <img src="contact-hero-traveler.png" alt="Travel, enjoy and live a new and full life" class="w-full h-auto max-h-[380px] sm:max-h-[440px] lg:max-h-[480px] object-contain select-none drop-shadow-xl hover:scale-102 transition-transform duration-500 mx-auto">
+
+              <div class="contact-floating-review-tag absolute top-2 -right-2 sm:-right-4 bg-white/95 dark:bg-[#0E202E]/95 backdrop-blur-md px-3 py-1.5 rounded-full border border-slate-200/80 dark:border-ocean-700/80 shadow-lg z-20 flex items-center gap-1.5">
+                <div class="flex text-[#9E6738] dark:text-[#DEB17E] text-[10px]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-xs font-black text-ocean-950 dark:text-white">4.9/5</span>
+              </div>
+
+              <div class="contact-floating-concierge-tag absolute -bottom-2 -left-2 sm:-left-4 bg-white/95 dark:bg-[#0E202E]/95 backdrop-blur-md p-2.5 sm:p-3 rounded-2xl border border-slate-200/80 dark:border-ocean-700/80 shadow-xl z-20 flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-xl bg-[#9E6738]/10 dark:bg-[#DEB17E]/20 text-[#9E6738] dark:text-[#DEB17E] flex items-center justify-center text-xs">
+                  <i class="fa-solid fa-headset"></i>
+                </div>
+                <div class="leading-tight">
+                  <span class="block text-xs font-bold text-ocean-950 dark:text-white font-heading">24/7 Dedicated Concierge</span>
+                  <span class="block text-[10px] text-slate-500 dark:text-slate-400">Direct Curators on Call</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-steps" class="py-16 sm:py-24 bg-slate-50/70 dark:bg-ocean-950 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center max-w-2xl mx-auto mb-14 sm:mb-16 relative">
+
+          <div class="flex items-center justify-center mb-2 pointer-events-none select-none">
+            <svg width="52" height="26" viewBox="0 0 52 26" fill="none" class="opacity-60 text-[#9E6738] dark:text-[#DEB17E]">
+              <path d="M2 20 C14 6, 28 6, 42 16" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 3"/>
+              <path d="M44 14 L50 17 L47 21 L44 18 Z" fill="currentColor"/>
+            </svg>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ocean-950 dark:text-white tracking-tight">
+            Easy Steps <span class="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#9E6738] via-[#DEB17E] to-[#9E6738] dark:from-[#F6D8AC] dark:via-[#DEB17E] dark:to-[#9E6738]">For Bookings</span>
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base mt-3 leading-relaxed font-body">
+            Discover Your Next Adventure! Explore our most popular destinations.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 mb-14 sm:mb-16">
+
+          <div class="p-8 sm:p-9 rounded-[32px] rounded-tr-[4.5rem] bg-white dark:bg-ocean-900 border border-slate-200/80 dark:border-ocean-800 shadow-xl shadow-ocean-950/5 dark:shadow-black/40 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+            <div class="flex items-center justify-between">
+
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#1A3B55] dark:bg-[#DEB17E] text-white dark:text-[#0B1924] flex items-center justify-center font-black text-2xl sm:text-3xl font-heading shadow-lg shadow-[#1A3B55]/25 dark:shadow-[#DEB17E]/20 ring-4 ring-[#1A3B55]/10 dark:ring-[#DEB17E]/20 shrink-0 group-hover:scale-105 transition-transform">
+                1
+              </div>
+
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#9E6738] dark:border-[#DEB17E] bg-[#FAF6F0] dark:bg-ocean-800 text-[#9E6738] dark:text-[#DEB17E] flex items-center justify-center text-xl sm:text-2xl shadow-sm shrink-0 group-hover:rotate-6 transition-transform">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+            </div>
+            <div class="pt-8">
+              <h3 class="text-xl font-bold font-heading text-ocean-950 dark:text-white group-hover:text-[#9E6738] dark:group-hover:text-[#DEB17E] transition-colors">
+                Choose Your Destination
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed font-body">
+                Explore hundreds of beautiful places worldwide.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-8 sm:p-9 rounded-[32px] rounded-tr-[4.5rem] bg-white dark:bg-ocean-900 border border-slate-200/80 dark:border-ocean-800 shadow-xl shadow-ocean-950/5 dark:shadow-black/40 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+            <div class="flex items-center justify-between">
+
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#1A3B55] dark:bg-[#DEB17E] text-white dark:text-[#0B1924] flex items-center justify-center font-black text-2xl sm:text-3xl font-heading shadow-lg shadow-[#1A3B55]/25 dark:shadow-[#DEB17E]/20 ring-4 ring-[#1A3B55]/10 dark:ring-[#DEB17E]/20 shrink-0 group-hover:scale-105 transition-transform">
+                2
+              </div>
+
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#9E6738] dark:border-[#DEB17E] bg-[#FAF6F0] dark:bg-ocean-800 text-[#9E6738] dark:text-[#DEB17E] flex items-center justify-center text-xl sm:text-2xl shadow-sm shrink-0 group-hover:rotate-6 transition-transform">
+                <i class="fa-solid fa-credit-card"></i>
+              </div>
+            </div>
+            <div class="pt-8">
+              <h3 class="text-xl font-bold font-heading text-ocean-950 dark:text-white group-hover:text-[#9E6738] dark:group-hover:text-[#DEB17E] transition-colors">
+                Make Your Payment
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed font-body">
+                Secure and fast payment with multiple options.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-8 sm:p-9 rounded-[32px] rounded-tr-[4.5rem] bg-white dark:bg-ocean-900 border border-slate-200/80 dark:border-ocean-800 shadow-xl shadow-ocean-950/5 dark:shadow-black/40 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+            <div class="flex items-center justify-between">
+
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#1A3B55] dark:bg-[#DEB17E] text-white dark:text-[#0B1924] flex items-center justify-center font-black text-2xl sm:text-3xl font-heading shadow-lg shadow-[#1A3B55]/25 dark:shadow-[#DEB17E]/20 ring-4 ring-[#1A3B55]/10 dark:ring-[#DEB17E]/20 shrink-0 group-hover:scale-105 transition-transform">
+                3
+              </div>
+
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-[#9E6738] dark:border-[#DEB17E] bg-[#FAF6F0] dark:bg-ocean-800 text-[#9E6738] dark:text-[#DEB17E] flex items-center justify-center text-xl sm:text-2xl shadow-sm shrink-0 group-hover:rotate-6 transition-transform">
+                <i class="fa-solid fa-suitcase-rolling"></i>
+              </div>
+            </div>
+            <div class="pt-8">
+              <h3 class="text-xl font-bold font-heading text-ocean-950 dark:text-white group-hover:text-[#9E6738] dark:group-hover:text-[#DEB17E] transition-colors">
+                Enjoy Your Trip
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed font-body">
+                Pack your bags and enjoy an unforgettable journey.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="rounded-3xl sm:rounded-[36px] bg-gradient-to-r from-[#1A3B55] via-[#12283A] to-[#0B1924] text-white p-7 sm:p-9 lg:p-11 shadow-2xl relative overflow-hidden border border-[#9E6738]/40">
+
+          <div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-[#9E6738]/20 blur-3xl pointer-events-none"></div>
+          <div class="absolute -left-16 -bottom-16 w-64 h-64 rounded-full bg-teal-500/15 blur-3xl pointer-events-none"></div>
+
+          <div class="absolute inset-x-0 bottom-0 pointer-events-none select-none opacity-15">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-12 sm:h-16 text-[#DEB17E]" fill="currentColor">
+              <path d="M0,40 C150,90 350,10 500,50 C650,90 850,20 1000,60 C1100,80 1150,40 1200,50 L1200,120 L0,120 Z"></path>
+            </svg>
+          </div>
+
+          <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8">
+
+            <div class="flex items-baseline gap-2 shrink-0">
+              <span class="text-5xl sm:text-6xl lg:text-7xl font-black font-heading text-transparent bg-clip-text bg-gradient-to-r from-[#DEB17E] via-[#F6D8AC] to-[#C9935E] tracking-tight leading-none drop-shadow-sm">
+                48
+              </span>
+              <span class="text-xs sm:text-sm font-extrabold text-[#DEB17E] uppercase tracking-widest font-sans">
+                % OFF
+              </span>
+            </div>
+
+            <div class="text-center lg:text-left flex-1 min-w-0">
+              <span class="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-[#DEB17E] block mb-1">
+                Get Special Offer
+              </span>
+              <h3 class="text-2xl sm:text-3xl lg:text-4xl font-serif italic font-normal text-white drop-shadow-sm leading-snug">
+                Tours and Trip Packages , Globally
+              </h3>
+            </div>
+
+            <div class="shrink-0">
+              <a href="packages.html" class="btn-primary !rounded-full inline-flex items-center justify-center gap-2.5 px-8 py-3.5 text-sm font-bold shadow-xl shadow-black/20 hover:-translate-y-0.5 transition-all duration-300">
+                <span>Discover More</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact-form-section" class="py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+
+        <div class="lg:col-span-5 space-y-6">
+
+          <div class="p-8 rounded-3xl bg-white dark:bg-ocean-900 border border-slate-200 dark:border-ocean-800 shadow-sm space-y-4">
+            <div class="section-tag-badge">
+              <i class="fa-solid fa-headset"></i>
+              <span>Live Concierge Duty Desk</span>
+            </div>
+            <h3 class="text-xl font-bold font-heading text-ocean-950 dark:text-white">Active Concierge on Call</h3>
+
+            <div class="flex items-center gap-3.5 p-3.5 rounded-2xl bg-slate-50 dark:bg-ocean-850 border border-slate-200/80 dark:border-ocean-700">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80" alt="Elena Rostova" class="w-12 h-12 rounded-full object-cover object-top ring-2 ring-teal-400">
+              <div>
+                <p class="text-sm font-bold text-ocean-950 dark:text-white">Elena Rostova</p>
+                <p class="text-xs text-teal-500 font-bold">Duty Destination Architect</p>
+                <p class="text-[11px] text-emerald-500 font-semibold flex items-center gap-1.5 mt-0.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  <span>Online &bull; Available for Live Consultation</span>
+                </p>
+              </div>
+            </div>
+
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+              When you submit your brief, our duty curator personally assesses flight routes, villa allotments, and private experiences before presenting your preliminary itinerary.
+            </p>
+
+            <div class="pt-3 border-t border-slate-100 dark:border-ocean-800 flex items-center justify-between text-xs">
+              <span class="text-slate-400">Direct Desk Hotline:</span>
+              <a href="tel:+919876543210" class="font-bold text-teal-500 hover:underline">+91 98765 43210</a>
+            </div>
+          </div>
+
+          <div class="p-8 rounded-3xl bg-gradient-to-br from-[#1A3B55] via-[#12283A] to-[#0B1924] text-white border border-[#9E6738]/40 shadow-xl space-y-3.5 relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-40 h-40 rounded-full bg-[#9E6738]/15 blur-2xl pointer-events-none"></div>
+
+            <div class="section-tag-badge">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>100% Financial Escrow</span>
+            </div>
+            <h4 class="text-lg font-bold font-heading text-white">Certified Travel Assurance</h4>
+            <p class="text-xs text-slate-200 leading-relaxed font-normal">
+              Every package is legally bonded with ATOL Shield #99482 and IATA #91-238491. Your deposits are held in safeguarded trust accounts until your journey begins.
+            </p>
+
+            <div class="pt-2 flex items-center gap-3 text-xs text-slate-300">
+              <div class="flex items-center gap-1.5">
+                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                <span>ATOL Protected</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                <span>IATA Accredited</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                <span>Client Monies Trust</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 bg-white dark:bg-ocean-900 rounded-3xl p-8 sm:p-10 border border-slate-200 dark:border-ocean-800 shadow-xl">
+          <div class="mb-8">
+            <div class="section-tag-badge">
+              <i class="fa-solid fa-file-signature"></i>
+              <span>Private Inquiry</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-black font-heading text-ocean-950 dark:text-white mt-1">
+              Commission Your Journey
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">Fill out your travel vision below. A senior destination director will contact you promptly.</p>
+          </div>
+
+          <form onsubmit="event.preventDefault(); showToast('Thank you! A Senior Concierge has been assigned to your request.', 'fa-circle-check'); this.reset()" class="space-y-5 text-xs">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="font-bold text-slate-700 dark:text-slate-300 block mb-1.5">First &amp; Last Name *</label>
+                <input type="text" required placeholder="Lord / Lady / Mr / Ms..." class="w-full p-3 rounded-xl border border-slate-200 dark:border-ocean-700 bg-slate-50 dark:bg-ocean-850 text-slate-900 dark:text-white focus:outline-none focus:border-teal-400 text-xs">
+              </div>
+              <div>
+                <label class="font-bold text-slate-700 dark:text-slate-300 block mb-1.5">Email Address *</label>
+                <input type="email" required placeholder="contact@example.com" class="w-full p-3 rounded-xl border border-slate-200 dark:border-ocean-700 bg-slate-50 dark:bg-ocean-850 text-slate-900 dark:text-white focus:outline-none focus:border-teal-400 text-xs">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="font-bold text-slate-700 dark:text-slate-300 block mb-1.5">Telephone / WhatsApp *</label>
+                <input type="tel" required placeholder="+44 / +1 / +971..." class="w-full p-3 rounded-xl border border-slate-200 dark:border-ocean-700 bg-slate-50 dark:bg-ocean-850 text-slate-900 dark:text-white focus:outline-none focus:border-teal-400 text-xs">
+              </div>
+              <div>
+                <label class="font-bold text-slate-700 dark:text-slate-300 block mb-1.5">Destination Wishlist</label>
+                <select class="w-full p-3 rounded-xl border border-slate-200 dark:border-ocean-700 bg-slate-50 dark:bg-ocean-850 text-slate-900 dark:text-white focus:outline-none focus:border-teal-400 text-xs">
+                  <option value="maldives">Maldives Overwater Sanctuaries</option>
+                  <option value="swiss">Swiss Alps &amp; Glacier Rail</option>
+                  <option value="rajasthan">Rajasthan Royal Heritage Palaces</option>
+                  <option value="kashmir">Kashmir &amp; Dal Lake Luxury Shikaras</option>
+                  <option value="japan">Kyoto Ryokans &amp; Mount Fuji</option>
+                  <option value="greece">Santorini &amp; Cyclades Yacht Charter</option>
+                  <option value="bespoke">Bespoke Multi-Country Odyssey</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="font-bold text-slate-700 dark:text-slate-300 block mb-1.5">Estimated Party Size</label>
+                <select class="w-full p-3 rounded-xl border border-slate-200 dark:border-ocean-700 bg-slate-50 dark:bg-ocean-850 text-slate-900 dark:text-white focus:outline-none focus:border-teal-400 text-xs">
+                  <option value="couple">Couple / Newlyweds (2 Guests)</option>
+                  <option value="solo">Solo Luxury Explorer</option>
+                  <option value="family-small">Family with Children (3-4 Guests)</option>
+                  <option value="family-large">Multi-Generational Group (5+ Guests)</option>
+                  <option value="buyout">Private Villa / Island Buyout</option>
+                </select>
+              </div>
+              <div>
+                <label class="font-bold text-slate-700 dark:text-slate-300 block mb-1.5">Target Travel Window</label>
+                <input type="text" placeholder="e.g. October 2026 / Flexible" class="w-full p-3 rounded-xl border border-slate-200 dark:border-ocean-700 bg-slate-50 dark:bg-ocean-850 text-slate-900 dark:text-white focus:outline-none focus:border-teal-400 text-xs">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="font-bold text-slate-700 dark:text-slate-300 block mb-1.5">Preferred Sanctuary Style *</label>
+                <select class="w-full p-3 rounded-xl border border-slate-200 dark:border-ocean-700 bg-slate-50 dark:bg-ocean-850 text-slate-900 dark:text-white focus:outline-none focus:border-teal-400 text-xs">
+                  <option value="overwater">Overwater Lagoon Pool Villa</option>
+                  <option value="alpine">Private Alpine Ski Chalet</option>
+                  <option value="palace">Historic Royal Palace Suite</option>
+                  <option value="clifftop">Clifftop Mediterranean Sanctuary</option>
+                  <option value="safari">Private Luxury Safari Lodge</option>
+                </select>
+              </div>
+              <div>
+                <label class="font-bold text-slate-700 dark:text-slate-300 block mb-1.5">Estimated Journey Budget *</label>
+                <select class="w-full p-3 rounded-xl border border-slate-200 dark:border-ocean-700 bg-slate-50 dark:bg-ocean-850 text-slate-900 dark:text-white focus:outline-none focus:border-teal-400 text-xs">
+                  <option value="15k-30k">$15,000 - $30,000 (Premier Collection)</option>
+                  <option value="30k-60k">$30,000 - $60,000 (VIP Reserve)</option>
+                  <option value="60k-120k">$60,000 - $120,000 (Presidential)</option>
+                  <option value="120k+">$120,000+ (Private Island / Jet Buyout)</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="font-bold text-slate-700 dark:text-slate-300 block mb-1.5">Bespoke Requests &amp; Notes</label>
+              <textarea rows="4" placeholder="Tell us about special celebrations, private jet requests, dietary preferences, or specific villa features..." class="w-full p-3 rounded-xl border border-slate-200 dark:border-ocean-700 bg-slate-50 dark:bg-ocean-850 text-slate-900 dark:text-white focus:outline-none focus:border-teal-400 text-xs resize-none"></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary w-full py-4 rounded-xl text-sm font-bold shadow-lg flex items-center justify-center gap-2">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Submit Confidential Travel Brief</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact-recommendations" class="py-20 sm:py-28 bg-white dark:bg-ocean-950 transition-colors duration-300 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+
+          <div class="lg:col-span-6 space-y-6 sm:space-y-8">
+
+            <h2 class="text-3xl sm:text-4xl lg:text-[44px] xl:text-[48px] font-bold font-heading text-ocean-950 dark:text-white leading-[1.18] tracking-tight">
+              We Recommend <span class="font-serif italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#9E6738] via-[#B87B47] to-[#DF6951] dark:from-[#F6D8AC] dark:via-[#DEB17E] dark:to-[#9E6738]">Beautiful</span><br>Destinations Every Month
+            </h2>
+
+            <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed font-body">
+              Travique is a multi-award-winning strategy and bespoke travel atelier curating non-commercial expeditions, unlisted private sanctuaries, and seamless private aviation worldwide.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-6 pt-2">
+
+              <div class="p-6 rounded-2xl bg-[#1A3B55] dark:bg-ocean-900 border border-[#1A3B55] dark:border-ocean-800 text-center flex flex-col items-center justify-center shrink-0 w-full sm:w-36 shadow-lg shadow-[#1A3B55]/20 group">
+                <span class="text-3xl sm:text-4xl font-black font-heading text-amber-400 dark:text-amber-300 leading-none">
+                  24/7
+                </span>
+                <span class="text-xs sm:text-sm font-bold text-white leading-tight mt-2 block">
+                  Guide<br>Support
+                </span>
+              </div>
+
+              <div class="space-y-4 flex-1 min-w-0">
+
+                <div class="flex items-start gap-3.5">
+                  <div class="w-11 h-11 rounded-full bg-amber-500/15 dark:bg-amber-400/20 text-[#9E6738] dark:text-amber-400 flex items-center justify-center shrink-0 text-lg shadow-sm">
+                    <i class="fa-solid fa-compass"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-base font-bold text-ocean-950 dark:text-white font-heading">
+                      Trusted Travel Guide
+                    </h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                      Provides reliable information to help travelers plan their trips efficiently and safely.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3.5">
+                  <div class="w-11 h-11 rounded-full bg-amber-500/15 dark:bg-amber-400/20 text-[#9E6738] dark:text-amber-400 flex items-center justify-center shrink-0 text-lg shadow-sm">
+                    <i class="fa-solid fa-bullseye"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-base font-bold text-ocean-950 dark:text-white font-heading">
+                      Mission &amp; Vision
+                    </h4>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                      Aims to connect people to positive experience through travel, helping them see the world differently.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex flex-wrap items-center gap-6 pt-3">
+
+              <a href="destinations.html" class="btn-primary !rounded-full inline-flex items-center justify-center gap-2.5 px-8 py-3.5 text-sm font-bold shadow-xl shadow-[#1A3B55]/20 hover:-translate-y-0.5 transition-all duration-300">
+                <span>Discover More</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+
+              <div class="flex items-center gap-3">
+                <div class="flex -space-x-2.5">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="Happy Traveler 1" class="w-10 h-10 rounded-full border-2 border-white dark:border-ocean-900 object-cover shadow-sm">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80" alt="Happy Traveler 2" class="w-10 h-10 rounded-full border-2 border-white dark:border-ocean-900 object-cover shadow-sm">
+                  <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=80&q=80" alt="Happy Traveler 3" class="w-10 h-10 rounded-full border-2 border-white dark:border-ocean-900 object-cover shadow-sm">
+                </div>
+                <div>
+                  <span class="block text-base font-black text-ocean-950 dark:text-white font-heading leading-tight">
+                    3.5K
+                  </span>
+                  <span class="block text-[10px] font-bold text-slate-400 dark:text-slate-400 uppercase tracking-wider">
+                    Happy Customer
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="lg:col-span-6 relative flex justify-center items-center">
+            <div class="relative w-full max-w-[560px] flex items-center justify-center">
+
+              <div class="absolute w-[360px] h-[360px] rounded-full bg-gradient-to-tr from-amber-500/10 via-teal-500/10 to-transparent blur-3xl pointer-events-none -z-0"></div>
+
+              <img src="contact-hiker-light.jpg" alt="We Recommend Beautiful Destinations - Adventurer climbing rock with alpine mountain vista" class="w-full h-auto object-contain select-none drop-shadow-2xl hover:scale-102 transition-transform duration-500 relative z-10 dark:hidden block rounded-3xl" style="mask-image: radial-gradient(circle at 50% 50%, black 72%, transparent 99%); -webkit-mask-image: radial-gradient(circle at 50% 50%, black 72%, transparent 99%);">
+
+              <img src="contact-hiker-dark.jpg" alt="We Recommend Beautiful Destinations - Adventurer climbing rock with alpine mountain vista" class="w-full h-auto object-contain select-none drop-shadow-2xl hover:scale-102 transition-transform duration-500 relative z-10 hidden dark:block rounded-3xl" style="mask-image: radial-gradient(circle at 50% 50%, black 72%, transparent 99%); -webkit-mask-image: radial-gradient(circle at 50% 50%, black 72%, transparent 99%);">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-channels" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="section-tag-badge">
+          <i class="fa-solid fa-comments"></i>
+          <span>Multi-Channel Access</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-black font-heading text-ocean-950 dark:text-white mt-2">
+          Direct Priority Communication
+        </h2>
+        <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">
+          Reach our senior team instantly through your preferred communications channel.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <a href="https://wa.me/919876543210" target="_blank" class="p-6 rounded-3xl bg-white dark:bg-ocean-900 border border-slate-200 dark:border-ocean-800 shadow-sm hover:border-teal-400 hover:shadow-xl transition-all group block">
+          <div class="w-12 h-12 rounded-2xl bg-teal-500/10 text-teal-500 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <h4 class="text-base font-bold text-ocean-950 dark:text-white">WhatsApp Butler</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Instant chat &amp; voice notes with duty concierges.</p>
+          <div class="text-xs font-bold text-teal-500 mt-3">+91 98765 43210 &rarr;</div>
+        </a>
+
+        <a href="tel:+919876543210" class="p-6 rounded-3xl bg-white dark:bg-ocean-900 border border-slate-200 dark:border-ocean-800 shadow-sm hover:border-teal-400 hover:shadow-xl transition-all group block">
+          <div class="w-12 h-12 rounded-2xl bg-teal-500/10 text-teal-500 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <h4 class="text-base font-bold text-ocean-950 dark:text-white">VIP Priority Line</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Direct phone access without automated menus.</p>
+          <div class="text-xs font-bold text-teal-500 mt-3">+91 98765 43210 &rarr;</div>
+        </a>
+
+        <a href="mailto:concierge@travique.com" class="p-6 rounded-3xl bg-white dark:bg-ocean-900 border border-slate-200 dark:border-ocean-800 shadow-sm hover:border-teal-400 hover:shadow-xl transition-all group block">
+          <div class="w-12 h-12 rounded-2xl bg-teal-500/10 text-teal-500 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <h4 class="text-base font-bold text-ocean-950 dark:text-white">Encrypted Email</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Send comprehensive itinerary requirements.</p>
+          <div class="text-xs font-bold text-teal-500 mt-3">concierge@travique.com &rarr;</div>
+        </a>
+
+        <a href="#" onclick="showToast('Video Consultation Scheduler launched.', 'fa-video')" class="p-6 rounded-3xl bg-white dark:bg-ocean-900 border border-slate-200 dark:border-ocean-800 shadow-sm hover:border-teal-400 hover:shadow-xl transition-all group block">
+          <div class="w-12 h-12 rounded-2xl bg-teal-500/10 text-teal-500 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-video"></i>
+          </div>
+          <h4 class="text-base font-bold text-ocean-950 dark:text-white">Virtual Zoom Atelier</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Interactive screen-share map planning sessions.</p>
+          <div class="text-xs font-bold text-teal-500 mt-3">Book Video Call &rarr;</div>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact-faqs" class="py-16 md:py-20 bg-slate-100/60 dark:bg-ocean-900/40 border-y border-slate-200 dark:border-ocean-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="p-8 md:p-12 rounded-3xl bg-white dark:bg-ocean-900 border border-slate-200 dark:border-ocean-800 shadow-sm">
+          <div class="max-w-3xl mx-auto space-y-6">
+            <div class="text-center space-y-2 mb-8">
+              <div class="section-tag-badge">
+                <i class="fa-solid fa-circle-question"></i>
+                <span>Consultation Knowledge</span>
+              </div>
+              <h3 class="text-2xl sm:text-4xl font-normal font-heading text-ocean-950 dark:text-white">
+                Frequently Asked Concierge <span class="font-serif italic text-transparent bg-clip-text bg-gradient-to-r from-[#9E6738] via-[#DEB17E] to-[#9E6738] dark:from-[#F6D8AC] dark:via-[#D4AF37] dark:to-[#9E6738]">Questions</span>
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400">Everything you need to know about our commission process and bespoke planning.</p>
+            </div>
+
+            <div class="space-y-3.5" id="contact-faq-accordion">
+
+              <div class="contact-faq-item rounded-2xl bg-slate-50 dark:bg-ocean-850 border border-slate-200/80 dark:border-ocean-700 overflow-hidden transition-all duration-300 ring-1 ring-[#9E6738]/40 shadow-sm">
+                <button type="button" onclick="toggleContactFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-ocean-950 dark:text-white cursor-pointer group">
+                  <span class="group-hover:text-[#9E6738] dark:group-hover:text-[#DEB17E] transition-colors">How does the bespoke commission process work?</span>
+                  <div class="w-8 h-8 rounded-full bg-[#9E6738]/15 dark:bg-[#DEB17E]/20 text-[#9E6738] dark:text-[#DEB17E] flex items-center justify-center shrink-0 transition-transform duration-300 faq-chevron rotate-180">
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                  </div>
+                </button>
+                <div class="contact-faq-answer px-5 pb-5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  <div class="pt-2 border-t border-slate-200/60 dark:border-ocean-700/60">
+                    After your initial inquiry, your assigned senior curator drafts a preliminary route with exclusive villa allotments within 24 hours. Once aligned on preferences, we coordinate all VIP reservations, seaplane/jet transfers, expedited tarmac clearances, and dedicated concierge links.
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-faq-item rounded-2xl bg-slate-50 dark:bg-ocean-850 border border-slate-200/80 dark:border-ocean-700 overflow-hidden transition-all duration-300">
+                <button type="button" onclick="toggleContactFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-ocean-950 dark:text-white cursor-pointer group">
+                  <span class="group-hover:text-[#9E6738] dark:group-hover:text-[#DEB17E] transition-colors">Can you arrange private jet charters and luxury helicopter links?</span>
+                  <div class="w-8 h-8 rounded-full bg-[#9E6738]/15 dark:bg-[#DEB17E]/20 text-[#9E6738] dark:text-[#DEB17E] flex items-center justify-center shrink-0 transition-transform duration-300 faq-chevron">
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                  </div>
+                </button>
+                <div class="contact-faq-answer px-5 pb-5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed hidden">
+                  <div class="pt-2 border-t border-slate-200/60 dark:border-ocean-700/60">
+                    Yes. Through our private aviation partnerships, we provide point-to-point jet charters (Citation, Gulfstream G650, Bombardier Global 7500) and seaplane transfers directly to island jetties with private tarmac escorts avoiding commercial terminal delays.
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-faq-item rounded-2xl bg-slate-50 dark:bg-ocean-850 border border-slate-200/80 dark:border-ocean-700 overflow-hidden transition-all duration-300">
+                <button type="button" onclick="toggleContactFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-ocean-950 dark:text-white cursor-pointer group">
+                  <span class="group-hover:text-[#9E6738] dark:group-hover:text-[#DEB17E] transition-colors">How are client monies protected and what escrow guarantees apply?</span>
+                  <div class="w-8 h-8 rounded-full bg-[#9E6738]/15 dark:bg-[#DEB17E]/20 text-[#9E6738] dark:text-[#DEB17E] flex items-center justify-center shrink-0 transition-transform duration-300 faq-chevron">
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                  </div>
+                </button>
+                <div class="contact-faq-answer px-5 pb-5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed hidden">
+                  <div class="pt-2 border-t border-slate-200/60 dark:border-ocean-700/60">
+                    Every Travique package is legally bonded under ATOL Protection Shield #99482 and IATA accreditation. 100% of client deposits are held in independent ring-fenced escrow trust accounts until your journey begins, backed by 14-day flexible modification rights.
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-faq-item rounded-2xl bg-slate-50 dark:bg-ocean-850 border border-slate-200/80 dark:border-ocean-700 overflow-hidden transition-all duration-300">
+                <button type="button" onclick="toggleContactFaq(this)" class="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-ocean-950 dark:text-white cursor-pointer group">
+                  <span class="group-hover:text-[#9E6738] dark:group-hover:text-[#DEB17E] transition-colors">How are special dietary requirements and medical requests coordinated?</span>
+                  <div class="w-8 h-8 rounded-full bg-[#9E6738]/15 dark:bg-[#DEB17E]/20 text-[#9E6738] dark:text-[#DEB17E] flex items-center justify-center shrink-0 transition-transform duration-300 faq-chevron">
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                  </div>
+                </button>
+                <div class="contact-faq-answer px-5 pb-5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed hidden">
+                  <div class="pt-2 border-t border-slate-200/60 dark:border-ocean-700/60">
+                    Your concierge liaises directly with resort executive chefs and airlines ahead of time to guarantee halal, kosher, vegan, or strict allergen-safe dining throughout your voyage. Private doctors and medical escorts can also be commissioned upon request.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-cta" class="py-16 md:py-24 bg-transparent relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-3xl sm:rounded-[36px] bg-[#12283A] dark:bg-[#0B1924] text-white border border-[#9E6738]/40 dark:border-ocean-700 shadow-2xl relative overflow-hidden flex flex-col lg:flex-row items-stretch group">
+
+          <div class="relative lg:w-1/2 h-64 sm:h-80 lg:h-auto min-h-[260px] lg:min-h-[380px] overflow-hidden shrink-0">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=85" alt="Alpine Mountain Lake and Pine Forests" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none lg:hidden"></div>
+
+            <svg class="hidden lg:block absolute top-0 -right-[1px] h-full w-24 text-[#12283A] dark:text-[#0B1924] z-10 pointer-events-none" viewBox="0 0 100 400" preserveAspectRatio="none" fill="currentColor">
+              <path d="M0,0 C45,100 15,280 85,400 L100,400 L100,0 Z"></path>
+            </svg>
+          </div>
+
+          <div class="relative lg:w-1/2 p-7 sm:p-10 lg:p-12 xl:p-14 flex flex-col justify-center items-start z-10 bg-[#12283A] dark:bg-[#0B1924]">
+
+            <div class="absolute top-1/2 -left-10 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="absolute top-0 right-0 w-24 h-24 overflow-hidden pointer-events-none select-none opacity-80">
+              <svg viewBox="0 0 100 100" class="w-full h-full text-emerald-400/70 dark:text-emerald-300/60" fill="currentColor">
+                <path d="M100,0 C90,20 70,30 50,35 C70,45 80,65 85,85 C90,65 95,45 100,35 Z" opacity="0.65"></path>
+                <path d="M100,15 C92,30 78,38 65,42 C78,50 85,62 88,75 C92,62 96,50 100,42 Z" opacity="0.85"></path>
+                <path d="M85,0 C78,15 65,22 55,25 C65,32 72,42 75,55 C78,42 82,32 85,25 Z" opacity="0.5"></path>
+              </svg>
+            </div>
+
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#F59E0B] dark:text-[#DEB17E] mb-3">
+              <span>SPECIAL OFFER</span>
+              <i class="fa-solid fa-leaf text-[11px] text-[#F59E0B] dark:text-[#DEB17E]"></i>
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl lg:text-[40px] xl:text-[44px] font-heading font-bold text-white leading-[1.15] tracking-tight mb-3 sm:mb-4 !text-white drop-shadow-sm">
+              Your Next Adventure<br>Starts Here
+            </h2>
+
+            <p class="text-slate-200 text-xs sm:text-sm leading-relaxed mb-6 sm:mb-7 font-normal max-w-md !text-slate-200 drop-shadow-sm">
+              Exclusive packages. Flexible bookings.<br class="hidden sm:inline">
+              Memories that last a lifetime.
+            </p>
+
+            <div>
+              <a href="packages.html" class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-xs sm:text-sm shadow-lg shadow-orange-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 group cursor-pointer">
+                <span>Discover Packages</span>
+                <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+
+            <div class="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-36 sm:w-48 lg:w-56 h-auto pointer-events-none select-none z-10">
+              <div class="absolute inset-0 bg-amber-500/15 rounded-full blur-xl pointer-events-none"></div>
+              <img src="cta-orange-lily.png" alt="Orange Lily Botanical Blossom" class="w-full h-auto object-contain drop-shadow-2xl relative z-10 hover:scale-105 transition-transform duration-500">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="login-modal" class="modal-overlay fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-ocean-900 rounded-3xl max-w-md w-full border border-slate-200 dark:border-ocean-800 shadow-2xl overflow-hidden relative">
+      <button onclick="closeModal('login-modal')" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 dark:bg-ocean-800 text-slate-400 hover:text-slate-600 dark:hover:text-white flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="h-10 w-auto flex items-center">
+            <img src="logo-light.png" alt="Travique Logo" class="h-10 w-auto object-contain dark:hidden">
+            <img src="logo-dark.png" alt="Travique Logo" class="h-10 w-auto object-contain hidden dark:block">
+          </div>
+          <span class="text-xl font-black font-heading text-ocean-950 dark:text-white">TRAVIQUE PORTAL</span>
+        </div>
+
+        <h3 class="text-2xl font-bold font-heading text-ocean-950 dark:text-white">Traveler Sign In</h3>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Access your bookings, boarding passes, and custom itineraries.</p>
+
+        <div class="mt-6 p-3.5 rounded-2xl bg-teal-50 dark:bg-teal-950/30 border border-teal-200 dark:border-teal-800 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sophia Vance" class="w-10 h-10 rounded-full object-cover ring-2 ring-teal-400">
+            <div>
+              <p class="text-xs font-bold text-slate-900 dark:text-white">Sophia Vance</p>
+              <span class="text-[10px] text-teal-500 font-bold">Diamond Club Traveler</span>
+            </div>
+          </div>
+          <button onclick="handleLoginSubmit()" class="px-3 py-1.5 rounded-xl btn-secondary text-xs font-bold">
+            Instant Demo
+          </button>
+        </div>
+
+        <div class="relative my-6 text-center">
+          <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-slate-200 dark:border-ocean-800"></div></div>
+          <span class="relative px-3 bg-white dark:bg-ocean-900 text-xs text-slate-400 font-medium">Or enter traveler credentials</span>
+        </div>
+
+        <form onsubmit="handleLoginSubmit(event)" class="space-y-4 text-xs">
+          <div>
+            <label class="font-bold text-slate-700 dark:text-slate-300 block mb-1">Traveler Email</label>
+            <input type="email" value="sophia.vance@travique.com" required class="w-full p-2.5 rounded-xl border border-slate-200 dark:border-ocean-700 bg-slate-50 dark:bg-ocean-850 text-slate-900 dark:text-white focus:outline-none focus:border-teal-400">
+          </div>
+
+          <div>
+            <label class="font-bold text-slate-700 dark:text-slate-300 block mb-1">Password</label>
+            <input type="password" value="password123" required class="w-full p-2.5 rounded-xl border border-slate-200 dark:border-ocean-700 bg-slate-50 dark:bg-ocean-850 text-slate-900 dark:text-white focus:outline-none focus:border-teal-400">
+          </div>
+
+          <div class="flex items-center justify-between text-slate-500">
+            <label class="flex items-center gap-1.5 cursor-pointer">
+              <input type="checkbox" checked class="rounded text-teal-500 accent-teal-500">
+              <span>Remember me</span>
+            </label>
+            <a href="#" onclick="showToast('Password reset link sent to registered email.', 'fa-envelope')" class="hover:text-teal-400">Forgot?</a>
+          </div>
+
+          <button type="submit" class="w-full py-3 rounded-xl btn-primary text-sm font-bold">
+            Sign In to Dashboard
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="ticket-modal" class="modal-overlay fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-transparent max-w-2xl w-full my-8 relative">
+      <div id="ticket-modal-content"></div>
+    </div>
+  </div>
+
+  <div id="invoice-modal" class="modal-overlay fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-transparent max-w-2xl w-full my-8 relative">
+      <div id="invoice-modal-content"></div>
+    </div>
+  </div>
+
+  <div id="package-detail-modal" class="modal-overlay fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white dark:bg-ocean-900 rounded-3xl max-w-3xl w-full my-8 border border-slate-200 dark:border-ocean-800 shadow-2xl relative overflow-hidden">
+      <button onclick="closeModal('package-detail-modal')" class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-black/50 text-white hover:bg-black flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="package-detail-modal-content"></div>
+    </div>
+  </div>
+
+  <div id="booking-checkout-modal" class="modal-overlay fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white dark:bg-ocean-900 rounded-3xl max-w-lg w-full my-8 border border-slate-200 dark:border-ocean-800 shadow-2xl relative overflow-hidden">
+      <button onclick="closeModal('booking-checkout-modal')" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 dark:bg-ocean-800 text-slate-400 hover:text-slate-600 dark:hover:text-white flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="booking-checkout-modal-content"></div>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+
+>>>>>>> 107638ee6bc6b2e4c7a4a43a5f47d9382c9597dd
 <footer class="site-footer pt-16 pb-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -1094,6 +2012,7 @@
         </div>
       </div>
     </div>
+<<<<<<< HEAD
   </footer>
 
 <div id="contact-video-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
@@ -1118,3 +2037,29 @@
   <script src="contact.js"></script>
 </body>
 </html>
+=======
+  </footer>
+
+<div id="contact-video-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+    <div class="relative w-full max-w-3xl bg-ocean-950 rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+      <div class="p-4 bg-ocean-900 border-b border-ocean-800 flex items-center justify-between">
+        <div class="flex items-center gap-2 text-white font-bold text-sm">
+          <i class="fa-solid fa-play text-[#DF6951]"></i>
+          <span>Travique Luxury Experience Showcase</span>
+        </div>
+        <button onclick="closeModal('contact-video-modal')" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center text-xs transition-colors" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="relative aspect-video w-full">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/gbpG0fW3vkI" title="Travel, enjoy and live a new and full life" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script src="contact.js"></script>
+</body>
+</html>
+>>>>>>> 107638ee6bc6b2e4c7a4a43a5f47d9382c9597dd

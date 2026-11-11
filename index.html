@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth">
 <head>
@@ -1068,3 +1069,1075 @@
   <script src="home-1.js"></script>
 </body>
 </html>
+=======
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travique - Luxury Travel & Holiday Package Platform</title>
+  <meta name="description" content="Explore handcrafted domestic & international holiday packages, romantic honeymoon tours, and manage your trips via the Travique Traveler Dashboard.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&family=Urbanist:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+
+  <link rel="icon" type="image/png" href="logo-light.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home-1.css">
+</head>
+<body class="bg-slate-50 dark:bg-ocean-950 text-slate-800 dark:text-slate-100 font-body transition-colors duration-300">
+
+  <header class="site-header">
+    <div class="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8">
+      <div class="header-inner-row flex items-center justify-between h-20 transition-all duration-300">
+
+        <a href="index.html" class="flex items-center gap-2 sm:gap-3 group shrink-0 -ml-1 sm:ml-0">
+          <div class="relative h-10 sm:h-12 w-auto flex items-center shrink-0">
+            <img src="logo-light.png" alt="Travique Logo" class="header-logo-img h-10 sm:h-12 w-auto object-contain dark:hidden group-hover:scale-105 transition-all duration-300">
+            <img src="logo-dark.png" alt="Travique Logo" class="header-logo-img h-10 sm:h-12 w-auto object-contain hidden dark:block group-hover:scale-105 transition-all duration-300">
+          </div>
+          <div class="flex flex-col items-start sm:items-center text-left sm:text-center">
+            <span class="text-xl sm:text-2xl font-black font-heading tracking-tight text-ocean-900 dark:text-white group-hover:text-teal-400 transition-colors">
+              Travique
+            </span>
+            <span class="text-[6.5px] sm:text-[7.5px] font-bold tracking-[0.12em] sm:tracking-[0.14em] text-[#9E6738] uppercase mt-0.5 whitespace-nowrap text-left sm:text-center">
+              Escape. Explore. Experience
+            </span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center justify-center gap-1 xl:gap-2">
+
+          <div class="nav-dropdown-wrapper relative group" id="home-dropdown">
+            <button data-view="home" class="nav-link active flex items-center gap-1.5 cursor-pointer" id="home-nav-trigger" aria-haspopup="true" aria-expanded="false" onclick="toggleHomeDropdown(event)">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down text-[10px] transition-transform duration-200 group-hover:rotate-180"></i>
+            </button>
+            <div class="nav-dropdown-menu" id="home-dropdown-menu">
+              <button data-view="home-1" onclick="window.location.href='index.html'" class="dropdown-item flex items-center gap-3 active">
+                <div class="w-8 h-8 rounded-lg bg-[#9E6738]/20 text-[#9E6738] flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-compass text-sm"></i>
+                </div>
+                <div class="text-left rtl:text-right">
+                  <span class="block font-bold text-sm text-[#9E6738] dark:text-[#C9935E] item-title">Home 1</span>
+                  <span class="block text-[11px] text-slate-500 dark:text-slate-400 font-normal">Classic Luxury &amp; Explorer</span>
+                </div>
+              </button>
+              <button data-view="home-2" onclick="window.location.href='home-2.html'" class="dropdown-item flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-crown text-sm"></i>
+                </div>
+                <div class="text-left rtl:text-right">
+                  <span class="block font-bold text-sm text-slate-800 dark:text-slate-100 item-title">Home 2</span>
+                  <span class="block text-[11px] text-slate-500 dark:text-slate-400 font-normal">Panoramic Escapes &amp; VIP Lounge</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <button data-view="about" onclick="window.location.href='about.html'" class="nav-link">
+            About Us
+          </button>
+          <button data-view="destinations" onclick="window.location.href='destinations.html'" class="nav-link">
+            Destinations
+          </button>
+          <button data-view="packages" onclick="window.location.href='packages.html'" class="nav-link">
+            Holiday Packages
+          </button>
+          <button data-view="contact" onclick="window.location.href='contact.html'" class="nav-link">
+            Contact Us
+          </button>
+          <button data-view="dashboard" onclick="window.location.href='dashboard.html'" class="nav-link">
+            Dashboard
+          </button>
+        </nav>
+
+        <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+          <button id="dir-toggle-btn" onclick="toggleDirection()" class="ctrl-btn ctrl-btn-icon w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center p-0" title="Toggle Layout Direction (LTR / RTL)" aria-label="Toggle Direction">
+            <i class="fa-solid fa-right-left text-[#9E6738] dark:text-[#DEB17E] text-xs sm:text-sm"></i>
+          </button>
+
+          <button id="theme-toggle-btn" onclick="toggleDarkMode()" class="ctrl-btn ctrl-btn-icon w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center p-0" title="Toggle Theme (Light / Dark)" aria-label="Toggle Dark Mode">
+            <i class="fa-solid fa-moon text-[#9E6738] dark:text-[#DEB17E] text-xs sm:text-sm"></i>
+          </button>
+
+          <div id="auth-button-container">
+            <button onclick="openLoginModal()" class="ctrl-btn ctrl-btn-primary px-2.5 sm:px-4 py-1.5 sm:py-2 text-xs flex items-center gap-1.5 font-bold">
+              <i class="fa-solid fa-user text-xs"></i>
+              <span>Login</span>
+            </button>
+          </div>
+
+          <button id="mobile-menu-toggle" class="lg:hidden p-1.5 sm:p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:text-teal-400">
+            <i class="fa-solid fa-bars-staggered text-lg sm:text-xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mobile-menu-drawer" class="lg:hidden hidden px-4 pt-2 pb-6 bg-white dark:bg-ocean-900 border-b border-slate-200 dark:border-ocean-800 shadow-xl space-y-2">
+      <div class="mobile-dropdown border-b border-slate-200 dark:border-ocean-800/60 pb-2">
+        <button onclick="toggleMobileHomeSubmenu()" class="flex items-center justify-between w-full py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium hover:text-teal-400">
+          <span class="flex items-center gap-2">
+            <i class="fa-solid fa-house text-teal-400 text-sm"></i>
+            <span>Home</span>
+          </span>
+          <i id="mobile-home-chevron" class="fa-solid fa-chevron-down text-xs transition-transform duration-200"></i>
+        </button>
+        <div id="mobile-home-submenu" class="pl-6 space-y-1 mt-1">
+          <button data-view="home-1" onclick="window.location.href='index.html'; closeMobileMenuDrawer();" class="mobile-nav-link block w-full text-left py-1.5 px-3 rounded-lg text-[#9E6738] dark:text-[#C9935E] hover:text-teal-400 text-sm font-bold bg-[#9E6738]/10">
+            <i class="fa-solid fa-compass text-[#9E6738] text-xs mr-2 rtl:ml-2 rtl:mr-0"></i>Home 1 (Classic Luxury)
+          </button>
+          <button data-view="home-2" onclick="window.location.href='home-2.html'; closeMobileMenuDrawer();" class="mobile-nav-link block w-full text-left py-1.5 px-3 rounded-lg text-slate-600 dark:text-slate-300 hover:text-teal-400 text-sm font-medium">
+            <i class="fa-solid fa-crown text-teal-500 text-xs mr-2 rtl:ml-2 rtl:mr-0"></i>Home 2 (Panoramic &amp; VIP)
+          </button>
+        </div>
+      </div>
+      <button data-view="about" onclick="window.location.href='about.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium">About Us</button>
+      <button data-view="destinations" onclick="window.location.href='destinations.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium">Destinations</button>
+      <button data-view="packages" onclick="window.location.href='packages.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium">Holiday Packages</button>
+      <button data-view="contact" onclick="window.location.href='contact.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-slate-700 dark:text-slate-200 font-medium">Contact Us</button>
+      <button data-view="dashboard" onclick="window.location.href='dashboard.html'; closeMobileMenuDrawer()" class="mobile-nav-link block w-full text-left py-2 px-3 rounded-lg text-teal-400 font-bold bg-teal-500/10">Dashboard</button>
+    </div>
+  </header>
+
+  <main>
+
+    <div id="view-home-1" class="view-section">
+      <section id="home-hero" class="home-1-sky-hero relative pt-8 pb-28 lg:pt-12 lg:pb-36 border-b border-slate-200 dark:border-ocean-800">
+
+        <div class="absolute inset-0 w-full h-full pointer-events-none select-none z-10 overflow-hidden">
+          <svg class="w-full h-full" viewBox="0 0 1440 600" preserveAspectRatio="none" fill="none">
+            <defs>
+              <linearGradient id="flightTrailLight" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#9E6738" stop-opacity="0.1" />
+                <stop offset="35%" stop-color="#1A3B55" stop-opacity="0.45" />
+                <stop offset="55%" stop-color="#9E6738" stop-opacity="0.7" />
+                <stop offset="100%" stop-color="#1A3B55" stop-opacity="0.8" />
+              </linearGradient>
+              <linearGradient id="flightTrailDark" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#C9935E" stop-opacity="0.1" />
+                <stop offset="45%" stop-color="#38BDF8" stop-opacity="0.55" />
+                <stop offset="70%" stop-color="#F5ECD7" stop-opacity="0.8" />
+                <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.9" />
+              </linearGradient>
+            </defs>
+
+            <path id="heroFlightPath"
+                  d="M -50 540 C 200 500, 440 400, 620 280 C 700 220, 770 120, 700 85 C 620 50, 545 130, 575 220 C 605 305, 685 330, 765 285 C 960 175, 1200 80, 1500 -40"
+                  stroke="url(#flightTrailLight)"
+                  stroke-width="2.5"
+                  stroke-dasharray="8 8"
+                  stroke-linecap="round"
+                  class="dark:stroke-[url(#flightTrailDark)] opacity-65 dark:opacity-85 transition-opacity" />
+
+            <g class="hero-airplane-group">
+              <animateMotion dur="13s" repeatCount="indefinite" rotate="auto">
+                <mpath href="#heroFlightPath" />
+              </animateMotion>
+              <g transform="scale(0.9)" class="filter drop-shadow-[0_4px_10px_rgba(0,0,0,0.4)] dark:drop-shadow-[0_0_12px_rgba(56,189,248,0.6)]">
+
+                <rect x="-4" y="-18" width="12" height="4.5" rx="2" fill="#9E6738" class="dark:fill-[#C9935E]" />
+                <rect x="-4" y="13.5" width="12" height="4.5" rx="2" fill="#9E6738" class="dark:fill-[#C9935E]" />
+
+                <path d="M 6 0 L -8 -32 L -16 -32 L -8 0 L -16 32 L -8 32 Z" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="0.5" class="dark:fill-[#94A3B8]" />
+
+                <path d="M -24 0 L -34 -14 L -39 -14 L -33 0 L -39 14 L -34 14 Z" fill="#CBD5E1" class="dark:fill-[#64748B]" />
+
+                <path d="M 32 0 C 32 4.5, 20 6.5, 0 6.5 C -18 6.5, -34 4.5, -38 0 C -34 -4.5, -18 -6.5, 0 -6.5 C 20 -6.5, 32 -4.5, 32 0 Z"
+                      fill="#FFFFFF" stroke="#1A3B55" stroke-width="0.8" class="dark:stroke-[#9E6738]" />
+
+                <path d="M 23 -3.2 C 25 -2, 26 0, 26 0 C 26 0, 25 2, 23 3.2 L 18 3.5 L 19.5 0 L 18 -3.5 Z" fill="#1A3B55" class="dark:fill-[#0B1924]" />
+
+                <path d="M 14 0 L -30 0" stroke="#9E6738" stroke-width="1.8" stroke-linecap="round" />
+
+                <circle cx="11" cy="-2.2" r="0.9" fill="#1A3B55" class="dark:fill-[#38BDF8]" />
+                <circle cx="7" cy="-2.2" r="0.9" fill="#1A3B55" class="dark:fill-[#38BDF8]" />
+                <circle cx="3" cy="-2.2" r="0.9" fill="#1A3B55" class="dark:fill-[#38BDF8]" />
+                <circle cx="-1" cy="-2.2" r="0.9" fill="#1A3B55" class="dark:fill-[#38BDF8]" />
+                <circle cx="-5" cy="-2.2" r="0.9" fill="#1A3B55" class="dark:fill-[#38BDF8]" />
+                <circle cx="-9" cy="-2.2" r="0.9" fill="#1A3B55" class="dark:fill-[#38BDF8]" />
+                <circle cx="-13" cy="-2.2" r="0.9" fill="#1A3B55" class="dark:fill-[#38BDF8]" />
+
+                <circle cx="-41" cy="0" r="2.5" fill="#C9935E" opacity="0.8" />
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+            <div class="lg:col-span-7 space-y-5">
+
+              <div class="section-tag-badge">
+                <i class="fa-solid fa-plane"></i>
+                <span>Handcrafted Luxury Holiday Packages</span>
+              </div>
+
+              <h1 class="text-4xl sm:text-5xl lg:text-[4rem] font-normal font-heading tracking-tight text-[#1A3B55] dark:text-white leading-[1.06]">
+                Journey Beyond the <span class="horizon-gradient">Horizon</span> with Travique.
+              </h1>
+
+              <p class="text-[15px] sm:text-base text-slate-700 dark:text-slate-200 font-normal max-w-xl leading-relaxed">
+                Immerse yourself in underwater sanctuaries, snow-clad alpine trails, and heritage desert citadels. Track bookings, view live itineraries, and access your tickets seamlessly in your Traveler Dashboard.
+              </p>
+
+              <div class="flex flex-wrap items-center gap-4 pt-1">
+                <button onclick="window.location.href='packages.html'" class="btn-primary text-sm font-bold flex items-center gap-2.5">
+                  <span>Explore Packages</span>
+                  <i class="fa-solid fa-arrow-right text-xs"></i>
+                </button>
+                <button onclick="window.location.href='dashboard.html'" class="btn-secondary text-sm font-bold flex items-center gap-2.5">
+                  <i class="fa-solid fa-compass text-base"></i>
+                  <span>Open Dashboard</span>
+                </button>
+              </div>
+
+              <div class="flex items-center gap-6 sm:gap-7 pt-4">
+                <div>
+                  <div class="text-2xl sm:text-3xl font-bold font-heading text-[#1A3B55] dark:text-white">120K+</div>
+                  <div class="text-xs font-semibold text-slate-600 dark:text-slate-300 mt-0.5">Happy Travelers</div>
+                </div>
+                <div class="h-9 w-[1.5px] bg-[#9E6738]/50"></div>
+                <div>
+                  <div class="text-2xl sm:text-3xl font-bold font-heading text-[#1A3B55] dark:text-white flex items-center gap-1.5">
+                    <span>4.97</span>
+                    <i class="fa-solid fa-star text-[#9E6738] text-xl"></i>
+                  </div>
+                  <div class="text-xs font-semibold text-slate-600 dark:text-slate-300 mt-0.5">Verified Reviews</div>
+                </div>
+                <div class="h-9 w-[1.5px] bg-[#9E6738]/50"></div>
+                <div>
+                  <div class="text-2xl sm:text-3xl font-bold font-heading text-[#1A3B55] dark:text-white">50+</div>
+                  <div class="text-xs font-semibold text-slate-600 dark:text-slate-300 mt-0.5">Global Destinations</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="lg:col-span-5 relative mt-4 lg:mt-0">
+              <div class="relative mx-auto max-w-md lg:max-w-none">
+
+                <div class="absolute -top-3.5 -right-3 z-30 cursor-pointer" onclick="openTicketModal('TRV-88219-MV')">
+                  <div class="bg-[#FAF6F0] dark:bg-ocean-900 rounded-2xl py-2 px-3.5 shadow-xl border border-[#9E6738]/40 flex items-center gap-2.5 hover:scale-105 transition-transform">
+                    <div class="w-8 h-8 rounded-xl bg-[#1A3B55] text-[#9E6738] flex items-center justify-center text-sm shadow-sm">
+                      <i class="fa-solid fa-ticket-simple"></i>
+                    </div>
+                    <div>
+                      <span class="text-[8.5px] uppercase font-bold tracking-wider text-[#A2703E] dark:text-[#E0B589] block leading-tight">BOARDING PASS READY</span>
+                      <span class="text-[11px] font-extrabold text-[#1A3B55] dark:text-white block leading-tight">1-Click Ticket PDF</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="hero-slider-card" class="rounded-[2.25rem] overflow-hidden shadow-2xl border-4 border-white dark:border-ocean-700 bg-[#0B1924] relative group aspect-[4/3] sm:aspect-[16/11] cursor-pointer" onclick="openPackageDetailsModal('pkg-intl-maldives')">
+
+                  <div class="hero-slide absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out opacity-100 scale-100">
+                    <img src="hero-maldives-classic.jpg" alt="Maldives Luxury Seaplane Island" class="w-full h-full object-cover block">
+                  </div>
+
+                  <div class="hero-slide absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out opacity-0 scale-105 pointer-events-none">
+                    <img src="hero-santorini.jpg" alt="Santorini Golden Sunset Caldera" class="w-full h-full object-cover block">
+                  </div>
+
+                  <div class="hero-slide absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out opacity-0 scale-105 pointer-events-none">
+                    <img src="hero-swiss.jpg" alt="Swiss Alps Alpine Waterfalls" class="w-full h-full object-cover block">
+                  </div>
+
+                  <div class="hero-slide absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out opacity-0 scale-105 pointer-events-none">
+                    <img src="hero-kyoto.jpg" alt="Kyoto Historic Twilight Lanterns" class="w-full h-full object-cover block">
+                  </div>
+
+                  <div class="hero-slide absolute inset-0 w-full h-full transition-all duration-1000 ease-in-out opacity-0 scale-105 pointer-events-none">
+                    <img src="luxury-yacht.jpg" alt="Mediterranean Luxury Yacht Voyage" class="w-full h-full object-cover block">
+                  </div>
+
+                  <div class="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/40 backdrop-blur-md border border-white/20">
+                    <button type="button" onclick="event.stopPropagation(); setHeroSlide(0)" class="hero-indicator w-6 h-1.5 rounded-full bg-white transition-all duration-300" aria-label="Slide 1"></button>
+                    <button type="button" onclick="event.stopPropagation(); setHeroSlide(1)" class="hero-indicator w-1.5 h-1.5 rounded-full bg-white/50 hover:bg-white transition-all duration-300" aria-label="Slide 2"></button>
+                    <button type="button" onclick="event.stopPropagation(); setHeroSlide(2)" class="hero-indicator w-1.5 h-1.5 rounded-full bg-white/50 hover:bg-white transition-all duration-300" aria-label="Slide 3"></button>
+                    <button type="button" onclick="event.stopPropagation(); setHeroSlide(3)" class="hero-indicator w-1.5 h-1.5 rounded-full bg-white/50 hover:bg-white transition-all duration-300" aria-label="Slide 4"></button>
+                    <button type="button" onclick="event.stopPropagation(); setHeroSlide(4)" class="hero-indicator w-1.5 h-1.5 rounded-full bg-white/50 hover:bg-white transition-all duration-300" aria-label="Slide 5"></button>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none z-10 pointer-events-none">
+          <svg class="relative block w-full h-24 sm:h-28 md:h-32 xl:h-36" viewBox="0 0 1440 160" preserveAspectRatio="none">
+
+            <path fill="#9E6738" d="M 0,140 C 300,165 480,160 720,135 C 980,110 1180,50 1440,35 L 1440,160 L 0,160 Z"/>
+
+            <path fill="#1A3B55" d="M 0,160 C 400,165 600,165 800,155 C 1050,145 1240,95 1440,75 L 1440,160 Z"/>
+          </svg>
+        </div>
+
+      </section>
+
+      <section id="discover-world-section" class="py-16 sm:py-20 lg:py-24 bg-[#FCFBF8] dark:bg-[#0B1924] transition-colors relative z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+            <div class="lg:col-span-7 flex justify-center lg:justify-start items-center">
+              <div class="relative w-full max-w-2xl lg:max-w-[680px] xl:max-w-[750px] group">
+
+                <div class="absolute -inset-4 rounded-full bg-gradient-to-tr from-sky-500/10 via-[#DEB17E]/10 to-teal-400/10 blur-3xl pointer-events-none hidden dark:block -z-0"></div>
+                <img src="home1-collage-transparent.png?v=2" alt="Discover Santorini and coastal destinations with Travique" class="w-full h-auto object-contain block transition-transform duration-500 group-hover:scale-[1.02] drop-shadow-[0_18px_36px_rgba(26,59,85,0.14)] dark:drop-shadow-[0_25px_50px_rgba(0,0,0,0.85)] relative z-10">
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 flex flex-col items-start justify-center text-left lg:pl-2">
+              <div class="section-tag-badge">
+                <i class="fa-solid fa-compass"></i>
+                <span>Welcome to Travique</span>
+              </div>
+
+              <h2 class="text-3xl sm:text-4xl lg:text-[44px] font-bold font-heading text-[#1A3B55] dark:text-white leading-[1.18] mb-5 tracking-tight">
+                Discover the World<br>with Us
+              </h2>
+
+              <p class="text-[14px] sm:text-[15px] text-slate-600 dark:text-slate-300 leading-relaxed mb-7 max-w-xl font-normal">
+                At Travique, we believe travel is more than just visiting places - it's about creating memories, embracing new cultures, and discovering yourself. With carefully curated tours and personalized services, we make your travel dreams come true.
+              </p>
+
+              <div>
+                <a href="about.html" class="btn-primary btn-pill inline-flex items-center gap-2.5 px-7 py-3 text-sm shadow-md group">
+                  <span>About Us</span>
+                  <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="mt-16 sm:mt-20 pt-10 border-t border-slate-200/70 dark:border-slate-800">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-0">
+
+              <div class="flex-1 px-4 flex flex-col items-center text-center">
+                <div class="h-10 flex items-center justify-center mb-3 text-[#1A3B55] dark:text-[#9E6738]">
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/>
+                  </svg>
+                </div>
+                <h3 class="text-sm sm:text-[15px] font-bold text-[#1A3B55] dark:text-white mb-1 font-sans">
+                  Best Price Guarantee
+                </h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 font-normal max-w-[200px]">
+                  Get the best deals for your dream trips.
+                </p>
+              </div>
+
+              <div class="hidden lg:block w-[1.5px] h-14 bg-slate-200 dark:bg-slate-700 shrink-0"></div>
+
+              <div class="flex-1 px-4 flex flex-col items-center text-center">
+                <div class="h-10 flex items-center justify-center mb-3 text-[#1A3B55] dark:text-[#9E6738]">
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="m9 12 2 2 4-4"/>
+                  </svg>
+                </div>
+                <h3 class="text-sm sm:text-[15px] font-bold text-[#1A3B55] dark:text-white mb-1 font-sans">
+                  Safe &amp; Secure
+                </h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 font-normal max-w-[200px]">
+                  Your safety is our top priority.
+                </p>
+              </div>
+
+              <div class="hidden lg:block w-[1.5px] h-14 bg-slate-200 dark:bg-slate-700 shrink-0"></div>
+
+              <div class="flex-1 px-4 flex flex-col items-center text-center">
+                <div class="h-10 flex items-center justify-center mb-3 text-[#1A3B55] dark:text-[#9E6738]">
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/>
+                    <path d="M19 19v1a3 3 0 0 1-3 3h-2"/>
+                  </svg>
+                </div>
+                <h3 class="text-sm sm:text-[15px] font-bold text-[#1A3B55] dark:text-white mb-1 font-sans">
+                  24/7 Support
+                </h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 font-normal max-w-[200px]">
+                  We're always here to help you.
+                </p>
+              </div>
+
+              <div class="hidden lg:block w-[1.5px] h-14 bg-slate-200 dark:bg-slate-700 shrink-0"></div>
+
+              <div class="flex-1 px-4 flex flex-col items-center text-center">
+                <div class="h-10 flex items-center justify-center mb-3 text-[#1A3B55] dark:text-[#9E6738]">
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M12 2a5 5 0 0 0-5 5c0 3.5 5 8 5 8s5-4.5 5-8a5 5 0 0 0-5-5z"/>
+                    <circle cx="12" cy="7" r="1.5"/>
+                    <path d="M3 17l6-2 6 2 6-2v4l-6 2-6-2-6 2v-4z"/>
+                  </svg>
+                </div>
+                <h3 class="text-sm sm:text-[15px] font-bold text-[#1A3B55] dark:text-white mb-1 font-sans">
+                  Expert Guides
+                </h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 font-normal max-w-[200px]">
+                  Local experts for a richer experience.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="home-destinations" class="py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+          <div>
+            <div class="section-tag-badge">
+              <i class="fa-solid fa-earth-americas"></i>
+              <span>World-Class Horizons</span>
+            </div>
+            <h2 class="text-3xl font-extrabold font-heading text-ocean-950 dark:text-white mt-1">Top Curated Destinations</h2>
+            <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Chosen by our master travel curators for unmatched luxury and culture.</p>
+          </div>
+          <button onclick="window.location.href='destinations.html'" class="mt-4 md:mt-0 text-sm font-bold text-teal-500 hover:text-teal-400 flex items-center gap-1.5">
+            <span>Explore All 50+ Destinations</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div onclick="window.location.href='international.html'; filterInternational('Europe')" class="group relative rounded-2xl overflow-hidden h-72 cursor-pointer shadow-md">
+            <img src="card-swiss-matterhorn.jpg" onerror="this.src='https://images.unsplash.com/photo-1531743579253-fa8d52993ba5?auto=format&fit=crop&w=800&q=85'" alt="Swiss Alps - Matterhorn Alpine Lake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-ocean-950/95 via-black/40 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-[#DEB17E] drop-shadow-sm">Europe</span>
+              <h3 class="text-lg font-bold font-heading !text-white group-hover:!text-[#DEB17E] transition-colors drop-shadow-md" style="color: #ffffff !important;">Swiss Alps</h3>
+              <p class="text-xs text-slate-200 drop-shadow-sm font-medium">Glacier Express &amp; Matterhorn</p>
+            </div>
+          </div>
+
+          <div onclick="window.location.href='international.html'; filterInternational('Indian Ocean')" class="group relative rounded-2xl overflow-hidden h-72 cursor-pointer shadow-md">
+            <img src="card-maldives-lagoon.jpg" onerror="this.src='https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=85'" alt="Maldives - Turquoise Lagoon Overwater Villas" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-ocean-950/95 via-black/40 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-[#DEB17E] drop-shadow-sm">Island Sanctuary</span>
+              <h3 class="text-lg font-bold font-heading !text-white group-hover:!text-[#DEB17E] transition-colors drop-shadow-md" style="color: #ffffff !important;">Maldives</h3>
+              <p class="text-xs text-slate-200 drop-shadow-sm font-medium">Overwater Plunge Villas</p>
+            </div>
+          </div>
+
+          <div onclick="window.location.href='domestic.html'; filterDomestic('North India')" class="group relative rounded-2xl overflow-hidden h-72 cursor-pointer shadow-md">
+            <img src="card-kashmir-shikara.jpg" onerror="this.src='https://images.unsplash.com/photo-1569852837213-00d97a707a83?auto=format&fit=crop&w=800&q=85'" alt="Kashmir Valley - Dal Lake Shikara & Snow Himalayas" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-ocean-950/95 via-black/40 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-[#DEB17E] drop-shadow-sm">Domestic Crown</span>
+              <h3 class="text-lg font-bold font-heading !text-white group-hover:!text-[#DEB17E] transition-colors drop-shadow-md" style="color: #ffffff !important;">Kashmir Valley</h3>
+              <p class="text-xs text-slate-200 drop-shadow-sm font-medium">Dal Lake Shikara &amp; Gulmarg</p>
+            </div>
+          </div>
+
+          <div onclick="window.location.href='international.html'; filterInternational('East Asia')" class="group relative rounded-2xl overflow-hidden h-72 cursor-pointer shadow-md">
+            <img src="card-kyoto-pagoda.jpg" onerror="this.src='https://images.unsplash.com/photo-1624253321171-1be53e12f5f4?auto=format&fit=crop&w=800&q=85'" alt="Kyoto, Japan - Yasaka Pagoda Traditional Street" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-ocean-950/95 via-black/40 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-[#DEB17E] drop-shadow-sm">East Asia</span>
+              <h3 class="text-lg font-bold font-heading !text-white group-hover:!text-[#DEB17E] transition-colors drop-shadow-md" style="color: #ffffff !important;">Kyoto, Japan</h3>
+              <p class="text-xs text-slate-200 drop-shadow-sm font-medium">Ryokans &amp; Cherry Blossoms</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="home-packages" class="py-16 bg-slate-100/60 dark:bg-ocean-900/50 border-y border-slate-200 dark:border-ocean-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <div class="section-tag-badge">
+              <i class="fa-solid fa-fire"></i>
+              <span>Most Popular Packages</span>
+            </div>
+            <h2 class="text-3xl font-extrabold font-heading text-ocean-950 dark:text-white mt-2">Trending Holiday Packages</h2>
+            <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Book now to receive complimentary airport lounge access and Travique Shield insurance.</p>
+          </div>
+
+          <div id="trending-packages-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </div>
+
+      </section>
+
+      <section id="home-pillars" class="h1-mission-section relative py-20 lg:py-28 overflow-hidden">
+
+        <div class="absolute top-0 left-0 right-0 w-full overflow-hidden leading-none pointer-events-none">
+          <svg class="relative block w-full h-8 sm:h-12 text-slate-100/90 dark:text-ocean-900/60" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 C200,60 400,0 600,45 C800,90 1000,20 1200,60 L1200,0 L0,0 Z" fill="currentColor"></path>
+          </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+            <div class="lg:col-span-6 flex flex-col items-start justify-center">
+
+              <div class="section-tag-badge">
+                <i class="fa-solid fa-seedling"></i>
+                <span>Our Mission &amp; Purpose</span>
+              </div>
+
+              <h2 class="text-3xl sm:text-4xl lg:text-[46px] font-black font-heading text-ocean-950 dark:text-white leading-[1.14] mb-6 tracking-tight">
+                Meaningful trips for people who care about <span class="font-serif italic font-normal text-[#1A3B55] dark:text-[#C9935E]">the planet.</span>
+              </h2>
+
+              <p class="text-[15px] sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal mb-10 max-w-xl">
+                We're a travel company with a purpose - connecting curious travelers with local communities, breathtaking nature and authentic cultural experiences. Because great journeys do more than fill your camera roll - they make a positive impact.
+              </p>
+
+              <div class="grid grid-cols-4 gap-2 sm:gap-6 pt-2 w-full">
+
+                <div class="h1-mission-feature flex flex-col items-center text-center cursor-default">
+                  <div class="h1-mission-icon-pill mb-2 sm:mb-3">
+                    <i class="fa-solid fa-leaf text-base sm:text-lg"></i>
+                  </div>
+                  <span class="text-[10px] sm:text-[13px] font-bold text-ocean-950 dark:text-white leading-tight sm:leading-snug">
+                    Sustainable<br>Travel
+                  </span>
+                </div>
+
+                <div class="h1-mission-feature flex flex-col items-center text-center cursor-default">
+                  <div class="h1-mission-icon-pill mb-2 sm:mb-3">
+                    <i class="fa-solid fa-people-roof text-base sm:text-lg"></i>
+                  </div>
+                  <span class="text-[10px] sm:text-[13px] font-bold text-ocean-950 dark:text-white leading-tight sm:leading-snug">
+                    Local<br>Communities
+                  </span>
+                </div>
+
+                <div class="h1-mission-feature flex flex-col items-center text-center cursor-default">
+                  <div class="h1-mission-icon-pill mb-2 sm:mb-3">
+                    <i class="fa-regular fa-heart text-base sm:text-lg"></i>
+                  </div>
+                  <span class="text-[10px] sm:text-[13px] font-bold text-ocean-950 dark:text-white leading-tight sm:leading-snug">
+                    Small<br>Groups
+                  </span>
+                </div>
+
+                <div class="h1-mission-feature flex flex-col items-center text-center cursor-default">
+                  <div class="h1-mission-icon-pill mb-2 sm:mb-3">
+                    <i class="fa-solid fa-shield-halved text-base sm:text-lg"></i>
+                  </div>
+                  <span class="text-[10px] sm:text-[13px] font-bold text-ocean-950 dark:text-white leading-tight sm:leading-snug">
+                    Safe &amp;<br>Trusted
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="lg:col-span-6 relative">
+
+              <div class="absolute -bottom-8 -right-8 w-60 h-60 rounded-[40%_60%_70%_30%/40%_50%_60%_55%] bg-[#D4F2EB] dark:bg-teal-900/25 -z-10 blur-[1px]"></div>
+
+              <div class="absolute -right-6 bottom-44 sm:bottom-48 w-16 h-16 pointer-events-none z-0 opacity-80">
+                <svg viewBox="0 0 100 100" fill="none" class="w-full h-full text-teal-700 dark:text-teal-400 stroke-current" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M48 95 C45 68 53 45 50 28" />
+                  <path d="M50 28 C38 18 18 22 10 38 C24 35 38 32 50 28" />
+                  <path d="M50 28 C30 8 10 12 4 24 C18 22 36 24 50 28" />
+                  <path d="M50 28 C56 12 76 10 92 20 C76 24 60 25 50 28" />
+                  <path d="M50 28 C62 20 82 28 90 42 C76 38 62 33 50 28" />
+                  <path d="M50 28 C48 12 52 4 54 2" />
+                </svg>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6 relative z-10">
+
+                <div class="h1-mission-card relative overflow-hidden rounded-[2.5rem] rounded-tr-[1.2rem] rounded-bl-[1.2rem] shadow-xl aspect-square border-2 border-white/80 dark:border-white/10 group">
+                  <img src="mission-turtle.jpg" alt="Protected marine sanctuaries with Travique" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                  <div class="absolute inset-0 bg-gradient-to-t from-ocean-950/25 via-transparent to-transparent pointer-events-none"></div>
+                </div>
+
+                <div class="h1-mission-card relative overflow-hidden rounded-[2rem] rounded-tl-[1.2rem] rounded-br-[2.5rem] shadow-xl aspect-square border-2 border-white/80 dark:border-white/10 group">
+                  <img src="mission-sunset-van.jpg" alt="Coastal expeditions and sunset journeys" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                  <div class="absolute inset-0 bg-gradient-to-t from-ocean-950/25 via-transparent to-transparent pointer-events-none"></div>
+                </div>
+
+              </div>
+
+              <div class="h1-mission-card relative z-10 overflow-hidden rounded-[2.5rem] rounded-tr-[1.5rem] rounded-bl-[2.8rem] shadow-xl aspect-[16/9] border-2 border-white/80 dark:border-white/10 group">
+                <img src="mission-friends-cliff.jpg" alt="Meaningful travel moments with local guides" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-ocean-950/25 via-transparent to-transparent pointer-events-none"></div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none pointer-events-none -mb-1">
+          <svg class="relative block w-full h-8 sm:h-12 text-ocean-900 dark:text-ocean-900" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 C300,70 600,0 900,50 C1050,75 1150,30 1200,60 L1200,120 L0,120 Z" fill="currentColor"></path>
+          </svg>
+        </div>
+
+      </section>
+
+      <section id="home-reviews" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-xl mx-auto mb-12">
+          <div class="section-tag-badge">
+            <i class="fa-solid fa-quote-left"></i>
+            <span>Traveler Stories &amp; Reflections</span>
+          </div>
+          <h2 class="text-3xl font-extrabold font-heading text-ocean-950 dark:text-white mt-2">Loved by Discerning Travelers</h2>
+          <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Read verified reflections from our global travelers.</p>
+        </div>
+
+        <div class="py-8 w-full flex flex-col items-center justify-center select-none">
+          <div id="testimonial-carousel-deck" class="relative w-[340px] sm:w-[420px] md:w-[480px] h-[340px] sm:h-[300px]">
+
+            <div class="testimonial-card absolute inset-0 w-full h-full rounded-2xl cursor-grab active:cursor-grabbing bg-white dark:bg-[#0E2233] shadow-xl dark:shadow-[0_12px_30px_rgba(0,0,0,0.6)] border border-slate-100 dark:border-white/10 transition-all duration-300 ease-out z-30" data-index="0">
+
+              <div class="top-arrows absolute inset-x-0 top-3 flex justify-between px-5 z-20 pointer-events-auto">
+                <button type="button" onclick="prevTestimonial(event)" class="text-xl sm:text-2xl text-slate-300 hover:text-slate-600 dark:text-slate-500 dark:hover:text-[#C9935E] transition-colors p-1" aria-label="Previous Testimonial">
+                  &larr;
+                </button>
+                <button type="button" onclick="nextTestimonial(event)" class="text-xl sm:text-2xl text-slate-300 hover:text-slate-600 dark:text-slate-500 dark:hover:text-[#C9935E] transition-colors p-1" aria-label="Next Testimonial">
+                  &rarr;
+                </button>
+              </div>
+
+              <div class="p-6 sm:p-7 flex flex-col items-center text-center h-full justify-between">
+                <div class="flex flex-col items-center">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Marcus & Elena Sterling" class="w-16 h-16 rounded-full object-cover ring-2 ring-[#9E6738]/40 dark:ring-[#C9935E]/40 mb-3 shadow-md pointer-events-none">
+                  <div class="flex items-center gap-1 text-[#9E6738] dark:text-[#C9935E] text-xs mb-1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h3 class="text-base sm:text-lg font-bold text-ocean-950 dark:text-white font-heading">Marcus &amp; Elena Sterling</h3>
+                  <span class="text-[11px] font-medium text-slate-400 dark:text-slate-400">London, UK - Maldives Overwater Lagoon Sanctuary</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed italic max-w-sm mt-2 line-clamp-4">
+                  "Travique organized our 10th anniversary honeymoon flawlessly! The private seaplane transfer, underwater dining, and the intuitive traveler dashboard with our downloadable boarding passes made this the most stress-free luxury trip we have ever taken."
+                </p>
+              </div>
+            </div>
+
+            <div class="testimonial-card absolute inset-0 w-full h-full rounded-2xl cursor-grab active:cursor-grabbing bg-white dark:bg-[#0E2233] shadow-xl dark:shadow-[0_12px_30px_rgba(0,0,0,0.6)] border border-slate-100 dark:border-white/10 transition-all duration-300 ease-out z-20 pointer-events-none" data-index="1" style="transform: translate3d(0, 10px, 0) scale(0.95) rotate(-2deg); opacity: 0.65;">
+              <div class="top-arrows absolute inset-x-0 top-3 flex justify-between px-5 z-20 pointer-events-auto" style="display: none;">
+                <button type="button" onclick="prevTestimonial(event)" class="text-xl sm:text-2xl text-slate-300 hover:text-slate-600 dark:text-slate-500 dark:hover:text-[#C9935E] transition-colors p-1" aria-label="Previous Testimonial">
+                  &larr;
+                </button>
+                <button type="button" onclick="nextTestimonial(event)" class="text-xl sm:text-2xl text-slate-300 hover:text-slate-600 dark:text-slate-500 dark:hover:text-[#C9935E] transition-colors p-1" aria-label="Next Testimonial">
+                  &rarr;
+                </button>
+              </div>
+
+              <div class="p-6 sm:p-7 flex flex-col items-center text-center h-full justify-between">
+                <div class="flex flex-col items-center">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Dr. Arvind & Neha Sharma" class="w-16 h-16 rounded-full object-cover ring-2 ring-[#9E6738]/40 dark:ring-[#C9935E]/40 mb-3 shadow-md pointer-events-none">
+                  <div class="flex items-center gap-1 text-[#9E6738] dark:text-[#C9935E] text-xs mb-1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h3 class="text-base sm:text-lg font-bold text-ocean-950 dark:text-white font-heading">Dr. Arvind &amp; Neha Sharma</h3>
+                  <span class="text-[11px] font-medium text-slate-400 dark:text-slate-400">San Jose, USA - Swiss Alpine Wonders &amp; Glacier Express</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed italic max-w-sm mt-2 line-clamp-4">
+                  "The day-by-day itinerary on the Travique dashboard kept our entire family on track across Zurich, Zermatt, and Interlaken. Instant ticket access on my phone saved us hours at stations. World-class service!"
+                </p>
+              </div>
+            </div>
+
+            <div class="testimonial-card absolute inset-0 w-full h-full rounded-2xl cursor-grab active:cursor-grabbing bg-white dark:bg-[#0E2233] shadow-xl dark:shadow-[0_12px_30px_rgba(0,0,0,0.6)] border border-slate-100 dark:border-white/10 transition-all duration-300 ease-out z-10 pointer-events-none" data-index="2" style="transform: translate3d(0, 20px, 0) scale(0.90) rotate(-4deg); opacity: 0.35;">
+              <div class="top-arrows absolute inset-x-0 top-3 flex justify-between px-5 z-20 pointer-events-auto" style="display: none;">
+                <button type="button" onclick="prevTestimonial(event)" class="text-xl sm:text-2xl text-slate-300 hover:text-slate-600 dark:text-slate-500 dark:hover:text-[#C9935E] transition-colors p-1" aria-label="Previous Testimonial">
+                  &larr;
+                </button>
+                <button type="button" onclick="nextTestimonial(event)" class="text-xl sm:text-2xl text-slate-300 hover:text-slate-600 dark:text-slate-500 dark:hover:text-[#C9935E] transition-colors p-1" aria-label="Next Testimonial">
+                  &rarr;
+                </button>
+              </div>
+
+              <div class="p-6 sm:p-7 flex flex-col items-center text-center h-full justify-between">
+                <div class="flex flex-col items-center">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Camille Dupont" class="w-16 h-16 rounded-full object-cover ring-2 ring-[#9E6738]/40 dark:ring-[#C9935E]/40 mb-3 shadow-md pointer-events-none">
+                  <div class="flex items-center gap-1 text-[#9E6738] dark:text-[#C9935E] text-xs mb-1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h3 class="text-base sm:text-lg font-bold text-ocean-950 dark:text-white font-heading">Camille Dupont</h3>
+                  <span class="text-[11px] font-medium text-slate-400 dark:text-slate-400">Paris, France - Kashmir Paradise &amp; Dal Lake</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed italic max-w-sm mt-2 line-clamp-4">
+                  "A magical journey. The Sukoon houseboat in Srinagar felt like living inside royal history, and the Gulmarg gondola ride was breathtaking. Travique's 24/7 concierge was always one WhatsApp tap away."
+                </p>
+              </div>
+            </div>
+
+            <div class="absolute -bottom-10 left-0 right-0 flex justify-center items-center gap-2.5 z-20">
+              <button type="button" onclick="setTestimonial(0)" class="testimonial-dot w-6 h-2 rounded-full bg-[#1A3B55] dark:bg-[#C9935E] transition-all duration-300" aria-label="Go to review 1"></button>
+              <button type="button" onclick="setTestimonial(1)" class="testimonial-dot w-2 h-2 rounded-full bg-slate-300 dark:bg-slate-700 hover:bg-slate-400 transition-all duration-300" aria-label="Go to review 2"></button>
+              <button type="button" onclick="setTestimonial(2)" class="testimonial-dot w-2 h-2 rounded-full bg-slate-300 dark:bg-slate-700 hover:bg-slate-400 transition-all duration-300" aria-label="Go to review 3"></button>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section id="home-cta" class="py-14 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-3xl p-8 sm:p-14 bg-gradient-to-r from-ocean-950 via-ocean-900 to-ocean-950 dark:from-ocean-900 dark:via-ocean-850 dark:to-ocean-900 text-white border border-[#9E6738]/35 shadow-2xl relative overflow-hidden">
+
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1920&q=85" alt="Travique Bespoke Expeditions" class="absolute inset-0 w-full h-full object-cover object-center opacity-30 pointer-events-none select-none">
+          <div class="absolute inset-0 bg-gradient-to-r from-[#0B1924]/95 via-[#0B1924]/85 to-[#0B1924]/75 pointer-events-none"></div>
+
+          <div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-[#9E6738]/20 blur-3xl pointer-events-none"></div>
+          <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-teal-500/15 blur-3xl pointer-events-none"></div>
+
+          <div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+            <div class="max-w-2xl space-y-4">
+              <div class="section-tag-badge">
+                <i class="fa-solid fa-bell-concierge"></i>
+                <span>Seamless Booking &amp; Concierge</span>
+              </div>
+
+              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading leading-tight text-white">
+                Ready to Experience the Extraordinary?
+              </h2>
+
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
+                Access your digital vouchers, live flight gate notifications, personal butler contact, and day-by-day itineraries inside your Travique Traveler Dashboard.
+              </p>
+
+              <div class="pt-2 flex flex-wrap items-center gap-6 text-xs text-slate-300">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-shield-halved text-[#C9935E]"></i>
+                  <span>100% Financial Protection</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-headset text-[#C9935E]"></i>
+                  <span>24/7 Dedicated Concierge</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-3.5 shrink-0">
+              <button onclick="window.location.href='dashboard.html'" class="btn-primary text-sm font-bold flex items-center justify-center gap-2 px-7 py-3.5 shadow-xl">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span>Launch Dashboard</span>
+              </button>
+              <button onclick="window.location.href='contact.html'" class="btn-secondary text-sm font-bold flex items-center justify-center gap-2 px-7 py-3.5 shadow-md">
+                <i class="fa-solid fa-phone"></i>
+                <span>Speak to Concierge</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <div id="login-modal" class="modal-overlay fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-ocean-900 rounded-3xl max-w-md w-full border border-slate-200 dark:border-ocean-800 shadow-2xl overflow-hidden relative">
+      <button onclick="closeModal('login-modal')" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 dark:bg-ocean-800 text-slate-400 hover:text-slate-600 dark:hover:text-white flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="h-10 w-auto flex items-center">
+            <img src="logo-light.png" alt="Travique Logo" class="h-10 w-auto object-contain dark:hidden">
+            <img src="logo-dark.png" alt="Travique Logo" class="h-10 w-auto object-contain hidden dark:block">
+          </div>
+          <span class="text-xl font-black font-heading text-ocean-950 dark:text-white">TRAVIQUE PORTAL</span>
+        </div>
+
+        <h3 class="text-2xl font-bold font-heading text-ocean-950 dark:text-white">Traveler Sign In</h3>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Access your bookings, boarding passes, and custom itineraries.</p>
+
+        <div class="mt-6 p-3.5 rounded-2xl bg-teal-50 dark:bg-teal-950/30 border border-teal-200 dark:border-teal-800 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sophia Vance" class="w-10 h-10 rounded-full object-cover ring-2 ring-teal-400">
+            <div>
+              <p class="text-xs font-bold text-slate-900 dark:text-white">Sophia Vance</p>
+              <span class="text-[10px] text-teal-500 font-bold">Diamond Club Traveler</span>
+            </div>
+          </div>
+          <button onclick="handleLoginSubmit()" class="px-3 py-1.5 rounded-xl btn-secondary text-xs font-bold">
+            Instant Demo
+          </button>
+        </div>
+
+        <div class="relative my-6 text-center">
+          <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-slate-200 dark:border-ocean-800"></div></div>
+          <span class="relative px-3 bg-white dark:bg-ocean-900 text-xs text-slate-400 font-medium">Or enter traveler credentials</span>
+        </div>
+
+        <form onsubmit="handleLoginSubmit(event)" class="space-y-4 text-xs">
+          <div>
+            <label class="font-bold text-slate-700 dark:text-slate-300 block mb-1">Traveler Email</label>
+            <input type="email" value="sophia.vance@travique.com" required class="w-full p-2.5 rounded-xl border border-slate-200 dark:border-ocean-700 bg-slate-50 dark:bg-ocean-850 text-slate-900 dark:text-white focus:outline-none focus:border-teal-400">
+          </div>
+
+          <div>
+            <label class="font-bold text-slate-700 dark:text-slate-300 block mb-1">Password</label>
+            <input type="password" value="password123" required class="w-full p-2.5 rounded-xl border border-slate-200 dark:border-ocean-700 bg-slate-50 dark:bg-ocean-850 text-slate-900 dark:text-white focus:outline-none focus:border-teal-400">
+          </div>
+
+          <div class="flex items-center justify-between text-slate-500">
+            <label class="flex items-center gap-1.5 cursor-pointer">
+              <input type="checkbox" checked class="rounded text-teal-500 accent-teal-500">
+              <span>Remember me</span>
+            </label>
+            <a href="#" onclick="showToast('Password reset link sent to registered email.', 'fa-envelope')" class="hover:text-teal-400">Forgot?</a>
+          </div>
+
+          <button type="submit" class="w-full py-3 rounded-xl btn-primary text-sm font-bold">
+            Sign In to Dashboard
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="ticket-modal" class="modal-overlay fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-transparent max-w-2xl w-full my-8 relative">
+      <div id="ticket-modal-content"></div>
+    </div>
+  </div>
+
+  <div id="invoice-modal" class="modal-overlay fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-transparent max-w-2xl w-full my-8 relative">
+      <div id="invoice-modal-content"></div>
+    </div>
+  </div>
+
+  <div id="package-detail-modal" class="modal-overlay fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white dark:bg-ocean-900 rounded-3xl max-w-3xl w-full my-8 border border-slate-200 dark:border-ocean-800 shadow-2xl relative overflow-hidden">
+      <button onclick="closeModal('package-detail-modal')" class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-black/50 text-white hover:bg-black flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="package-detail-modal-content"></div>
+    </div>
+  </div>
+
+  <div id="booking-checkout-modal" class="modal-overlay fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white dark:bg-ocean-900 rounded-3xl max-w-lg w-full my-8 border border-slate-200 dark:border-ocean-800 shadow-2xl relative overflow-hidden">
+      <button onclick="closeModal('booking-checkout-modal')" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 dark:bg-ocean-800 text-slate-400 hover:text-slate-600 dark:hover:text-white flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="booking-checkout-modal-content"></div>
+    </div>
+  </div>
+
+  <div id="toast-container"></div>
+
+<footer class="site-footer pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="site-footer-grid grid grid-cols-1 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 md:gap-4 lg:gap-8 pb-12 border-b border-slate-200 dark:border-ocean-800">
+
+        <div class="footer-brand space-y-4">
+          <div class="footer-brand-header flex items-center gap-2.5">
+            <div class="h-9 sm:h-9 md:h-9 lg:h-11 w-auto flex items-center shrink-0">
+              <img src="logo-light.png" alt="Travique Logo" class="h-8 sm:h-9 md:h-8 lg:h-10 w-auto object-contain dark:hidden">
+              <img src="logo-dark.png" alt="Travique Logo" class="h-8 sm:h-9 md:h-8 lg:h-10 w-auto object-contain hidden dark:block">
+            </div>
+            <div class="flex flex-col items-start text-left">
+              <span class="footer-brand-title text-xl sm:text-lg md:text-xl lg:text-2xl font-black font-heading tracking-tight text-ocean-950 dark:text-white leading-none">Travique</span>
+              <span class="footer-brand-tagline text-[6.5px] sm:text-[6px] md:text-[6.5px] lg:text-[7.5px] font-bold tracking-[0.08em] text-[#9E6738] uppercase block mt-1 text-left">Escape. Explore. Experience</span>
+            </div>
+          </div>
+
+          <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
+            Crafting indelible journeys across<br>
+            oceans and alpine horizons.<br>
+            Fully protected with private<br>
+            traveler booking tracking.
+          </p>
+
+          <div class="flex items-center gap-2.5 pt-1">
+            <a href="#" aria-label="Instagram" class="footer-social-btn">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="Facebook" class="footer-social-btn">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="X Twitter" class="footer-social-btn">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#" aria-label="YouTube" class="footer-social-btn">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading text-xs font-extrabold uppercase tracking-widest text-[#9E6738] dark:text-[#C9935E] font-heading">
+            Quick Links
+          </h4>
+          <nav aria-label="Footer Quick Links">
+            <ul class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 font-medium">
+              <li>
+                <a href="index.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="about.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                  <span>About Us</span>
+                </a>
+              </li>
+              <li>
+                <a href="destinations.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                  <span>Destinations</span>
+                </a>
+              </li>
+              <li>
+                <a href="packages.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                  <span>Holiday Packages</span>
+                </a>
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                  <span>Contact Us</span>
+                </a>
+              </li>
+              <li>
+                <a href="dashboard.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                  <span>Dashboard</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-heading text-xs font-extrabold uppercase tracking-widest text-[#9E6738] dark:text-[#C9935E] font-heading">
+            Holiday Packages
+          </h4>
+          <ul class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 font-medium">
+            <li>
+              <a href="domestic.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                <span>Domestic Packages</span>
+              </a>
+            </li>
+            <li>
+              <a href="international.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                <span>International Packages</span>
+              </a>
+            </li>
+            <li>
+              <a href="packages.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                <span>All Holiday Packages</span>
+              </a>
+            </li>
+            <li>
+              <a href="packages.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                <span>Private Island Villas</span>
+              </a>
+            </li>
+            <li>
+              <a href="packages.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                <span>Alpine Ski &amp; Rail</span>
+              </a>
+            </li>
+            <li>
+              <a href="packages.html" class="hover:text-teal-500 transition-colors flex items-center gap-1.5 group">
+                <span>Yacht &amp; Catamaran Charters</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading text-xs font-extrabold uppercase tracking-widest text-[#9E6738] dark:text-[#C9935E] font-heading">
+            Traveler Portal
+          </h4>
+          <ul class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 font-medium">
+            <li>
+              <a href="dashboard.html" class="hover:text-teal-400 transition-colors flex items-center gap-1.5 group">
+                <span>Traveler Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard.html" class="hover:text-teal-400 transition-colors flex items-center gap-1.5 group">
+                <span>Live Booking Tracker</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard.html" class="hover:text-teal-400 transition-colors flex items-center gap-1.5 group">
+                <span>Interactive Itinerary</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard.html" class="hover:text-teal-400 transition-colors flex items-center gap-1.5 group">
+                <span>Saved Wishlist</span>
+              </a>
+            </li>
+            <li>
+              <a href="dashboard.html" class="hover:text-teal-400 transition-colors flex items-center gap-1.5 group">
+                <span>Download Tickets &amp; Invoices</span>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-teal-400 transition-colors flex items-center gap-1.5 group">
+                <span>24/7 Island Concierge</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading text-xs font-extrabold uppercase tracking-widest text-[#9E6738] dark:text-[#C9935E] font-heading">
+            VIP Club
+          </h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mb-3 leading-relaxed">Join 45,000+ members receiving private luxury escapes and seasonal privileges.</p>
+          <form onsubmit="event.preventDefault(); (window.showToast ? showToast('Subscribed to Travique VIP Club!', 'fa-bell') : null); this.reset()" class="space-y-2">
+            <input type="email" required placeholder="Enter your email" class="w-full p-2.5 rounded-xl bg-slate-100 dark:bg-ocean-900 border border-slate-200 dark:border-ocean-800 text-xs text-slate-900 dark:text-white focus:outline-none focus:border-teal-400">
+            <button type="submit" class="btn-secondary w-full py-2.5 text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-paper-plane text-[11px]"></i>
+              <span>Join VIP Club</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 dark:text-slate-400 gap-4">
+        <p>&copy; 2026 Travique Luxury Travel &amp; Holidays. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-teal-400">Privacy Policy</a>
+          <a href="#" class="hover:text-teal-400">Terms of Service</a>
+          <a href="#" class="hover:text-teal-400">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+  
+  <script src="home-1.js"></script>
+</body>
+</html>
+>>>>>>> 107638ee6bc6b2e4c7a4a43a5f47d9382c9597dd
