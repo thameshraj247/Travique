@@ -276,8 +276,8 @@ a.btn-secondary,
 .bg-secondary-btn,
 .site-footer button[type="submit"],
 .footer-newsletter-btn {
-  background-color: var(--secondary) !important;
-  color: #ffffff !important;
+  background-color: #F5EBE1 !important;
+  color: #000000 !important;
   border: 1.5px solid var(--secondary) !important;
   font-weight: 700 !important;
   border-radius: 0.85rem;
@@ -288,8 +288,25 @@ a.btn-secondary,
   gap: 0.5rem;
   transition: all var(--transition-normal);
   cursor: pointer;
-  box-shadow: 0 4px 14px var(--secondary-glow);
+  box-shadow: 0 4px 14px rgba(158, 103, 56, 0.18);
   text-decoration: none;
+}
+
+.btn-secondary i,
+.btn-secondary svg,
+.btn-secondary span,
+button.btn-secondary i,
+button.btn-secondary svg,
+button.btn-secondary span,
+a.btn-secondary i,
+a.btn-secondary svg,
+a.btn-secondary span,
+.site-footer button[type="submit"] i,
+.site-footer button[type="submit"] span,
+.footer-newsletter-btn i,
+.footer-newsletter-btn span {
+  color: #000000 !important;
+  stroke: #000000 !important;
 }
 
 .btn-secondary:hover,
@@ -299,15 +316,26 @@ a.btn-secondary:hover,
 .bg-secondary-btn:hover,
 .site-footer button[type="submit"]:hover,
 .footer-newsletter-btn:hover {
-  background-color: var(--primary) !important;
+  background-color: var(--secondary) !important;
   color: #ffffff !important;
-  border-color: var(--primary) !important;
+  border-color: var(--secondary) !important;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(26, 59, 85, 0.35) !important;
+  box-shadow: 0 6px 20px var(--secondary-glow) !important;
 }
 
 .btn-secondary:hover i,
-.btn-secondary:hover svg {
+.btn-secondary:hover svg,
+.btn-secondary:hover span,
+button.btn-secondary:hover i,
+button.btn-secondary:hover svg,
+button.btn-secondary:hover span,
+a.btn-secondary:hover i,
+a.btn-secondary:hover svg,
+a.btn-secondary:hover span,
+.site-footer button[type="submit"]:hover i,
+.site-footer button[type="submit"]:hover span,
+.footer-newsletter-btn:hover i,
+.footer-newsletter-btn:hover span {
   color: #ffffff !important;
   stroke: #ffffff !important;
 }
@@ -1497,24 +1525,60 @@ html.dark button[class*="toggle"]:hover i {
   color: #1A3B55 !important;
 }
 
-.ctrl-btn-primary {
+.ctrl-btn-primary,
+#auth-button-container a,
+#auth-button-container button,
+.login-btn,
+#login-btn,
+#login-submit-btn {
   background-color: var(--primary) !important;
   color: #ffffff !important;
-  font-weight: 700;
-  font-size: 0.76rem !important;
-  padding: 0.42rem 0.85rem !important;
-  gap: 0.35rem !important;
-  border-radius: 0.65rem !important;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  padding: 0.55rem 1.25rem !important;
+  gap: 0.5rem !important;
+  border-radius: 0.85rem !important;
   border: 1.5px solid var(--primary) !important;
-  box-shadow: 0 4px 14px rgba(26, 59, 85, 0.25);
+  box-shadow: 0 4px 14px rgba(26, 59, 85, 0.25) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.ctrl-btn-primary:hover {
+.ctrl-btn-primary i,
+.ctrl-btn-primary svg,
+#auth-button-container a i,
+#auth-button-container button i,
+.login-btn i,
+#login-btn i {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+.ctrl-btn-primary:hover,
+#auth-button-container a:hover,
+#auth-button-container button:hover,
+.login-btn:hover,
+#login-btn:hover,
+#login-submit-btn:hover {
   background-color: var(--secondary) !important;
   color: #ffffff !important;
   border-color: var(--secondary) !important;
-  box-shadow: 0 6px 20px rgba(158, 103, 56, 0.55);
+  box-shadow: 0 6px 20px var(--secondary-glow) !important;
   transform: translateY(-2px);
+}
+
+.ctrl-btn-primary:hover i,
+.ctrl-btn-primary:hover svg,
+#auth-button-container a:hover i,
+#auth-button-container button:hover i,
+.login-btn:hover i,
+#login-btn:hover i {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
 }
 
 .home-1-sky-hero {
@@ -2274,4 +2338,20 @@ html.dark #about-hero {
     opacity: 1 !important;
     transform: none !important;
   }
+}
+
+html:not(.dark) .theme-icon-moon {
+  display: none !important;
+}
+
+html:not(.dark) .theme-icon-sun {
+  display: inline-flex !important;
+}
+
+html.dark .theme-icon-sun {
+  display: none !important;
+}
+
+html.dark .theme-icon-moon {
+  display: inline-flex !important;
 }

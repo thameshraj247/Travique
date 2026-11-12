@@ -131,8 +131,9 @@
             <i class="fa-solid fa-right-left text-[#9E6738] dark:text-[#DEB17E] text-xs sm:text-sm"></i>
           </button>
 
-          <button id="theme-toggle-btn" onclick="toggleDarkMode()" class="ctrl-btn ctrl-btn-icon w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center p-0" title="Toggle Theme (Light / Dark)" aria-label="Toggle Dark Mode">
-            <i class="fa-solid fa-moon text-[#9E6738] dark:text-[#DEB17E] text-xs sm:text-sm"></i>
+          <button id="theme-toggle-btn" onclick="toggleDarkMode()" class="ctrl-btn ctrl-btn-icon w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center p-0" title="Toggle Theme (Light / Dark)" aria-label="Toggle Theme">
+            <i class="fa-solid fa-sun text-[#9E6738] dark:text-[#DEB17E] text-xs sm:text-sm theme-icon-sun"></i>
+            <i class="fa-solid fa-moon text-[#9E6738] dark:text-[#DEB17E] text-xs sm:text-sm theme-icon-moon"></i>
           </button>
 
           <div id="auth-button-container">
@@ -206,18 +207,15 @@
               Curated travel experiences to the world's most extraordinary destinations. More than trips, we create stories you'll never forget.
             </p>
 
-            <div class="flex flex-row items-center justify-center gap-2.5 sm:gap-5 pt-2 sm:pt-3">
-              <a href="destinations.html" class="inline-flex items-center gap-2 px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-full bg-ocean-950 hover:bg-[#12283A] dark:bg-white dark:hover:bg-slate-100 text-white dark:text-ocean-950 font-bold text-xs sm:text-sm shadow-xl shadow-ocean-950/20 hover:-translate-y-0.5 transition-all duration-300">
-                <span>Explore Destinations</span>
-                <i class="fa-solid fa-arrow-right text-[10px] sm:text-xs"></i>
-              </a>
-
-              <a href="contact.html" class="inline-flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full bg-white/95 hover:bg-white dark:bg-ocean-900/90 dark:hover:bg-ocean-850 backdrop-blur-md border border-slate-300/80 dark:border-ocean-700 text-ocean-950 dark:text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group">
-                <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-amber-500/15 dark:bg-amber-400/20 text-[#9E6738] dark:text-[#DEB17E] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-                  <i class="fa-solid fa-compass text-[10px] sm:text-xs"></i>
-                </div>
-                <span>Plan Journey</span>
-              </a>
+            <div class="flex flex-wrap items-center justify-center gap-4 pt-2 sm:pt-3">
+              <button onclick="window.location.href='packages.html'" class="btn-primary text-sm font-bold flex items-center gap-2.5">
+                <span>Explore Packages</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </button>
+              <button onclick="window.location.href='dashboard.html'" class="btn-secondary text-sm font-bold flex items-center gap-2.5">
+                <i class="fa-solid fa-compass text-base"></i>
+                <span>Open Dashboard</span>
+              </button>
             </div>
 
           </div>
@@ -404,7 +402,7 @@
                 </ul>
 
                 <div class="pt-1">
-                  <a href="packages.html" class="btn-primary !rounded-full inline-flex items-center justify-center gap-2.5 px-8 py-3.5 text-sm font-bold shadow-xl shadow-[#1A3B55]/20 hover:-translate-y-0.5 transition-all duration-300">
+                  <a href="packages.html" class="btn-primary text-sm font-bold flex items-center gap-2.5">
                     <span>Explore More</span>
                     <i class="fa-solid fa-arrow-right text-xs"></i>
                   </a>
@@ -1254,7 +1252,7 @@
           </div>
 
           <div class="pt-3">
-            <button onclick="window.location.href='about.html'" class="btn-primary btn-pill px-8 py-3.5 text-white font-bold text-sm shadow-xl transition-all inline-flex items-center gap-2.5">
+            <button onclick="window.location.href='about.html'" class="btn-primary text-sm font-bold flex items-center gap-2.5">
               <span>Read More</span>
               <i class="fa-solid fa-arrow-right text-xs"></i>
             </button>
@@ -1487,7 +1485,7 @@
               <span>Speak with a Senior Architect</span>
             </button>
             <button onclick="window.location.href='dashboard.html'" class="btn-secondary text-sm sm:text-base shadow-xl font-bold flex items-center gap-2.5 px-8 py-3.5">
-              <i class="fa-solid fa-gauge-high text-white"></i>
+              <i class="fa-solid fa-gauge-high"></i>
               <span>Access Traveler Portal</span>
             </button>
           </div>

@@ -605,58 +605,110 @@ html.dark .h2-grand-invitation-overlay {
 
 .btn-primary,
 button.btn-primary,
-a.btn-primary {
-  background-color: #1A3B55 !important;
-  color: #FFFFFF !important;
-  border: 1.5px solid rgba(255, 255, 255, 0.28) !important;
+a.btn-primary,
+.ctrl-btn-primary,
+#auth-button-container a,
+#auth-button-container button,
+.login-btn,
+#login-btn,
+#login-submit-btn {
+  background-color: var(--primary) !important;
+  color: #ffffff !important;
+  border: 1.5px solid var(--primary) !important;
   font-weight: 700 !important;
-  border-radius: 0.85rem;
-  padding: 0.85rem 1.85rem;
+  border-radius: 0.85rem !important;
+  padding: 0.75rem 1.5rem !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
-  box-shadow: 0 10px 25px rgba(26, 59, 85, 0.35);
+  gap: 0.5rem;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
+  box-shadow: 0 4px 14px rgba(26, 59, 85, 0.25) !important;
+  text-decoration: none;
 }
 
 .btn-primary:hover,
 button.btn-primary:hover,
-a.btn-primary:hover {
-  background-color: #9E6738 !important;
-  color: #FFFFFF !important;
-  border-color: #9E6738 !important;
+a.btn-primary:hover,
+.ctrl-btn-primary:hover,
+#auth-button-container a:hover,
+#auth-button-container button:hover,
+.login-btn:hover,
+#login-btn:hover,
+#login-submit-btn:hover {
+  background-color: var(--secondary) !important;
+  color: #ffffff !important;
+  border-color: var(--secondary) !important;
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(158, 103, 56, 0.5) !important;
+  box-shadow: 0 6px 20px var(--secondary-glow) !important;
+}
+
+.btn-primary:hover i,
+.btn-primary:hover svg,
+.ctrl-btn-primary:hover i,
+.ctrl-btn-primary:hover svg,
+#auth-button-container a:hover i,
+#auth-button-container button:hover i,
+.login-btn:hover i,
+#login-btn:hover i {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
 }
 
 .btn-secondary,
 button.btn-secondary,
 a.btn-secondary {
-  background-color: #9E6738 !important;
-  color: #FFFFFF !important;
-  border: 1.5px solid #9E6738 !important;
+  background-color: #F5EBE1 !important;
+  color: #000000 !important;
+  border: 1.5px solid var(--secondary) !important;
   font-weight: 700 !important;
-  border-radius: 0.85rem;
-  padding: 0.85rem 1.85rem;
+  border-radius: 0.85rem !important;
+  padding: 0.75rem 1.5rem !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
-  box-shadow: 0 10px 25px rgba(158, 103, 56, 0.35);
+  gap: 0.5rem;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
+  box-shadow: 0 4px 14px rgba(158, 103, 56, 0.18) !important;
+  text-decoration: none;
+}
+
+.btn-secondary i,
+.btn-secondary svg,
+.btn-secondary span,
+button.btn-secondary i,
+button.btn-secondary svg,
+button.btn-secondary span,
+a.btn-secondary i,
+a.btn-secondary svg,
+a.btn-secondary span {
+  color: #000000 !important;
+  stroke: #000000 !important;
 }
 
 .btn-secondary:hover,
 button.btn-secondary:hover,
 a.btn-secondary:hover {
-  background-color: #1A3B55 !important;
-  color: #FFFFFF !important;
-  border-color: #1A3B55 !important;
+  background-color: var(--secondary) !important;
+  color: #ffffff !important;
+  border-color: var(--secondary) !important;
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(26, 59, 85, 0.45) !important;
+  box-shadow: 0 6px 20px var(--secondary-glow) !important;
+}
+
+.btn-secondary:hover i,
+.btn-secondary:hover svg,
+.btn-secondary:hover span,
+button.btn-secondary:hover i,
+button.btn-secondary:hover svg,
+button.btn-secondary:hover span,
+a.btn-secondary:hover i,
+a.btn-secondary:hover svg,
+a.btn-secondary:hover span {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
 }
 
 .btn-gold {

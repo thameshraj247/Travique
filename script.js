@@ -607,7 +607,7 @@
       name: "Marcus & Elena Sterling",
       location: "London, UK",
       trip: "Maldives Overwater Lagoon Sanctuary",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+      avatar: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&q=80",
       rating: 5,
       date: "2 weeks ago",
       comment: "Travique organized our 10th anniversary honeymoon flawlessly! The private seaplane transfer, underwater dining, and the intuitive traveler dashboard with our downloadable boarding passes made this the most stress-free luxury trip we have ever taken."
@@ -616,7 +616,7 @@
       name: "Dr. Arvind & Neha Sharma",
       location: "San Jose, USA",
       trip: "Swiss Alpine Wonders & Glacier Express",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+      avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80",
       rating: 5,
       date: "1 month ago",
       comment: "The day-by-day itinerary on the Travique dashboard kept our entire family on track across Zurich, Zermatt, and Interlaken. Instant ticket access on my phone saved us hours at stations. World-class service!"
@@ -625,7 +625,7 @@
       name: "Camille Dupont",
       location: "Paris, France",
       trip: "Kashmir Paradise & Dal Lake Houseboat",
-      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80",
+      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80",
       rating: 5,
       date: "2 months ago",
       comment: "A magical journey. The Sukoon houseboat in Srinagar felt like living inside royal history, and the Gulmarg gondola ride was breathtaking. Travique's 24/7 concierge was always one WhatsApp tap away."
@@ -822,17 +822,19 @@ function disableDarkMode() {
 }
 
 function updateThemeButtonUI() {
-  const btn = document.getElementById('theme-toggle-btn');
-  if (!btn) return;
-  if (AppState.isDarkMode) {
-    btn.innerHTML = `<i class="fa-solid fa-sun text-teal-400 text-sm"></i>`;
-    btn.setAttribute('title', 'Switch to Light Mode');
-    btn.setAttribute('aria-label', 'Switch to Light Mode');
-  } else {
-    btn.innerHTML = `<i class="fa-solid fa-moon text-teal-500 text-sm"></i>`;
-    btn.setAttribute('title', 'Switch to Dark Mode');
-    btn.setAttribute('aria-label', 'Switch to Dark Mode');
-  }
+  const btns = document.querySelectorAll('#theme-toggle-btn, #theme-toggle-btn-mobile, .theme-toggle-btn, button[onclick*="toggleDarkMode"]');
+  if (!btns.length) return;
+  btns.forEach(btn => {
+    if (AppState.isDarkMode) {
+      btn.innerHTML = `<i class="fa-solid fa-moon text-xs sm:text-sm theme-icon-moon"></i>`;
+      btn.setAttribute('title', 'Dark Mode Active (Click to Switch to Light)');
+      btn.setAttribute('aria-label', 'Dark Mode Active (Click to Switch to Light)');
+    } else {
+      btn.innerHTML = `<i class="fa-solid fa-sun text-xs sm:text-sm theme-icon-sun"></i>`;
+      btn.setAttribute('title', 'Light Mode Active (Click to Switch to Dark)');
+      btn.setAttribute('aria-label', 'Light Mode Active (Click to Switch to Dark)');
+    }
+  });
 }
 
 function initDirection() {
@@ -1252,7 +1254,7 @@ function updateAuthUI() {
   } else {
 
     authContainer.innerHTML = `
-      <a href="login.html" class="ctrl-btn ctrl-btn-primary px-3 sm:px-4 py-1.5 sm:py-2 text-xs flex items-center gap-1.5 font-bold rounded-full cursor-pointer">
+      <a href="login.html" class="ctrl-btn ctrl-btn-primary px-3 sm:px-4 py-1.5 sm:py-2 text-xs flex items-center gap-1.5 font-bold cursor-pointer">
         <i class="fa-solid fa-user text-xs"></i>
         <span>Login</span>
       </a>
@@ -1374,12 +1376,10 @@ function renderDestinationsView(filter = 'all') {
     return `
     <div class="travel-card group cursor-pointer flex flex-col justify-between rounded-3xl overflow-hidden bg-white dark:bg-ocean-900 border border-slate-200 dark:border-ocean-800 shadow-md hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2" onclick="window.location.href='destination-detail.html?id=${d.id}&target=${d.packageTarget}'">
 
-      <!-- Image Stage with Guaranteed High-Contrast Protection in Light & Dark Mode -->
       <div class="travel-card-img-wrap relative h-56 overflow-hidden">
         <img src="${d.image}" alt="${d.name}" class="travel-card-img w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-[#0B1924]/95 via-[#0B1924]/45 to-transparent"></div>
 
-        <!-- Top Floating Badges -->
         <div class="absolute top-3 left-3 flex items-center gap-1.5">
           <span class="px-3 py-1 rounded-full bg-white/95 dark:bg-ocean-950/90 text-[#1A3B55] dark:text-[#DEB17E] font-black text-xs shadow-md border border-[#9E6738]/30">
             <i class="fa-solid fa-location-dot mr-1 text-[#9E6738] dark:text-[#DEB17E]"></i>${d.country}
@@ -1391,7 +1391,6 @@ function renderDestinationsView(filter = 'all') {
           </span>
         </div>
 
-        <!-- Location Title strictly forced to white with drop-shadow -->
         <div class="absolute bottom-3 left-4 right-4 text-white z-10">
           <span class="text-[9px] font-extrabold uppercase tracking-widest text-[#DEB17E] block mb-0.5">${d.category} Sanctuary</span>
           <h3 class="dest-card-title text-xl font-bold font-heading !text-white group-hover:!text-[#DEB17E] transition-colors leading-tight drop-shadow-md" style="color: #ffffff !important;">${d.name}</h3>
@@ -1402,10 +1401,8 @@ function renderDestinationsView(filter = 'all') {
         </div>
       </div>
 
-      <!-- Card Body: Rich 3-Spec Bar, Feature Badges, and Curated Rate Row -->
       <div class="p-5 pt-4 space-y-3.5 flex-1 flex flex-col justify-between">
 
-        <!-- 3-Column Micro-Telemetry Grid -->
         <div class="grid grid-cols-3 gap-2 py-2 px-3 rounded-xl bg-slate-100/90 dark:bg-ocean-850/80 border border-slate-200/80 dark:border-ocean-800 text-center">
           <div>
             <span class="block text-[9px] font-bold uppercase tracking-wider text-slate-400">Best Season</span>
@@ -1421,12 +1418,10 @@ function renderDestinationsView(filter = 'all') {
           </div>
         </div>
 
-        <!-- Curated Feature Badges -->
         <div class="flex flex-wrap gap-1.5 pt-0.5">
           ${pillsHtml}
         </div>
 
-        <!-- Bottom Row: Price & Action -->
         <div class="pt-3 border-t border-slate-200 dark:border-ocean-800/80 flex items-center justify-between gap-3">
           <div class="flex flex-col">
             <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Curated Rate</span>
@@ -1747,8 +1742,9 @@ function renderDashboard() {
         <p class="text-slate-500 dark:text-slate-400 max-w-md mx-auto mt-2 text-sm">
           Please log into your Travique traveler account to view live trip tracking, interactive day-by-day itineraries, saved holiday packages, and downloadable tickets & invoices.
         </p>
-        <button onclick="openLoginModal()" class="mt-6 px-6 py-2.5 rounded-xl bg-teal-500 text-white font-bold hover:bg-teal-400 transition-all shadow-lg shadow-teal-500/25">
-          Sign In as Traveler (Sophia Vance)
+        <button onclick="openLoginModal()" class="btn-primary text-sm font-bold inline-flex items-center justify-center gap-2.5 mx-auto mt-6">
+          <i class="fa-solid fa-user-lock text-xs"></i>
+          <span>Sign In as Traveler (Sophia Vance)</span>
         </button>
       </div>
     `;

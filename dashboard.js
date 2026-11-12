@@ -339,6 +339,10 @@ function toggleDashboardTheme() {
   } else {
     const isDark = document.documentElement.classList.toggle('dark');
     localStorage.setItem('travique_dark_mode', isDark ? 'true' : 'false');
+    localStorage.setItem('travique_theme', isDark ? 'dark' : 'light');
+    if (typeof updateThemeButtonUI === 'function') {
+      updateThemeButtonUI();
+    }
   }
 }
 window.toggleDashboardTheme = toggleDashboardTheme;

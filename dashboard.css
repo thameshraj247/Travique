@@ -564,49 +564,106 @@ html.dark #dash-search-input:focus {
   box-shadow: 0 0 0 4px rgba(222, 177, 126, 0.18), 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
-#dir-toggle-btn,
-button[onclick="toggleDarkMode()"],
-button[title="2 Unread Notifications"] {
-  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+.dash-top-ctrl-btn {
+  width: 2.25rem !important;
+  height: 2.25rem !important;
+  border-radius: 9999px !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid rgba(226, 232, 240, 0.95) !important;
+  color: #334155 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  cursor: pointer;
 }
 
-#dir-toggle-btn:hover,
-button[onclick="toggleDarkMode()"]:hover,
-button[title="2 Unread Notifications"]:hover {
-  transform: translateY(-2px) scale(1.05);
+html.dark .dash-top-ctrl-btn {
+  background-color: #0B1924 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #E2E8F0 !important;
 }
 
-html:not(.dark) #dir-toggle-btn:hover,
-html:not(.dark) button[onclick="toggleDarkMode()"]:hover,
-html:not(.dark) button[title="2 Unread Notifications"]:hover {
-  border-color: #9E6738;
-  box-shadow: 0 4px 12px rgba(158, 103, 56, 0.18);
-  background: #FAF6F0;
+.dash-top-ctrl-btn i {
+  color: #334155 !important;
+  font-size: 0.8rem !important;
+  transition: transform 0.35s ease, color 0.25s ease;
 }
 
-html.dark #dir-toggle-btn:hover,
-html.dark button[onclick="toggleDarkMode()"]:hover,
-html.dark button[title="2 Unread Notifications"]:hover {
-  border-color: #DEB17E;
-  box-shadow: 0 4px 14px rgba(222, 177, 126, 0.25);
-  background: #112334;
+html.dark .dash-top-ctrl-btn i {
+  color: #E2E8F0 !important;
 }
 
-#dir-toggle-btn i,
-button[onclick="toggleDarkMode()"] i {
-  transition: transform 0.35s ease;
+.dash-top-ctrl-btn:hover {
+  transform: translateY(-2px) scale(1.05) !important;
+  border-color: #9E6738 !important;
+  background-color: #FAF6F0 !important;
+  box-shadow: 0 4px 12px rgba(158, 103, 56, 0.18) !important;
 }
 
-#dir-toggle-btn:hover i {
+html.dark .dash-top-ctrl-btn:hover {
+  border-color: #DEB17E !important;
+  background-color: #112334 !important;
+  box-shadow: 0 4px 14px rgba(222, 177, 126, 0.25) !important;
+}
+
+.dash-top-ctrl-btn:hover i {
+  color: #9E6738 !important;
+}
+
+html.dark .dash-top-ctrl-btn:hover i {
+  color: #DEB17E !important;
+}
+
+html:not(.dark) .theme-icon-moon {
+  display: none !important;
+}
+
+html:not(.dark) .theme-icon-sun {
+  display: inline-flex !important;
+}
+
+html.dark .theme-icon-sun {
+  display: none !important;
+}
+
+html.dark .theme-icon-moon {
+  display: inline-flex !important;
+}
+
+.theme-toggle-btn i {
+  color: #334155 !important;
+  font-size: 0.8rem !important;
+  transition: transform 0.35s ease, color 0.25s ease;
+}
+
+html.dark .theme-toggle-btn i {
+  color: #E2E8F0 !important;
+}
+
+.theme-toggle-btn:hover i {
+  color: #9E6738 !important;
+}
+
+html.dark .theme-toggle-btn:hover i {
+  color: #DEB17E !important;
+}
+
+.dash-top-ctrl-btn:hover i.fa-right-left {
   transform: rotate(180deg);
 }
 
-button[onclick="toggleDarkMode()"]:hover i.fa-moon {
+.dash-top-ctrl-btn:hover i.fa-moon {
   transform: rotate(-25deg) scale(1.1);
 }
 
-button[onclick="toggleDarkMode()"]:hover i.fa-sun {
+.dash-top-ctrl-btn:hover i.fa-sun {
   transform: rotate(45deg) scale(1.15);
+}
+
+.dash-top-ctrl-btn:hover i.fa-bell {
+  transform: scale(1.1);
 }
 
 button[title="2 Unread Notifications"] span {

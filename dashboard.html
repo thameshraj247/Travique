@@ -32,18 +32,22 @@
         <aside id="dashboard-sidebar" class="sidebar-travique w-full lg:w-64 xl:w-72 shrink-0 rounded-3xl p-5 shadow-2xl transition-all duration-300 lg:sticky lg:top-6 flex flex-col justify-between">
           <div>
 
-            <div class="flex items-center justify-between pb-6 border-b border-slate-200/80 dark:border-white/10">
-              <a href="index.html" class="flex items-center gap-3 group cursor-pointer transition-transform hover:scale-[1.02]">
-                <div class="w-10 h-10 rounded-xl bg-[#FAF6F0] dark:bg-white/10 flex items-center justify-center shrink-0 border border-[#DEB17E]/30 dark:border-white/10 shadow-sm">
-                  <img src="logo-light.png" alt="Travique" class="h-7 w-auto object-contain dark:hidden">
-                  <img src="logo-dark.png" alt="Travique" class="h-7 w-auto object-contain hidden dark:block">
+            <div class="relative flex items-center justify-center pb-6 border-b border-slate-200/80 dark:border-white/10 w-full">
+              <a href="index.html" class="flex items-center justify-center gap-2.5 sm:gap-3 group shrink-0 cursor-pointer transition-transform hover:scale-[1.02] mx-auto">
+                <div class="relative h-10 sm:h-12 w-auto flex items-center shrink-0">
+                  <img src="logo-light.png" alt="Travique Logo" class="h-10 sm:h-12 w-auto object-contain dark:hidden group-hover:scale-105 transition-all duration-300">
+                  <img src="logo-dark.png" alt="Travique Logo" class="h-10 sm:h-12 w-auto object-contain hidden dark:block group-hover:scale-105 transition-all duration-300">
                 </div>
-                <div>
-                  <span class="text-2xl font-black font-heading tracking-tight text-ocean-950 dark:text-white group-hover:text-[#DEB17E] transition-colors block leading-tight">Travique</span>
-                  <span class="text-[8px] font-bold uppercase tracking-[0.15em] text-[#9E6738] dark:text-[#DEB17E] block mt-0.5">Escape. Explore. Experience.</span>
+                <div class="flex flex-col items-center text-center">
+                  <span class="text-xl sm:text-2xl font-black font-heading tracking-tight text-ocean-900 dark:text-white group-hover:text-teal-400 dark:group-hover:text-[#DEB17E] transition-colors leading-none">
+                    Travique
+                  </span>
+                  <span class="text-[6.5px] sm:text-[7.5px] font-bold tracking-[0.12em] sm:tracking-[0.14em] text-[#9E6738] dark:text-[#DEB17E] uppercase mt-1 whitespace-nowrap block">
+                    Escape. Explore. Experience
+                  </span>
                 </div>
               </a>
-              <button type="button" onclick="toggleDashboardMobileSidebar(false)" aria-label="Close sidebar" class="lg:hidden w-8 h-8 rounded-full bg-slate-100 dark:bg-white/10 text-slate-500 hover:text-ocean-950 dark:text-slate-300 dark:hover:text-white flex items-center justify-center transition-colors">
+              <button type="button" onclick="toggleDashboardMobileSidebar(false)" aria-label="Close sidebar" class="lg:hidden absolute right-0 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-100 dark:bg-white/10 text-slate-500 hover:text-ocean-950 dark:text-slate-300 dark:hover:text-white flex items-center justify-center transition-colors">
                 <i class="fa-solid fa-xmark text-sm"></i>
               </button>
             </div>
@@ -117,17 +121,26 @@
               <span>Menu</span>
             </button>
 
-            <a href="index.html" class="flex items-center gap-2">
-              <img src="logo-light.png" alt="Travique" class="h-6 w-auto dark:hidden object-contain">
-              <img src="logo-dark.png" alt="Travique" class="h-6 w-auto hidden dark:block object-contain">
-              <span class="text-base font-extrabold font-heading text-ocean-950 dark:text-white">Travique</span>
+            <a href="index.html" class="flex items-center gap-2 sm:gap-2.5 group shrink-0">
+              <div class="relative h-8 sm:h-9 w-auto flex items-center shrink-0">
+                <img src="logo-light.png" alt="Travique Logo" class="h-8 sm:h-9 w-auto object-contain dark:hidden group-hover:scale-105 transition-all">
+                <img src="logo-dark.png" alt="Travique Logo" class="h-8 sm:h-9 w-auto object-contain hidden dark:block group-hover:scale-105 transition-all">
+              </div>
+              <div class="flex flex-col items-center text-center">
+                <span class="text-base sm:text-lg font-black font-heading tracking-tight text-ocean-900 dark:text-white leading-none">
+                  Travique
+                </span>
+                <span class="text-[6px] sm:text-[6.5px] font-bold tracking-[0.12em] text-[#9E6738] dark:text-[#DEB17E] uppercase mt-0.5 whitespace-nowrap block">
+                  Escape. Explore. Experience
+                </span>
+              </div>
             </a>
 
             <div class="flex items-center gap-2">
-                <button onclick="toggleDirection()" class="w-8 h-8 rounded-xl bg-white dark:bg-[#0B1924] border border-slate-200 dark:border-ocean-800 text-slate-700 dark:text-slate-200 flex items-center justify-center shadow-sm text-xs cursor-pointer mr-1" title="Toggle Layout Direction (LTR / RTL)" aria-label="Toggle Layout Direction"><i class="fa-solid fa-right-left text-[#9E6738] dark:text-[#DEB17E] text-xs"></i></button>
-              <button onclick="toggleDarkMode()" class="w-8 h-8 rounded-xl bg-white dark:bg-[#0B1924] border border-slate-200 dark:border-ocean-800 text-slate-700 dark:text-slate-200 flex items-center justify-center shadow-sm text-xs cursor-pointer" title="Toggle Light/Dark Theme" aria-label="Toggle Light/Dark Theme">
-                <i class="fa-regular fa-moon dark:hidden"></i>
-                <i class="fa-regular fa-sun hidden dark:block text-amber-400"></i>
+                <button onclick="toggleDirection()" class="w-8 h-8 rounded-xl bg-white dark:bg-[#0B1924] border border-slate-200 dark:border-ocean-800 text-slate-700 dark:text-slate-200 flex items-center justify-center shadow-sm text-xs cursor-pointer mr-1" title="Toggle Layout Direction (LTR / RTL)" aria-label="Toggle Layout Direction"><i class="fa-solid fa-right-left text-xs"></i></button>
+              <button id="theme-toggle-btn-mobile" onclick="toggleDarkMode()" class="theme-toggle-btn w-8 h-8 rounded-xl bg-white dark:bg-[#0B1924] border border-slate-200 dark:border-ocean-800 text-slate-700 dark:text-slate-200 flex items-center justify-center shadow-sm text-xs cursor-pointer" title="Toggle Light/Dark Theme" aria-label="Toggle Light/Dark Theme">
+                <i class="fa-solid fa-sun text-xs theme-icon-sun"></i>
+                <i class="fa-solid fa-moon text-xs theme-icon-moon"></i>
               </button>
             </div>
           </div>
@@ -141,16 +154,16 @@
 
             <div class="flex items-center gap-3 w-full sm:w-auto justify-end">
 
-              <button id="dir-toggle-btn" onclick="toggleDirection()" class="w-9 h-9 rounded-full bg-white dark:bg-[#0B1924] border border-slate-200 dark:border-ocean-800 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-ocean-850 flex items-center justify-center text-xs shadow-sm transition-colors cursor-pointer" title="Toggle Layout Direction (LTR / RTL)" aria-label="Toggle Layout Direction">
-                <i class="fa-solid fa-right-left text-[#9E6738] dark:text-[#DEB17E] text-xs"></i>
+              <button onclick="toggleDirection()" class="dash-top-ctrl-btn w-9 h-9 rounded-full bg-white dark:bg-[#0B1924] border border-slate-200 dark:border-ocean-800 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-ocean-850 flex items-center justify-center text-xs shadow-sm transition-all cursor-pointer" title="Toggle Layout Direction (LTR / RTL)" aria-label="Toggle Layout Direction">
+                <i class="fa-solid fa-right-left text-xs"></i>
               </button>
-              <button onclick="toggleDarkMode()" class="w-9 h-9 rounded-full bg-white dark:bg-[#0B1924] border border-slate-200 dark:border-ocean-800 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-ocean-850 flex items-center justify-center text-xs shadow-sm transition-colors cursor-pointer" title="Toggle Light/Dark Theme">
-                <i class="fa-solid fa-moon dark:hidden"></i>
-                <i class="fa-solid fa-sun hidden dark:block text-amber-400"></i>
+              <button id="theme-toggle-btn" onclick="toggleDarkMode()" class="theme-toggle-btn dash-top-ctrl-btn w-9 h-9 rounded-full bg-white dark:bg-[#0B1924] border border-slate-200 dark:border-ocean-800 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-ocean-850 flex items-center justify-center text-xs shadow-sm transition-all cursor-pointer" title="Toggle Light/Dark Theme" aria-label="Toggle Light/Dark Theme">
+                <i class="fa-solid fa-sun text-xs theme-icon-sun"></i>
+                <i class="fa-solid fa-moon text-xs theme-icon-moon"></i>
               </button>
 
-              <button onclick="showToast('You have 2 unread concierge notifications: Booking confirmed for Bali, Indonesia', 'fa-bell')" class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white dark:bg-[#0B1924] border border-slate-200 dark:border-ocean-800 text-slate-600 dark:text-slate-300 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-ocean-850 transition-colors shadow-sm cursor-pointer" title="2 Unread Notifications">
-                <i class="fa-regular fa-bell text-sm"></i>
+              <button onclick="showToast('You have 2 unread concierge notifications: Booking confirmed for Bali, Indonesia', 'fa-bell')" class="dash-top-ctrl-btn relative w-9 h-9 rounded-full bg-white dark:bg-[#0B1924] border border-slate-200 dark:border-ocean-800 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-ocean-850 flex items-center justify-center text-xs shadow-sm transition-all cursor-pointer" title="2 Unread Notifications">
+                <i class="fa-regular fa-bell text-xs"></i>
                 <span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-rose-500 text-white text-[9px] font-extrabold flex items-center justify-center border-2 border-white dark:border-[#0B1924]">2</span>
               </button>
 
@@ -1134,12 +1147,19 @@
       </button>
 
       <div class="p-8">
-        <a href="index.html" class="flex items-center gap-3 mb-6 group cursor-pointer">
-          <div class="h-10 w-auto flex items-center">
-            <img src="logo-light.png" alt="Travique Logo" class="h-10 w-auto object-contain dark:hidden group-hover:scale-105 transition-transform">
-            <img src="logo-dark.png" alt="Travique Logo" class="h-10 w-auto object-contain hidden dark:block group-hover:scale-105 transition-transform">
+        <a href="index.html" class="flex items-center justify-center gap-2.5 sm:gap-3 mb-6 group cursor-pointer text-center mx-auto">
+          <div class="relative h-10 sm:h-12 w-auto flex items-center shrink-0">
+            <img src="logo-light.png" alt="Travique Logo" class="h-10 sm:h-12 w-auto object-contain dark:hidden group-hover:scale-105 transition-transform">
+            <img src="logo-dark.png" alt="Travique Logo" class="h-10 sm:h-12 w-auto object-contain hidden dark:block group-hover:scale-105 transition-transform">
           </div>
-          <span class="text-xl font-black font-heading text-ocean-950 dark:text-white group-hover:text-[#9E6738] dark:group-hover:text-[#DEB17E] transition-colors">TRAVIQUE PORTAL</span>
+          <div class="flex flex-col items-center text-center">
+            <span class="text-xl sm:text-2xl font-black font-heading tracking-tight text-ocean-900 dark:text-white group-hover:text-teal-400 dark:group-hover:text-[#DEB17E] transition-colors leading-none">
+              Travique
+            </span>
+            <span class="text-[6.5px] sm:text-[7.5px] font-bold tracking-[0.12em] sm:tracking-[0.14em] text-[#9E6738] dark:text-[#DEB17E] uppercase mt-1 whitespace-nowrap block">
+              Escape. Explore. Experience
+            </span>
+          </div>
         </a>
 
         <h3 class="text-2xl font-bold font-heading text-ocean-950 dark:text-white">Traveler Sign In</h3>
